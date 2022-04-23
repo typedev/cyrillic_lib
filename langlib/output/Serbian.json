@@ -1,0 +1,680 @@
+{
+    "name_eng": "Serbian",
+    "uppercase_alphabet": [
+        {
+            "sign": "А",
+            "unicodes": [
+                "0410"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Б",
+            "unicodes": [
+                "0411"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "В",
+            "unicodes": [
+                "0412"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Г",
+            "unicodes": [
+                "0413"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Д",
+            "unicodes": [
+                "0414"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ђ",
+            "unicodes": [
+                "0402"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "Е",
+            "unicodes": [
+                "0415"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ж",
+            "unicodes": [
+                "0416"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "З",
+            "unicodes": [
+                "0417"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "И",
+            "unicodes": [
+                "0418"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ј",
+            "unicodes": [
+                "0408"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "К",
+            "unicodes": [
+                "041A"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Л",
+            "unicodes": [
+                "041B"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Љ",
+            "unicodes": [
+                "0409"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "М",
+            "unicodes": [
+                "041C"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Н",
+            "unicodes": [
+                "041D"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Њ",
+            "unicodes": [
+                "040A"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "О",
+            "unicodes": [
+                "041E"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "П",
+            "unicodes": [
+                "041F"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Р",
+            "unicodes": [
+                "0420"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "С",
+            "unicodes": [
+                "0421"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Т",
+            "unicodes": [
+                "0422"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ћ",
+            "unicodes": [
+                "040B"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "У",
+            "unicodes": [
+                "0423"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ф",
+            "unicodes": [
+                "0424"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Х",
+            "unicodes": [
+                "0425"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ц",
+            "unicodes": [
+                "0426"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Ч",
+            "unicodes": [
+                "0427"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "Џ",
+            "unicodes": [
+                "040F"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "Ш",
+            "unicodes": [
+                "0428"
+            ],
+            "types": [],
+            "alts": []
+        }
+    ],
+    "lowercase_alphabet": [
+        {
+            "sign": "а",
+            "unicodes": [
+                "0430"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "б",
+            "unicodes": [
+                "0431"
+            ],
+            "types": [],
+            "alts": [
+                {
+                    "sign": "б",
+                    "unicodes": [
+                        "0431"
+                    ],
+                    "types": [
+                        "&"
+                    ],
+                    "alts": []
+                }
+            ]
+        },
+        {
+            "sign": "в",
+            "unicodes": [
+                "0432"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "г",
+            "unicodes": [
+                "0433"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "д",
+            "unicodes": [
+                "0434"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ђ",
+            "unicodes": [
+                "0452"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "е",
+            "unicodes": [
+                "0435"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ж",
+            "unicodes": [
+                "0436"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "з",
+            "unicodes": [
+                "0437"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "и",
+            "unicodes": [
+                "0438"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ј",
+            "unicodes": [
+                "0458"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "к",
+            "unicodes": [
+                "043A"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "л",
+            "unicodes": [
+                "043B"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "љ",
+            "unicodes": [
+                "0459"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "м",
+            "unicodes": [
+                "043C"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "н",
+            "unicodes": [
+                "043D"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "њ",
+            "unicodes": [
+                "045A"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "о",
+            "unicodes": [
+                "043E"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "п",
+            "unicodes": [
+                "043F"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "р",
+            "unicodes": [
+                "0440"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "с",
+            "unicodes": [
+                "0441"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "т",
+            "unicodes": [
+                "0442"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ћ",
+            "unicodes": [
+                "045B"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "у",
+            "unicodes": [
+                "0443"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ф",
+            "unicodes": [
+                "0444"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "х",
+            "unicodes": [
+                "0445"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ц",
+            "unicodes": [
+                "0446"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "ч",
+            "unicodes": [
+                "0447"
+            ],
+            "types": [],
+            "alts": []
+        },
+        {
+            "sign": "џ",
+            "unicodes": [
+                "045F"
+            ],
+            "types": [
+                "*"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "ш",
+            "unicodes": [
+                "0448"
+            ],
+            "types": [],
+            "alts": []
+        }
+    ],
+    "uppercase_alphabet_adds": [
+        {
+            "sign": "Â",
+            "unicodes": [
+                "00C2"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "Ê",
+            "unicodes": [
+                "00CA"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "Ô",
+            "unicodes": [
+                "00D4"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "Ѕ",
+            "unicodes": [
+                "0405"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        }
+    ],
+    "lowercase_alphabet_adds": [
+        {
+            "sign": "â",
+            "unicodes": [
+                "00E2"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "ê",
+            "unicodes": [
+                "00EA"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "ô",
+            "unicodes": [
+                "00F4"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        },
+        {
+            "sign": "ѕ",
+            "unicodes": [
+                "0455"
+            ],
+            "types": [
+                "$"
+            ],
+            "alts": []
+        }
+    ],
+    "uppercase_characters_string": "А Â Б В Г Д Ђ Е Ê Ж Ѕ З И Ј К Л Љ М Н Њ О Ô П Р С Т Ћ У Ф Х Ц Ч Џ Ш",
+    "lowercase_characters_string": "а â б в г д ђ е ê ж ѕ з и ј к л љ м н њ о ô п р с т ћ у ф х ц ч џ ш",
+    "uppercase_unicodes_list": [
+        "0410",
+        "00C2",
+        "0411",
+        "0412",
+        "0413",
+        "0414",
+        "0402",
+        "0415",
+        "00CA",
+        "0416",
+        "0405",
+        "0417",
+        "0418",
+        "0408",
+        "041A",
+        "041B",
+        "0409",
+        "041C",
+        "041D",
+        "040A",
+        "041E",
+        "00D4",
+        "041F",
+        "0420",
+        "0421",
+        "0422",
+        "040B",
+        "0423",
+        "0424",
+        "0425",
+        "0426",
+        "0427",
+        "040F",
+        "0428"
+    ],
+    "lowercase_unicodes_list": [
+        "0430",
+        "00E2",
+        "0431",
+        "0432",
+        "0433",
+        "0434",
+        "0452",
+        "0435",
+        "00EA",
+        "0436",
+        "0455",
+        "0437",
+        "0438",
+        "0458",
+        "043A",
+        "043B",
+        "0459",
+        "043C",
+        "043D",
+        "045A",
+        "043E",
+        "00F4",
+        "043F",
+        "0440",
+        "0441",
+        "0442",
+        "045B",
+        "0443",
+        "0444",
+        "0445",
+        "0446",
+        "0447",
+        "045F",
+        "0448"
+    ]
+}
