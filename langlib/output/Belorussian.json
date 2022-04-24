@@ -180,9 +180,9 @@
             "alts": []
         },
         {
-            "sign": "",
+            "sign": "Ў",
             "unicodes": [
-                "F4A2"
+                "040E"
             ],
             "types": [
                 "notrussiansign"
@@ -460,9 +460,9 @@
             "alts": []
         },
         {
-            "sign": "",
+            "sign": "ў",
             "unicodes": [
-                "F4A3"
+                "045E"
             ],
             "types": [
                 "notrussiansign"
@@ -598,10 +598,10 @@
             "alts": []
         }
     ],
-    "uppercase_characters_string": "А Б В Г Ґ Д Е Ё Ж З І Й К Л М Н О П Р С Т У  Ф Х Ц Ч Ш Ы Ь Э Ю Я ʼ",
-    "lowercase_characters_string": "а б в г ґ д е ё ж з і й к л м н о п р с т у  ф х ц ч ш ы ь э ю я",
-    "uppercase_unicodes_string": "0410 0411 0412 0413 0490 0414 0415 0401 0416 0417 0406 0419 041A 041B 041C 041D 041E 041F 0420 0421 0422 0423 F4A2 0424 0425 0426 0427 0428 042B 042C 042D 042E 042F 02BC",
-    "lowercase_unicodes_string": "0430 0431 0432 0433 0491 0434 0435 0451 0436 0437 0456 0439 043A 043B 043C 043D 043E 043F 0440 0441 0442 0443 F4A3 0444 0445 0446 0447 0448 044B 044C 044D 044E 044F",
+    "uppercase_characters_string": "А Б В Г Ґ Д Е Ё Ж З І Й К Л М Н О П Р С Т У Ў Ф Х Ц Ч Ш Ы Ь Э Ю Я ʼ",
+    "lowercase_characters_string": "а б в г ґ д е ё ж з і й к л м н о п р с т у ў ф х ц ч ш ы ь э ю я",
+    "uppercase_unicodes_string": "0410 0411 0412 0413 0490 0414 0415 0401 0416 0417 0406 0419 041A 041B 041C 041D 041E 041F 0420 0421 0422 0423 040E 0424 0425 0426 0427 0428 042B 042C 042D 042E 042F 02BC",
+    "lowercase_unicodes_string": "0430 0431 0432 0433 0491 0434 0435 0451 0436 0437 0456 0439 043A 043B 043C 043D 043E 043F 0440 0441 0442 0443 045E 0444 0445 0446 0447 0448 044B 044C 044D 044E 044F",
     "uppercase_unicodes_list": [
         {
             "unicode": "0410",
@@ -692,8 +692,8 @@
             "description": "CYRILLIC CAPITAL LETTER U\nx (cyrillic capital letter uk - 0478)\nx (cyrillic small letter straight u - 04AF)\nx (cyrillic capital letter monograph uk - A64A)"
         },
         {
-            "unicode": "F4A2",
-            "description": ""
+            "unicode": "040E",
+            "description": "CYRILLIC CAPITAL LETTER SHORT U\n: 0423 0306"
         },
         {
             "unicode": "0424",
@@ -830,8 +830,8 @@
             "description": "CYRILLIC SMALL LETTER U"
         },
         {
-            "unicode": "F4A3",
-            "description": ""
+            "unicode": "045E",
+            "description": "CYRILLIC SMALL LETTER SHORT U\n* Byelorussian, Uzbek\n: 0443 0306"
         },
         {
             "unicode": "0444",
