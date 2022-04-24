@@ -39,7 +39,7 @@
                 "0492"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": [
                 {
@@ -48,8 +48,8 @@
                         "F53C"
                     ],
                     "types": [
-                        "*",
-                        "+"
+                        "notrussiansign",
+                        "alternatesign"
                     ],
                     "alts": []
                 }
@@ -69,7 +69,7 @@
                 "0498"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": [
                 {
@@ -78,8 +78,8 @@
                         "F50A"
                     ],
                     "types": [
-                        "*",
-                        "+"
+                        "notrussiansign",
+                        "alternatesign"
                     ],
                     "alts": []
                 }
@@ -147,7 +147,7 @@
                 "04A0"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -181,7 +181,7 @@
                 "04A2"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -199,7 +199,7 @@
                 "04E8"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -233,7 +233,7 @@
                 "04AA"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": [
                 {
@@ -242,8 +242,8 @@
                         "F53E"
                     ],
                     "types": [
-                        "*",
-                        "+"
+                        "notrussiansign",
+                        "alternatesign"
                     ],
                     "alts": []
                 }
@@ -271,7 +271,7 @@
                 "04AE"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -297,7 +297,7 @@
                 "04BA"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -371,7 +371,7 @@
                 "04D8"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -431,7 +431,7 @@
                 "0493"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": [
                 {
@@ -440,8 +440,8 @@
                         "F53D"
                     ],
                     "types": [
-                        "*",
-                        "+"
+                        "notrussiansign",
+                        "alternatesign"
                     ],
                     "alts": []
                 }
@@ -461,7 +461,7 @@
                 "0499"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": [
                 {
@@ -470,8 +470,8 @@
                         "F50B"
                     ],
                     "types": [
-                        "*",
-                        "+"
+                        "notrussiansign",
+                        "alternatesign"
                     ],
                     "alts": []
                 }
@@ -539,7 +539,7 @@
                 "04A1"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -573,7 +573,7 @@
                 "04A3"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -591,7 +591,7 @@
                 "04E9"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -625,7 +625,7 @@
                 "04AB"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": [
                 {
@@ -634,8 +634,8 @@
                         "F53F"
                     ],
                     "types": [
-                        "*",
-                        "+"
+                        "notrussiansign",
+                        "alternatesign"
                     ],
                     "alts": []
                 }
@@ -663,7 +663,7 @@
                 "04AF"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -689,7 +689,7 @@
                 "04BB"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -763,7 +763,7 @@
                 "04D9"
             ],
             "types": [
-                "*"
+                "notrussiansign"
             ],
             "alts": []
         },
@@ -791,7 +791,7 @@
                 "0496"
             ],
             "types": [
-                "$"
+                "lexicosign"
             ],
             "alts": []
         }
@@ -803,7 +803,7 @@
                 "0497"
             ],
             "types": [
-                "$"
+                "lexicosign"
             ],
             "alts": []
         }
