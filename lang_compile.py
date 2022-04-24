@@ -56,6 +56,7 @@ def cascadeAltsChar(charsline):
 	chars_list = [getCharInfo(sign) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
+	if not charsline: return ([],[])
 	for idx, item in enumerate(chars_list):
 		sign = item['sign']
 		unicodes = item['unicodes']
@@ -172,6 +173,7 @@ for name in names:
 	uppercase_unicodes_list = set(l1).difference(lowercase_unicodes_list)
 	uppercase_unicodes_list = SC.getSortedCyrillicList(uppercase_unicodes_list)
 	lowercase_unicodes_list = SC.getSortedCyrillicList(lowercase_unicodes_list)
+	print (name, uppercase_alphabet_adds)
 
 
 	outputdata = {
