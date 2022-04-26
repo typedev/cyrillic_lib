@@ -1,6 +1,10 @@
 
 import re
 
+dangersymbols = {
+	'\t' : '',
+    '\"' : '\''
+}
 
 class CyrillicOrderSorter(object):
 
@@ -80,7 +84,10 @@ class CharacherDescription(object):
 
 	def getCharacterDescription(self, unicodechar):
 		if unicodechar in self.stuct:
-			return self.stuct[unicodechar].strip().replace('\t','')
+			r = self.stuct[unicodechar].strip()
+			for k,v in dangersymbols.items():
+				r = r.replace(k, v)
+			return r #self.stuct[unicodechar].strip().replace('\t','')
 		else:
 			return ''
 
