@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import csv, re, json
+import json
 import os.path
 import importlib
 
 import PTLangLib
-
 importlib.reload(PTLangLib)
 from PTLangLib import *
 
@@ -17,10 +16,10 @@ unicodelibfile = 'unicode14.txt'
 
 marks = ['*', '$', '#', '@', '(', ')', '[', ']', '+', '=', '&', '.alt']  # , '.alt'
 signtypes = {
-	'*' : 'notrussiansign',
+	# '*' : 'notrussiansign',
 	'@' : 'dialectsign',
-	'#' : 'oldersign',
-	"$" : 'lexicosign',
+	'#' : 'historicsign', #oldersign
+	"$" : 'lexicsign', #lexicosign
 	'+' : 'alternatesign',
 	'=' : 'equivalentsign',
 	'&' : 'featuresign',
@@ -88,42 +87,7 @@ def cascadeAltsChar(charsline):
 				'alts': alts
 			})
 	return (chars_list_wrap, uniqunicodes)
-#
-# def makeCharList(txtupper, lang):# , txtlower,
-# 	charlist = []
-# 	resultcharlist =[]
-# 	for mark in marks:
-# 		txtupper = txtupper.replace(mark, '')
-# 	charlist += txtupper.split(' ')
-# 	for ch in charlist:
-# 		if '.alt' not in ch:
-# 			if '!' not in ch:
-# 				for _ch in ch:
-# 					_ch = '%04X' % ord(_ch)
-# 					if _ch and _ch not in resultcharlist:
-# 						resultcharlist.append(_ch)
-# 			else:
-# 				_ch = ch.replace('!','')
-# 				if _ch and _ch not in resultcharlist:
-# 					resultcharlist.append(_ch)
-#
-# 		else:
-# 			ch = ch.replace('.alt','')
-# 			if '!' not in ch:
-# 				for _ch in ch:
-# 					_ch = '%04X' % ord(_ch)
-# 					if _ch and _ch + '.alt' not in resultcharlist:
-# 						resultcharlist.append(_ch + '.alt')
-# 			else:
-# 				_ch = ch.replace('!','')
-# 				if _ch and _ch + '.alt' not in resultcharlist:
-# 					resultcharlist.append(_ch + '.alt')
-# 	sortedlist = SC.getSortedCyrillicList(resultcharlist, lang) #sortedcyrillic(resultcharlist)
-# 	result = sortedlist
-#
-# 	return (result)
 
-# codeslangfile = os.path.join(codeslangfile)
 
 with open(codeslangfile, "r") as read_file:
 	data = json.load(read_file)
@@ -140,56 +104,71 @@ for name in names:
 		data = json.load(read_file)
 	uppercase_alphabet = data['uppercase_alphabet']
 	lowercase_alphabet = data['lowercase_alphabet']
-	uppercase_alphabet_adds = data['uppercase_alphabet_adds']
-	lowercase_alphabet_adds = data['lowercase_alphabet_adds']
+
+	uppercase_dialect = data['uppercase_dialect']
+	lowercase_dialect = data['lowercase_dialect']
+	uppercase_historic = data['uppercase_historic']
+	lowercase_historic = data['lowercase_historic']
+	uppercase_lexic = data['uppercase_lexic']
+	lowercase_lexic = data['lowercase_lexic']
+
+	# uppercase_alphabet_adds = data['uppercase_alphabet_adds']
+	# lowercase_alphabet_adds = data['lowercase_alphabet_adds']
+
+
 	upper_txtlist = []
 	lower_txtlist = []
-	# cl1 = makeCharList(uppercase_alphabet + uppercase_alphabet_adds, name)
-	# cl2 = makeCharList(lowercase_alphabet + lowercase_alphabet_adds, name)
-	# ex = set(cl1).intersection(cl2)
-	# for x in ex:
-	# 	cl1.remove(x)
-	#
-	# upper_txtlist = []
-	# for ch in cl1:
-	# 	if '.alt' in ch:
-	# 		ch = ch.replace('.alt', '')
-	# 		upper_txtlist.append(chr(int(ch, 16)) + '.alt')
-	# 	else:
-	# 		upper_txtlist.append(chr(int(ch, 16)))
-	# lower_txtlist = []
-	# for ch in cl2:
-	# 	if '.alt' in ch:
-	# 		ch = ch.replace('.alt', '')
-	# 		lower_txtlist.append(chr(int(ch, 16)) + '.alt')
-	# 	else:
-	# 		lower_txtlist.append(chr(int(ch, 16)))
+
 	(uppercase_alphabet, uppercase_unicodes) = cascadeAltsChar(uppercase_alphabet)
 	(lowercase_alphabet, lowercase_unicodes) = cascadeAltsChar(lowercase_alphabet)
-	(uppercase_alphabet_adds, uppercase_unicodes_adds) = cascadeAltsChar(uppercase_alphabet_adds)
-	(lowercase_alphabet_adds, lowercase_unicodes_adds) = cascadeAltsChar(lowercase_alphabet_adds)
-	l1 = set(uppercase_unicodes + uppercase_unicodes_adds)
-	lowercase_unicodes_list = set(lowercase_unicodes + lowercase_unicodes_adds)
+
+	(uppercase_dialect, uppercase_dialect_unicodes) = cascadeAltsChar(uppercase_dialect)
+	(lowercase_dialect, lowercase_dialect_unicodes) = cascadeAltsChar(lowercase_dialect)
+
+	(uppercase_historic, uppercase_historic_unicodes) = cascadeAltsChar(uppercase_historic)
+	(lowercase_historic, lowercase_historic_unicodes) = cascadeAltsChar(lowercase_historic)
+
+	(uppercase_lexic, uppercase_lexic_unicodes) = cascadeAltsChar(uppercase_lexic)
+	(lowercase_lexic, lowercase_lexic_unicodes) = cascadeAltsChar(lowercase_lexic)
+
+
+	# (uppercase_alphabet_adds, uppercase_unicodes_adds) = cascadeAltsChar(uppercase_alphabet_adds)
+	# (lowercase_alphabet_adds, lowercase_unicodes_adds) = cascadeAltsChar(lowercase_alphabet_adds)
+	l1 = set(uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes)
+	lowercase_unicodes_list = set(lowercase_unicodes + lowercase_dialect_unicodes + lowercase_historic_unicodes + lowercase_lexic_unicodes)
 	uppercase_unicodes_list = set(l1).difference(lowercase_unicodes_list)
 	uppercase_unicodes_list = SC.getSortedCyrillicList(uppercase_unicodes_list)
 	lowercase_unicodes_list = SC.getSortedCyrillicList(lowercase_unicodes_list)
-	print (name, uppercase_alphabet_adds)
-
+	print (name, uppercase_unicodes_list)
 
 	outputdata = {
 		'name_eng': name,
-		'uppercase_alphabet': uppercase_alphabet,
-		'lowercase_alphabet': lowercase_alphabet,
-		'uppercase_alphabet_adds': uppercase_alphabet_adds,
-		'lowercase_alphabet_adds': lowercase_alphabet_adds,
 
-		'uppercase_characters_string': ' '.join([chr(int(x,16)) for x in uppercase_unicodes_list]),
-		'lowercase_characters_string': ' '.join([chr(int(x,16)) for x in lowercase_unicodes_list]),
+		'uppercase_characters_string': ' '.join([chr(int(x, 16)) for x in uppercase_unicodes_list]),
+		'lowercase_characters_string': ' '.join([chr(int(x, 16)) for x in lowercase_unicodes_list]),
 		'uppercase_unicodes_string': ' '.join(uppercase_unicodes_list),
 		'lowercase_unicodes_string': ' '.join(lowercase_unicodes_list),
-		'uppercase_unicodes_list': [{'unicode': uni, 'description': CD.getCharacterDescription(uni) } for uni in uppercase_unicodes_list],
-		'lowercase_unicodes_list': [{'unicode': uni, 'description': CD.getCharacterDescription(uni) } for uni in lowercase_unicodes_list],
+
+		'uppercase_alphabet': uppercase_alphabet,
+		'lowercase_alphabet': lowercase_alphabet,
+
+		'uppercase_dialect': uppercase_dialect,
+		'lowercase_dialect': lowercase_dialect,
+
+		'uppercase_historic': uppercase_historic,
+		'lowercase_historic': lowercase_historic,
+
+		'uppercase_lexic': uppercase_lexic,
+		'lowercase_lexic': lowercase_lexic,
+
+		# 'uppercase_alphabet_adds': uppercase_alphabet_adds,
+		# 'lowercase_alphabet_adds': lowercase_alphabet_adds,
+
+		'uppercase_unicodes_list': [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in uppercase_unicodes_list],
+		'lowercase_unicodes_list': [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in lowercase_unicodes_list],
 	}
+
+	# print (outputdata)
 	outputJSONfile = os.path.join(workpath, outputpath, '%s.json' % name)
 	with open(outputJSONfile, "w") as write_file:
 		json.dump(outputdata, write_file, indent = 4, ensure_ascii = False)

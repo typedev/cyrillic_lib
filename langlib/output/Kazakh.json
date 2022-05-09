@@ -1,5 +1,9 @@
 {
     "name_eng": "Kazakh",
+    "uppercase_characters_string": "А Б В Г Ғ Һ Д Е Ё Ә Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ү Ұ Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я",
+    "lowercase_characters_string": "а б в г ғ һ д е ё ә ж з и і й к қ л м н ң о ө п р с т у ү ұ ф х ц ч ш щ ъ ы ь э ю я",
+    "uppercase_unicodes_string": "0410 0411 0412 0413 0492 04BA 0414 0415 0401 04D8 0416 0417 0418 0406 0419 041A 049A 041B 041C 041D 04A2 041E 04E8 041F 0420 0421 0422 0423 04AE 04B0 0424 0425 0426 0427 0428 0429 042A 042B 042C 042D 042E 042F",
+    "lowercase_unicodes_string": "0430 0431 0432 0433 0493 04BB 0434 0435 0451 04D9 0436 0437 0438 0456 0439 043A 049B 043B 043C 043D 04A3 043E 04E9 043F 0440 0441 0442 0443 04AF 04B1 0444 0445 0446 0447 0448 0449 044A 044B 044C 044D 044E 044F",
     "uppercase_alphabet": [
         {
             "sign": "А",
@@ -14,9 +18,7 @@
             "unicodes": [
                 "04D8"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -48,9 +50,7 @@
             "unicodes": [
                 "0492"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -122,9 +122,7 @@
             "unicodes": [
                 "049A"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -156,9 +154,7 @@
             "unicodes": [
                 "04A2"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -174,9 +170,7 @@
             "unicodes": [
                 "04E8"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -224,9 +218,7 @@
             "unicodes": [
                 "04B0"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -234,9 +226,7 @@
             "unicodes": [
                 "04AE"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -260,9 +250,7 @@
             "unicodes": [
                 "04BA"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -318,9 +306,7 @@
             "unicodes": [
                 "0406"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -370,9 +356,7 @@
             "unicodes": [
                 "04D9"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -404,9 +388,7 @@
             "unicodes": [
                 "0493"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -478,9 +460,7 @@
             "unicodes": [
                 "049B"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -512,9 +492,7 @@
             "unicodes": [
                 "04A3"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -530,9 +508,7 @@
             "unicodes": [
                 "04E9"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -580,9 +556,7 @@
             "unicodes": [
                 "04B1"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -590,9 +564,7 @@
             "unicodes": [
                 "04AF"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -616,9 +588,7 @@
             "unicodes": [
                 "04BB"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -674,9 +644,7 @@
             "unicodes": [
                 "0456"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -712,349 +680,433 @@
             "alts": []
         }
     ],
-    "uppercase_alphabet_adds": [],
-    "lowercase_alphabet_adds": [],
-    "uppercase_characters_string": "А Б В Г Ғ Һ Д Е Ё Ә Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ү Ұ Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я",
-    "lowercase_characters_string": "а б в г ғ һ д е ё ә ж з и і й к қ л м н ң о ө п р с т у ү ұ ф х ц ч ш щ ъ ы ь э ю я",
-    "uppercase_unicodes_string": "0410 0411 0412 0413 0492 04BA 0414 0415 0401 04D8 0416 0417 0418 0406 0419 041A 049A 041B 041C 041D 04A2 041E 04E8 041F 0420 0421 0422 0423 04AE 04B0 0424 0425 0426 0427 0428 0429 042A 042B 042C 042D 042E 042F",
-    "lowercase_unicodes_string": "0430 0431 0432 0433 0493 04BB 0434 0435 0451 04D9 0436 0437 0438 0456 0439 043A 049B 043B 043C 043D 04A3 043E 04E9 043F 0440 0441 0442 0443 04AF 04B1 0444 0445 0446 0447 0448 0449 044A 044B 044C 044D 044E 044F",
+    "uppercase_dialect": [],
+    "lowercase_dialect": [],
+    "uppercase_historic": [],
+    "lowercase_historic": [],
+    "uppercase_lexic": [],
+    "lowercase_lexic": [],
     "uppercase_unicodes_list": [
         {
             "unicode": "0410",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER A"
         },
         {
             "unicode": "0411",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER BE\nx (latin small letter b with topbar - 0183)"
         },
         {
             "unicode": "0412",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER VE"
         },
         {
             "unicode": "0413",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER GHE"
         },
         {
             "unicode": "0492",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER GHE WITH STROKE"
         },
         {
             "unicode": "04BA",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHHA"
         },
         {
             "unicode": "0414",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER DE"
         },
         {
             "unicode": "0415",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER IE"
         },
         {
             "unicode": "0401",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER IO\n: 0415 0308"
         },
         {
             "unicode": "04D8",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SCHWA"
         },
         {
             "unicode": "0416",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ZHE"
         },
         {
             "unicode": "0417",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ZE"
         },
         {
             "unicode": "0418",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER I"
         },
         {
             "unicode": "0406",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I\nx (latin capital letter i - 0049)\nx (cyrillic small letter byelorussian-ukrainian i - 0456)\nx (cyrillic letter palochka - 04C0)"
         },
         {
             "unicode": "0419",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHORT I\n: 0418 0306"
         },
         {
             "unicode": "041A",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER KA"
         },
         {
             "unicode": "049A",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER KA WITH DESCENDER"
         },
         {
             "unicode": "041B",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EL"
         },
         {
             "unicode": "041C",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EM"
         },
         {
             "unicode": "041D",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EN"
         },
         {
             "unicode": "04A2",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EN WITH DESCENDER"
         },
         {
             "unicode": "041E",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER O"
         },
         {
             "unicode": "04E8",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER BARRED O"
         },
         {
             "unicode": "041F",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER PE"
         },
         {
             "unicode": "0420",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ER"
         },
         {
             "unicode": "0421",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ES"
         },
         {
             "unicode": "0422",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER TE"
         },
         {
             "unicode": "0423",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER U\nx (cyrillic capital letter uk - 0478)\nx (cyrillic small letter straight u - 04AF)\nx (cyrillic capital letter monograph uk - A64A)"
         },
         {
             "unicode": "04AE",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER STRAIGHT U"
         },
         {
             "unicode": "04B0",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE"
         },
         {
             "unicode": "0424",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EF"
         },
         {
             "unicode": "0425",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER HA"
         },
         {
             "unicode": "0426",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER TSE"
         },
         {
             "unicode": "0427",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER CHE"
         },
         {
             "unicode": "0428",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHA"
         },
         {
             "unicode": "0429",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHCHA"
         },
         {
             "unicode": "042A",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER HARD SIGN"
         },
         {
             "unicode": "042B",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER YERU"
         },
         {
             "unicode": "042C",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SOFT SIGN"
         },
         {
             "unicode": "042D",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER E"
         },
         {
             "unicode": "042E",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER YU"
         },
         {
             "unicode": "042F",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER YA"
         }
     ],
     "lowercase_unicodes_list": [
         {
             "unicode": "0430",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER A"
         },
         {
             "unicode": "0431",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER BE"
         },
         {
             "unicode": "0432",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER VE"
         },
         {
             "unicode": "0433",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER GHE"
         },
         {
             "unicode": "0493",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER GHE WITH STROKE\n* Azerbaijani, Bashkir, ...\n* full bar form preferred over half-barred 'F'-type"
         },
         {
             "unicode": "04BB",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHHA\n* originally derived from Latin 'h', but uppercase form 04BA is closer to an inverted che (0427)\n* Azerbaijani, Bashkir, ...\nx (latin small letter h - 0068)"
         },
         {
             "unicode": "0434",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER DE"
         },
         {
             "unicode": "0435",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER IE"
         },
         {
             "unicode": "0451",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER IO\n* Russian, ...\n: 0435 0308"
         },
         {
             "unicode": "04D9",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SCHWA\nx (latin small letter schwa - 0259)"
         },
         {
             "unicode": "0436",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ZHE"
         },
         {
             "unicode": "0437",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ZE"
         },
         {
             "unicode": "0438",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER I"
         },
         {
             "unicode": "0456",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I\n= Old Cyrillic i"
         },
         {
             "unicode": "0439",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHORT I\n: 0438 0306"
         },
         {
             "unicode": "043A",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER KA"
         },
         {
             "unicode": "049B",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER KA WITH DESCENDER\n* Abkhasian, Tajik, ..."
         },
         {
             "unicode": "043B",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EL"
         },
         {
             "unicode": "043C",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EM"
         },
         {
             "unicode": "043D",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EN"
         },
         {
             "unicode": "04A3",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EN WITH DESCENDER\n* Bashkir, ..."
         },
         {
             "unicode": "043E",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER O"
         },
         {
             "unicode": "04E9",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER BARRED O\nx (latin small letter barred o - 0275)"
         },
         {
             "unicode": "043F",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER PE"
         },
         {
             "unicode": "0440",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ER"
         },
         {
             "unicode": "0441",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ES"
         },
         {
             "unicode": "0442",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER TE"
         },
         {
             "unicode": "0443",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER U"
         },
         {
             "unicode": "04AF",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER STRAIGHT U\n* stem is straight, unlike LETTER U\n* Azerbaijani, Bashkir, ...\nx (cyrillic capital letter u - 0423)"
         },
         {
             "unicode": "04B1",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE\n* Kazakh"
         },
         {
             "unicode": "0444",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EF"
         },
         {
             "unicode": "0445",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER HA"
         },
         {
             "unicode": "0446",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER TSE"
         },
         {
             "unicode": "0447",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER CHE"
         },
         {
             "unicode": "0448",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHA"
         },
         {
             "unicode": "0449",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHCHA"
         },
         {
             "unicode": "044A",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER HARD SIGN"
         },
         {
             "unicode": "044B",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER YERU\nx (cyrillic small letter yeru with back yer - A651)"
         },
         {
             "unicode": "044C",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SOFT SIGN\nx (latin small letter tone six - 0185)\nx (cyrillic small letter neutral yer - A64F)"
         },
         {
             "unicode": "044D",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER E"
         },
         {
             "unicode": "044E",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER YU\nx (cyrillic small letter reversed yu - A655)"
         },
         {
             "unicode": "044F",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER YA"
         }
     ]

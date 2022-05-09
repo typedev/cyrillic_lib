@@ -1,5 +1,9 @@
 {
     "name_eng": "Saami Kildin",
+    "uppercase_characters_string": "А  Ӓ Б В Г Һ Д Е  Ё  Ж З И Ӣ Й Ҋ Ј К Л Ӆ М Ӎ Н Ӊ Ӈ О  П Р Ҏ С Т У Ӯ Ф Х Ц Ч Ш Щ Ъ Ы Ь Ҍ Э  Ӭ Ю  Я ",
+    "lowercase_characters_string": "ʼ а  ӓ б в г һ д е  ё  ж з и ӣ й ҋ ј к л ӆ м ӎ н ӊ ӈ о  п р ҏ с т у ӯ ф х ц ч ш щ ъ ы ь ҍ э  ӭ ю  я ",
+    "uppercase_unicodes_string": "0410 F50E 04D2 0411 0412 0413 04BA 0414 0415 F510 0401 F512 0416 0417 0418 04E2 0419 048A 0408 041A 041B 04C5 041C 04CD 041D 04C9 04C7 041E F518 041F 0420 048E 0421 0422 0423 04EE 0424 0425 0426 0427 0428 0429 042A 042B 042C 048C 042D F522 04EC 042E F52C 042F F528",
+    "lowercase_unicodes_string": "02BC 0430 F50F 04D3 0431 0432 0433 04BB 0434 0435 F511 0451 F513 0436 0437 0438 04E3 0439 048B 0458 043A 043B 04C6 043C 04CE 043D 04CA 04C8 043E F519 043F 0440 048F 0441 0442 0443 04EF 0444 0445 0446 0447 0448 0449 044A 044B 044C 048D 044D F523 04ED 044E F52D 044F F529",
     "uppercase_alphabet": [
         {
             "sign": "А",
@@ -14,9 +18,7 @@
             "unicodes": [
                 "04D2"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -88,9 +90,7 @@
             "unicodes": [
                 "04BA"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": [
                 {
                     "sign": "ʼ",
@@ -98,7 +98,6 @@
                         "02BC"
                     ],
                     "types": [
-                        "notrussiansign",
                         "alternatesign"
                     ],
                     "alts": []
@@ -126,9 +125,7 @@
             "unicodes": [
                 "0408"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": [
                 {
                     "sign": "Ҋ",
@@ -136,7 +133,6 @@
                         "048A"
                     ],
                     "types": [
-                        "notrussiansign",
                         "alternatesign"
                     ],
                     "alts": []
@@ -164,9 +160,7 @@
             "unicodes": [
                 "04C5"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -182,9 +176,7 @@
             "unicodes": [
                 "04CD"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -200,9 +192,7 @@
             "unicodes": [
                 "04C9"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -210,9 +200,7 @@
             "unicodes": [
                 "04C7"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -244,9 +232,7 @@
             "unicodes": [
                 "048E"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -350,9 +336,7 @@
             "unicodes": [
                 "048C"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -368,9 +352,7 @@
             "unicodes": [
                 "04EC"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -404,9 +386,7 @@
             "unicodes": [
                 "04D3"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -478,9 +458,7 @@
             "unicodes": [
                 "04BB"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": [
                 {
                     "sign": "ʼ",
@@ -488,7 +466,6 @@
                         "02BC"
                     ],
                     "types": [
-                        "notrussiansign",
                         "alternatesign"
                     ],
                     "alts": []
@@ -516,9 +493,7 @@
             "unicodes": [
                 "0458"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": [
                 {
                     "sign": "ҋ",
@@ -526,7 +501,6 @@
                         "048B"
                     ],
                     "types": [
-                        "notrussiansign",
                         "alternatesign"
                     ],
                     "alts": []
@@ -554,9 +528,7 @@
             "unicodes": [
                 "04C6"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -572,9 +544,7 @@
             "unicodes": [
                 "04CE"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -590,9 +560,7 @@
             "unicodes": [
                 "04CA"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -600,9 +568,7 @@
             "unicodes": [
                 "04C8"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -634,9 +600,7 @@
             "unicodes": [
                 "048F"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -740,9 +704,7 @@
             "unicodes": [
                 "048D"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -758,9 +720,7 @@
             "unicodes": [
                 "04ED"
             ],
-            "types": [
-                "notrussiansign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -780,15 +740,17 @@
             "alts": []
         }
     ],
-    "uppercase_alphabet_adds": [
+    "uppercase_dialect": [],
+    "lowercase_dialect": [],
+    "uppercase_historic": [],
+    "lowercase_historic": [],
+    "uppercase_lexic": [
         {
             "sign": "",
             "unicodes": [
                 "F50E"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -796,9 +758,7 @@
             "unicodes": [
                 "F510"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -806,9 +766,7 @@
             "unicodes": [
                 "F512"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -816,9 +774,7 @@
             "unicodes": [
                 "04E2"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -826,9 +782,7 @@
             "unicodes": [
                 "F518"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -836,9 +790,7 @@
             "unicodes": [
                 "04EE"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -846,9 +798,7 @@
             "unicodes": [
                 "F522"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -856,9 +806,7 @@
             "unicodes": [
                 "F52C"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -866,21 +814,17 @@
             "unicodes": [
                 "F528"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         }
     ],
-    "lowercase_alphabet_adds": [
+    "lowercase_lexic": [
         {
             "sign": "",
             "unicodes": [
                 "F50F"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -888,9 +832,7 @@
             "unicodes": [
                 "F511"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -898,9 +840,7 @@
             "unicodes": [
                 "F513"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -908,9 +848,7 @@
             "unicodes": [
                 "04E3"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -918,9 +856,7 @@
             "unicodes": [
                 "F519"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -928,9 +864,7 @@
             "unicodes": [
                 "04EF"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -938,9 +872,7 @@
             "unicodes": [
                 "F523"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -948,9 +880,7 @@
             "unicodes": [
                 "F52D"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         },
         {
@@ -958,445 +888,546 @@
             "unicodes": [
                 "F529"
             ],
-            "types": [
-                "lexicosign"
-            ],
+            "types": [],
             "alts": []
         }
     ],
-    "uppercase_characters_string": "А  Ӓ Б В Г Һ Д Е  Ё  Ж З И Ӣ Й Ҋ Ј К Л Ӆ М Ӎ Н Ӊ Ӈ О  П Р Ҏ С Т У Ӯ Ф Х Ц Ч Ш Щ Ъ Ы Ь Ҍ Э  Ӭ Ю  Я ",
-    "lowercase_characters_string": "ʼ а  ӓ б в г һ д е  ё  ж з и ӣ й ҋ ј к л ӆ м ӎ н ӊ ӈ о  п р ҏ с т у ӯ ф х ц ч ш щ ъ ы ь ҍ э  ӭ ю  я ",
-    "uppercase_unicodes_string": "0410 F50E 04D2 0411 0412 0413 04BA 0414 0415 F510 0401 F512 0416 0417 0418 04E2 0419 048A 0408 041A 041B 04C5 041C 04CD 041D 04C9 04C7 041E F518 041F 0420 048E 0421 0422 0423 04EE 0424 0425 0426 0427 0428 0429 042A 042B 042C 048C 042D F522 04EC 042E F52C 042F F528",
-    "lowercase_unicodes_string": "02BC 0430 F50F 04D3 0431 0432 0433 04BB 0434 0435 F511 0451 F513 0436 0437 0438 04E3 0439 048B 0458 043A 043B 04C6 043C 04CE 043D 04CA 04C8 043E F519 043F 0440 048F 0441 0442 0443 04EF 0444 0445 0446 0447 0448 0449 044A 044B 044C 048D 044D F523 04ED 044E F52D 044F F529",
     "uppercase_unicodes_list": [
         {
             "unicode": "0410",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER A"
         },
         {
             "unicode": "F50E",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "04D2",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER A WITH DIAERESIS\n: 0410 0308"
         },
         {
             "unicode": "0411",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER BE\nx (latin small letter b with topbar - 0183)"
         },
         {
             "unicode": "0412",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER VE"
         },
         {
             "unicode": "0413",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER GHE"
         },
         {
             "unicode": "04BA",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHHA"
         },
         {
             "unicode": "0414",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER DE"
         },
         {
             "unicode": "0415",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER IE"
         },
         {
             "unicode": "F510",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "0401",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER IO\n: 0415 0308"
         },
         {
             "unicode": "F512",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "0416",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ZHE"
         },
         {
             "unicode": "0417",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ZE"
         },
         {
             "unicode": "0418",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER I"
         },
         {
             "unicode": "04E2",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER I WITH MACRON\n: 0418 0304"
         },
         {
             "unicode": "0419",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHORT I\n: 0418 0306"
         },
         {
             "unicode": "048A",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHORT I WITH TAIL"
         },
         {
             "unicode": "0408",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER JE"
         },
         {
             "unicode": "041A",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER KA"
         },
         {
             "unicode": "041B",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EL"
         },
         {
             "unicode": "04C5",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EL WITH TAIL"
         },
         {
             "unicode": "041C",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EM"
         },
         {
             "unicode": "04CD",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EM WITH TAIL"
         },
         {
             "unicode": "041D",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EN"
         },
         {
             "unicode": "04C9",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EN WITH TAIL"
         },
         {
             "unicode": "04C7",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EN WITH HOOK"
         },
         {
             "unicode": "041E",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER O"
         },
         {
             "unicode": "F518",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "041F",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER PE"
         },
         {
             "unicode": "0420",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ER"
         },
         {
             "unicode": "048E",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ER WITH TICK"
         },
         {
             "unicode": "0421",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER ES"
         },
         {
             "unicode": "0422",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER TE"
         },
         {
             "unicode": "0423",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER U\nx (cyrillic capital letter uk - 0478)\nx (cyrillic small letter straight u - 04AF)\nx (cyrillic capital letter monograph uk - A64A)"
         },
         {
             "unicode": "04EE",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER U WITH MACRON\n: 0423 0304"
         },
         {
             "unicode": "0424",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER EF"
         },
         {
             "unicode": "0425",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER HA"
         },
         {
             "unicode": "0426",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER TSE"
         },
         {
             "unicode": "0427",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER CHE"
         },
         {
             "unicode": "0428",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHA"
         },
         {
             "unicode": "0429",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SHCHA"
         },
         {
             "unicode": "042A",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER HARD SIGN"
         },
         {
             "unicode": "042B",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER YERU"
         },
         {
             "unicode": "042C",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SOFT SIGN"
         },
         {
             "unicode": "048C",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER SEMISOFT SIGN"
         },
         {
             "unicode": "042D",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER E"
         },
         {
             "unicode": "F522",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "04EC",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER E WITH DIAERESIS\n: 042D 0308"
         },
         {
             "unicode": "042E",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER YU"
         },
         {
             "unicode": "F52C",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "042F",
+            "types": null,
             "description": "CYRILLIC CAPITAL LETTER YA"
         },
         {
             "unicode": "F528",
+            "types": null,
             "description": ""
         }
     ],
     "lowercase_unicodes_list": [
         {
             "unicode": "02BC",
+            "types": null,
             "description": "MODIFIER LETTER APOSTROPHE\n= apostrophe\n* glottal stop, glottalization, ejective\n* many languages use this as a letter of their alphabets\n* used as a tone marker in Bodo, Dogri, and Maithili\n* 2019 is the preferred character for a punctuation apostrophe\nx (apostrophe - 0027)\nx (combining comma above - 0313)\nx (combining comma above right - 0315)\nx (armenian apostrophe - 055A)\nx (nko high tone apostrophe - 07F4)\nx (greek psili - 1FBF)\nx (right single quotation mark - 2019)"
         },
         {
             "unicode": "0430",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER A"
         },
         {
             "unicode": "F50F",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "04D3",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER A WITH DIAERESIS\n: 0430 0308"
         },
         {
             "unicode": "0431",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER BE"
         },
         {
             "unicode": "0432",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER VE"
         },
         {
             "unicode": "0433",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER GHE"
         },
         {
             "unicode": "04BB",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHHA\n* originally derived from Latin 'h', but uppercase form 04BA is closer to an inverted che (0427)\n* Azerbaijani, Bashkir, ...\nx (latin small letter h - 0068)"
         },
         {
             "unicode": "0434",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER DE"
         },
         {
             "unicode": "0435",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER IE"
         },
         {
             "unicode": "F511",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "0451",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER IO\n* Russian, ...\n: 0435 0308"
         },
         {
             "unicode": "F513",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "0436",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ZHE"
         },
         {
             "unicode": "0437",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ZE"
         },
         {
             "unicode": "0438",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER I"
         },
         {
             "unicode": "04E3",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER I WITH MACRON\n: 0438 0304"
         },
         {
             "unicode": "0439",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHORT I\n: 0438 0306"
         },
         {
             "unicode": "048B",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHORT I WITH TAIL\n* Kildin Sami"
         },
         {
             "unicode": "0458",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER JE\n* Serbian, Azerbaijani, Altay"
         },
         {
             "unicode": "043A",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER KA"
         },
         {
             "unicode": "043B",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EL"
         },
         {
             "unicode": "04C6",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EL WITH TAIL\n* Kildin Sami"
         },
         {
             "unicode": "043C",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EM"
         },
         {
             "unicode": "04CE",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EM WITH TAIL\n* Kildin Sami"
         },
         {
             "unicode": "043D",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EN"
         },
         {
             "unicode": "04CA",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EN WITH TAIL\n* Kildin Sami"
         },
         {
             "unicode": "04C8",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EN WITH HOOK\n* Chukchi"
         },
         {
             "unicode": "043E",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER O"
         },
         {
             "unicode": "F519",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "043F",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER PE"
         },
         {
             "unicode": "0440",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ER"
         },
         {
             "unicode": "048F",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ER WITH TICK\n* Kildin Sami"
         },
         {
             "unicode": "0441",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER ES"
         },
         {
             "unicode": "0442",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER TE"
         },
         {
             "unicode": "0443",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER U"
         },
         {
             "unicode": "04EF",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER U WITH MACRON\n: 0443 0304"
         },
         {
             "unicode": "0444",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER EF"
         },
         {
             "unicode": "0445",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER HA"
         },
         {
             "unicode": "0446",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER TSE"
         },
         {
             "unicode": "0447",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER CHE"
         },
         {
             "unicode": "0448",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHA"
         },
         {
             "unicode": "0449",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SHCHA"
         },
         {
             "unicode": "044A",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER HARD SIGN"
         },
         {
             "unicode": "044B",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER YERU\nx (cyrillic small letter yeru with back yer - A651)"
         },
         {
             "unicode": "044C",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SOFT SIGN\nx (latin small letter tone six - 0185)\nx (cyrillic small letter neutral yer - A64F)"
         },
         {
             "unicode": "048D",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER SEMISOFT SIGN\n* Kildin Sami"
         },
         {
             "unicode": "044D",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER E"
         },
         {
             "unicode": "F523",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "04ED",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER E WITH DIAERESIS\n* Kildin Sami\n: 044D 0308"
         },
         {
             "unicode": "044E",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER YU\nx (cyrillic small letter reversed yu - A655)"
         },
         {
             "unicode": "F52D",
+            "types": null,
             "description": ""
         },
         {
             "unicode": "044F",
+            "types": null,
             "description": "CYRILLIC SMALL LETTER YA"
         },
         {
             "unicode": "F529",
+            "types": null,
             "description": ""
         }
     ]
