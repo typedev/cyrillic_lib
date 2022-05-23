@@ -35,15 +35,18 @@
                 "0413"
             ],
             "types": [],
-            "alts": []
-        },
-        {
-            "sign": "Ґ",
-            "unicodes": [
-                "0490"
-            ],
-            "types": [],
-            "alts": []
+            "alts": [
+                {
+                    "sign": "Ґ",
+                    "unicodes": [
+                        "0490"
+                    ],
+                    "types": [
+                        "equivalentsign"
+                    ],
+                    "alts": []
+                }
+            ]
         },
         {
             "sign": "Д",
@@ -309,15 +312,18 @@
                 "0433"
             ],
             "types": [],
-            "alts": []
-        },
-        {
-            "sign": "ґ",
-            "unicodes": [
-                "0491"
-            ],
-            "types": [],
-            "alts": []
+            "alts": [
+                {
+                    "sign": "ґ",
+                    "unicodes": [
+                        "0491"
+                    ],
+                    "types": [
+                        "equivalentsign"
+                    ],
+                    "alts": []
+                }
+            ]
         },
         {
             "sign": "д",
