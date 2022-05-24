@@ -68,10 +68,13 @@ def cascadeAltsChar(charsline):
 			_types = nextitem['types']
 			if signtypes['+'] in _types or signtypes['='] in _types:# or signtypes['&'] in _types:
 				_unicodes = nextitem['unicodes']
+				nexttypes = nextitem['types']
+				if signtypes['+'] in nexttypes and signtypes['&'] in nexttypes:
+					nexttypes.remove(signtypes['+'])
 				alts.append({
 					'sign': nextitem['sign'],
 					'unicodes': _unicodes,
-					'types': nextitem['types'],
+					'types': nexttypes, #nextitem['types'],
 					'alts': []
 				})
 				for uni in _unicodes:
