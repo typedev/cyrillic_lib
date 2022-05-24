@@ -269,17 +269,19 @@
                 "0431"
             ],
             "types": [],
-            "alts": []
-        },
-        {
-            "sign": "б",
-            "unicodes": [
-                "0431"
-            ],
-            "types": [
-                "featuresign"
-            ],
-            "alts": []
+            "alts": [
+                {
+                    "sign": "б",
+                    "unicodes": [
+                        "0431"
+                    ],
+                    "types": [
+                        "alternatesign",
+                        "featuresign"
+                    ],
+                    "alts": []
+                }
+            ]
         },
         {
             "sign": "в",
