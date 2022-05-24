@@ -73,12 +73,13 @@ class CharacherDescription(object):
 
 			if line and not line.startswith('@') and not line.startswith(';'):
 				if line.startswith('\t'):
-					txt += line + '\n'
-					if key in self.stuct:
-						self.stuct[key] = txt
+					pass
+					# txt += line + '\n'
+					# if key in self.stuct:
+					# 	self.stuct[key] = txt
 				else:
 					key = line.split('\t')[0]
-					txt = line.split('\t')[1] + '\n'
+					txt = line.split('\t')[1] # + '\n'
 					self.stuct[key] = txt
 		filedesc.close()
 
