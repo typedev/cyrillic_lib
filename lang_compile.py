@@ -68,7 +68,7 @@ def cascadeAltsChar(charsline):
 			_types = nextitem['types']
 			if signtypes['+'] in _types or signtypes['='] in _types:# or signtypes['&'] in _types:
 				_unicodes = nextitem['unicodes']
-				nexttypes = nextitem['types']
+				nexttypes = nextitem['types'].copy()
 				if signtypes['+'] in nexttypes and signtypes['&'] in nexttypes:
 					nexttypes.remove(signtypes['+'])
 				alts.append({
@@ -142,7 +142,7 @@ for name in names:
 	uppercase_unicodes_list = set(l1).difference(lowercase_unicodes_list)
 	uppercase_unicodes_list = SC.getSortedCyrillicList(uppercase_unicodes_list)
 	lowercase_unicodes_list = SC.getSortedCyrillicList(lowercase_unicodes_list)
-	print (name, uppercase_unicodes_list)
+	# print (name, uppercase_unicodes_list)
 
 	outputdata = {
 		'name_eng': name,
