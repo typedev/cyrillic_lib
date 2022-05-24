@@ -1,9 +1,5 @@
 {
     "name_eng": "Abkhazian",
-    "uppercase_characters_string": "А Б В Г Ӷ Ҕ Д Е Ә Ж Ӡ З Ҙ И Й К Қ Ҟ Л М Н О П Ԥ Ҧ Р С Ҫ Т Ҭ У Ў Ф Х Ҳ Ц Ҵ Ч Ҷ Ҽ Ҿ Џ Ш Ы Ь Ҩ",
-    "lowercase_characters_string": "ʼ а б в г ӷ ҕ д е ә ж ӡ з ҙ и й к қ ҟ л м н о п ԥ ҧ р с ҫ т ҭ у ў ф х ҳ ц ҵ ч ҷ ҽ ҿ џ ш ы ь ҩ",
-    "uppercase_unicodes_string": "0410 0411 0412 0413 04F6 0494 0414 0415 04D8 0416 04E0 0417 0498 0418 0419 041A 049A 049E 041B 041C 041D 041E 041F 0524 04A6 0420 0421 04AA 0422 04AC 0423 040E 0424 0425 04B2 0426 04B4 0427 04B6 04BC 04BE 040F 0428 042B 042C 04A8",
-    "lowercase_unicodes_string": "02BC 0430 0431 0432 0433 04F7 0495 0434 0435 04D9 0436 04E1 0437 0499 0438 0439 043A 049B 049F 043B 043C 043D 043E 043F 0525 04A7 0440 0441 04AB 0442 04AD 0443 045E 0444 0445 04B3 0446 04B5 0447 04B7 04BD 04BF 045F 0448 044B 044C 04A9",
     "uppercase_alphabet": [
         {
             "sign": "А",
@@ -1427,55 +1423,210 @@
     "uppercase_unicodes_list": [
         {
             "unicode": "0410",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER A"
         },
         {
             "unicode": "0411",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER BE\nx (latin small letter b with topbar - 0183)"
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER BE"
         },
         {
             "unicode": "0412",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER VE"
         },
         {
             "unicode": "0413",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER GHE"
         },
         {
             "unicode": "04F6",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER GHE WITH DESCENDER"
         },
         {
-            "unicode": "0494",
-            "types": [
-                "historicsign"
-            ],
-            "description": "CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK"
-        },
-        {
             "unicode": "0414",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER DE"
         },
         {
             "unicode": "0415",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER IE"
         },
         {
+            "unicode": "0416",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ZHE"
+        },
+        {
+            "unicode": "0417",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ZE"
+        },
+        {
+            "unicode": "04E0",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN DZE"
+        },
+        {
+            "unicode": "0418",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER I"
+        },
+        {
+            "unicode": "041A",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER KA"
+        },
+        {
+            "unicode": "049A",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER KA WITH DESCENDER"
+        },
+        {
+            "unicode": "049E",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER KA WITH STROKE"
+        },
+        {
+            "unicode": "041B",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER EL"
+        },
+        {
+            "unicode": "041C",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER EM"
+        },
+        {
+            "unicode": "041D",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER EN"
+        },
+        {
+            "unicode": "041E",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER O"
+        },
+        {
+            "unicode": "041F",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER PE"
+        },
+        {
+            "unicode": "0524",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER PE WITH DESCENDER"
+        },
+        {
+            "unicode": "0420",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ER"
+        },
+        {
+            "unicode": "0421",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ES"
+        },
+        {
+            "unicode": "0422",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER TE"
+        },
+        {
+            "unicode": "04AC",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER TE WITH DESCENDER"
+        },
+        {
+            "unicode": "0423",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER U"
+        },
+        {
+            "unicode": "0424",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER EF"
+        },
+        {
+            "unicode": "0425",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER HA"
+        },
+        {
+            "unicode": "04B2",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER HA WITH DESCENDER"
+        },
+        {
+            "unicode": "0426",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER TSE"
+        },
+        {
+            "unicode": "04B4",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LIGATURE TE TSE"
+        },
+        {
+            "unicode": "0427",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER CHE"
+        },
+        {
+            "unicode": "04B6",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER CHE WITH DESCENDER"
+        },
+        {
+            "unicode": "04BC",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE"
+        },
+        {
+            "unicode": "04BE",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER"
+        },
+        {
+            "unicode": "0428",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER SHA"
+        },
+        {
+            "unicode": "042B",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER YERU"
+        },
+        {
+            "unicode": "04A8",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN HA"
+        },
+        {
+            "unicode": "040F",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER DZHE"
+        },
+        {
+            "unicode": "042C",
+            "types": [],
+            "description": "CYRILLIC CAPITAL LETTER SOFT SIGN"
+        },
+        {
             "unicode": "04D8",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC CAPITAL LETTER SCHWA"
         },
         {
-            "unicode": "0416",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ZHE"
+            "unicode": "0498",
+            "types": [
+                "dialectsign"
+            ],
+            "description": "CYRILLIC CAPITAL LETTER ZE WITH DESCENDER"
         },
         {
             "unicode": "04E0",
@@ -1483,124 +1634,16 @@
             "description": "CYRILLIC CAPITAL LETTER ABKHASIAN DZE"
         },
         {
-            "unicode": "0417",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ZE"
-        },
-        {
-            "unicode": "0498",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ZE WITH DESCENDER"
-        },
-        {
-            "unicode": "0418",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER I"
-        },
-        {
-            "unicode": "0419",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER SHORT I\n: 0418 0306"
-        },
-        {
-            "unicode": "041A",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER KA"
-        },
-        {
-            "unicode": "049A",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER KA WITH DESCENDER"
-        },
-        {
-            "unicode": "049E",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER KA WITH STROKE"
-        },
-        {
-            "unicode": "041B",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER EL"
-        },
-        {
-            "unicode": "041C",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER EM"
-        },
-        {
-            "unicode": "041D",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER EN"
-        },
-        {
-            "unicode": "041E",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER O"
-        },
-        {
-            "unicode": "041F",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER PE"
-        },
-        {
-            "unicode": "0524",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER PE WITH DESCENDER"
-        },
-        {
-            "unicode": "04A6",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER PE WITH MIDDLE HOOK"
-        },
-        {
-            "unicode": "0420",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ER"
-        },
-        {
-            "unicode": "0421",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ES"
-        },
-        {
             "unicode": "04AA",
-            "types": null,
+            "types": [
+                "dialectsign"
+            ],
             "description": "CYRILLIC CAPITAL LETTER ES WITH DESCENDER"
-        },
-        {
-            "unicode": "0422",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER TE"
-        },
-        {
-            "unicode": "04AC",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER TE WITH DESCENDER"
-        },
-        {
-            "unicode": "0423",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER U\nx (cyrillic capital letter uk - 0478)\nx (cyrillic small letter straight u - 04AF)\nx (cyrillic capital letter monograph uk - A64A)"
-        },
-        {
-            "unicode": "040E",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER SHORT U\n: 0423 0306"
-        },
-        {
-            "unicode": "0424",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER EF"
         },
         {
             "unicode": "0425",
             "types": null,
             "description": "CYRILLIC CAPITAL LETTER HA"
-        },
-        {
-            "unicode": "04B2",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER HA WITH DESCENDER"
         },
         {
             "unicode": "0426",
@@ -1613,233 +1656,278 @@
             "description": "CYRILLIC CAPITAL LIGATURE TE TSE"
         },
         {
-            "unicode": "0427",
+            "unicode": "0413",
             "types": null,
-            "description": "CYRILLIC CAPITAL LETTER CHE"
+            "description": "CYRILLIC CAPITAL LETTER GHE"
         },
         {
-            "unicode": "04B6",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER CHE WITH DESCENDER"
+            "unicode": "0494",
+            "types": [
+                "historicsign"
+            ],
+            "description": "CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK"
         },
         {
-            "unicode": "04BC",
+            "unicode": "041A",
             "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE"
+            "description": "CYRILLIC CAPITAL LETTER KA"
         },
         {
-            "unicode": "04BE",
+            "unicode": "049E",
             "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER"
+            "description": "CYRILLIC CAPITAL LETTER KA WITH STROKE"
         },
         {
-            "unicode": "040F",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER DZHE"
+            "unicode": "04A6",
+            "types": [
+                "historicsign"
+            ],
+            "description": "CYRILLIC CAPITAL LETTER PE WITH MIDDLE HOOK"
         },
         {
-            "unicode": "0428",
+            "unicode": "0425",
             "types": null,
-            "description": "CYRILLIC CAPITAL LETTER SHA"
+            "description": "CYRILLIC CAPITAL LETTER HA"
         },
         {
-            "unicode": "042B",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER YERU"
+            "unicode": "0419",
+            "types": [
+                "lexicsign"
+            ],
+            "description": "CYRILLIC CAPITAL LETTER SHORT I"
         },
         {
-            "unicode": "042C",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER SOFT SIGN"
-        },
-        {
-            "unicode": "04A8",
-            "types": null,
-            "description": "CYRILLIC CAPITAL LETTER ABKHASIAN HA"
+            "unicode": "040E",
+            "types": [
+                "lexicsign"
+            ],
+            "description": "CYRILLIC CAPITAL LETTER SHORT U"
         }
     ],
     "lowercase_unicodes_list": [
         {
-            "unicode": "02BC",
-            "types": null,
-            "description": "MODIFIER LETTER APOSTROPHE\n= apostrophe\n* glottal stop, glottalization, ejective\n* many languages use this as a letter of their alphabets\n* used as a tone marker in Bodo, Dogri, and Maithili\n* 2019 is the preferred character for a punctuation apostrophe\nx (apostrophe - 0027)\nx (combining comma above - 0313)\nx (combining comma above right - 0315)\nx (armenian apostrophe - 055A)\nx (nko high tone apostrophe - 07F4)\nx (greek psili - 1FBF)\nx (right single quotation mark - 2019)"
-        },
-        {
             "unicode": "0430",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER A"
         },
         {
             "unicode": "0431",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER BE"
         },
         {
             "unicode": "0432",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER VE"
         },
         {
             "unicode": "0433",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER GHE"
         },
         {
             "unicode": "04F7",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER GHE WITH DESCENDER\n* Yupik"
-        },
-        {
-            "unicode": "0495",
-            "types": [
-                "historicsign"
-            ],
-            "description": "CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK\n* Yakut, older orthographies for Abkhasian"
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER GHE WITH DESCENDER"
         },
         {
             "unicode": "0434",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER DE"
         },
         {
             "unicode": "0435",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER IE"
         },
         {
-            "unicode": "04D9",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER SCHWA\nx (latin small letter schwa - 0259)"
-        },
-        {
             "unicode": "0436",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER ZHE"
         },
         {
-            "unicode": "04E1",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER ABKHASIAN DZE\nx (latin small letter ezh - 0292)"
-        },
-        {
             "unicode": "0437",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER ZE"
         },
         {
-            "unicode": "0499",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER ZE WITH DESCENDER\n* Bashkir\n* letterforms with right hooks are preferred, although occasional variants with left hooks occur"
+            "unicode": "04E1",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER ABKHASIAN DZE"
         },
         {
             "unicode": "0438",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER I"
         },
         {
-            "unicode": "0439",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER SHORT I\n: 0438 0306"
-        },
-        {
             "unicode": "043A",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER KA"
         },
         {
             "unicode": "049B",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER KA WITH DESCENDER\n* Abkhasian, Tajik, ..."
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER KA WITH DESCENDER"
         },
         {
             "unicode": "049F",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER KA WITH STROKE\n* Abkhasian"
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER KA WITH STROKE"
         },
         {
             "unicode": "043B",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER EL"
         },
         {
             "unicode": "043C",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER EM"
         },
         {
             "unicode": "043D",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER EN"
         },
         {
             "unicode": "043E",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER O"
         },
         {
             "unicode": "043F",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER PE"
         },
         {
             "unicode": "0525",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER PE WITH DESCENDER\n* used in modern Abkhaz orthography\nx (cyrillic small letter pe with middle hook - 04A7)"
-        },
-        {
-            "unicode": "04A7",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER PE WITH MIDDLE HOOK\n* older orthographies for Abkhasian"
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER PE WITH DESCENDER"
         },
         {
             "unicode": "0440",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER ER"
         },
         {
             "unicode": "0441",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER ES"
         },
         {
-            "unicode": "04AB",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER ES WITH DESCENDER\n* Bashkir, Chuvash\n* letterforms with right hooks are preferred, although occasional variants with left hooks occur\n* in Chuvashia, letterforms identical to or similar in form to 00E7 regularly occur"
-        },
-        {
             "unicode": "0442",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER TE"
         },
         {
             "unicode": "04AD",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER TE WITH DESCENDER\n* Abkhasian"
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER TE WITH DESCENDER"
         },
         {
             "unicode": "0443",
-            "types": null,
+            "types": [],
             "description": "CYRILLIC SMALL LETTER U"
         },
         {
-            "unicode": "045E",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER SHORT U\n* Byelorussian, Uzbek\n: 0443 0306"
+            "unicode": "0444",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER EF"
         },
         {
-            "unicode": "0444",
+            "unicode": "0445",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER HA"
+        },
+        {
+            "unicode": "04B3",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER HA WITH DESCENDER"
+        },
+        {
+            "unicode": "0446",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER TSE"
+        },
+        {
+            "unicode": "04B5",
+            "types": [],
+            "description": "CYRILLIC SMALL LIGATURE TE TSE"
+        },
+        {
+            "unicode": "0447",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER CHE"
+        },
+        {
+            "unicode": "04B7",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER CHE WITH DESCENDER"
+        },
+        {
+            "unicode": "04BD",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER ABKHASIAN CHE"
+        },
+        {
+            "unicode": "04BF",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER"
+        },
+        {
+            "unicode": "0448",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER SHA"
+        },
+        {
+            "unicode": "044B",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER YERU"
+        },
+        {
+            "unicode": "04A9",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER ABKHASIAN HA"
+        },
+        {
+            "unicode": "045F",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER DZHE"
+        },
+        {
+            "unicode": "044C",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER SOFT SIGN"
+        },
+        {
+            "unicode": "04D9",
+            "types": [],
+            "description": "CYRILLIC SMALL LETTER SCHWA"
+        },
+        {
+            "unicode": "0499",
+            "types": [
+                "dialectsign"
+            ],
+            "description": "CYRILLIC SMALL LETTER ZE WITH DESCENDER"
+        },
+        {
+            "unicode": "04E1",
             "types": null,
-            "description": "CYRILLIC SMALL LETTER EF"
+            "description": "CYRILLIC SMALL LETTER ABKHASIAN DZE"
+        },
+        {
+            "unicode": "04AB",
+            "types": [
+                "dialectsign"
+            ],
+            "description": "CYRILLIC SMALL LETTER ES WITH DESCENDER"
         },
         {
             "unicode": "0445",
             "types": null,
             "description": "CYRILLIC SMALL LETTER HA"
-        },
-        {
-            "unicode": "04B3",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER HA WITH DESCENDER\n* Abkhasian, Tajik, Uzbek"
         },
         {
             "unicode": "0446",
@@ -1849,52 +1937,55 @@
         {
             "unicode": "04B5",
             "types": null,
-            "description": "CYRILLIC SMALL LIGATURE TE TSE\n* Abkhasian\n* this is not a decomposable ligature"
+            "description": "CYRILLIC SMALL LIGATURE TE TSE"
         },
         {
-            "unicode": "0447",
+            "unicode": "0433",
             "types": null,
-            "description": "CYRILLIC SMALL LETTER CHE"
+            "description": "CYRILLIC SMALL LETTER GHE"
         },
         {
-            "unicode": "04B7",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER CHE WITH DESCENDER\n* Abkhasian, Tajik"
+            "unicode": "0495",
+            "types": [
+                "historicsign"
+            ],
+            "description": "CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK"
         },
         {
-            "unicode": "04BD",
+            "unicode": "043A",
             "types": null,
-            "description": "CYRILLIC SMALL LETTER ABKHASIAN CHE"
+            "description": "CYRILLIC SMALL LETTER KA"
         },
         {
-            "unicode": "04BF",
+            "unicode": "049F",
             "types": null,
-            "description": "CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER\n* some older Abkhaz fonts show a descender shaped like a right hook (ogonek or reversed comma shape)"
+            "description": "CYRILLIC SMALL LETTER KA WITH STROKE"
         },
         {
-            "unicode": "045F",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER DZHE\n* Serbian, Macedonian, Abkhasian\nx (latin small letter dz with caron - 01C6)"
+            "unicode": "04A7",
+            "types": [
+                "historicsign"
+            ],
+            "description": "CYRILLIC SMALL LETTER PE WITH MIDDLE HOOK"
         },
         {
-            "unicode": "0448",
+            "unicode": "0445",
             "types": null,
-            "description": "CYRILLIC SMALL LETTER SHA"
+            "description": "CYRILLIC SMALL LETTER HA"
         },
         {
-            "unicode": "044B",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER YERU\nx (cyrillic small letter yeru with back yer - A651)"
+            "unicode": "0439",
+            "types": [
+                "lexicsign"
+            ],
+            "description": "CYRILLIC SMALL LETTER SHORT I"
         },
         {
-            "unicode": "044C",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER SOFT SIGN\nx (latin small letter tone six - 0185)\nx (cyrillic small letter neutral yer - A64F)"
-        },
-        {
-            "unicode": "04A9",
-            "types": null,
-            "description": "CYRILLIC SMALL LETTER ABKHASIAN HA"
+            "unicode": "045E",
+            "types": [
+                "lexicsign"
+            ],
+            "description": "CYRILLIC SMALL LETTER SHORT U"
         }
     ]
 }

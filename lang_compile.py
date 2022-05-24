@@ -15,14 +15,22 @@ sortorderfile = 'sortorder_cyrillic.txt'
 unicodelibfile = 'unicode14.txt'
 
 marks = ['*', '$', '#', '@', '(', ')', '[', ']', '+', '=', '&', '.alt']  # , '.alt'
+
+dialectsign = '@'
+historicsign = '#'
+lexicsign = '$'
+alternatesign = '+'
+equivalentsign = '='
+featuresign = '&'
+
 signtypes = {
 	# '*' : 'notrussiansign',
-	'@' : 'dialectsign',
-	'#' : 'historicsign', #oldersign
-	"$" : 'lexicsign', #lexicosign
-	'+' : 'alternatesign',
-	'=' : 'equivalentsign',
-	'&' : 'featuresign',
+	dialectsign : 'dialectsign',
+	historicsign : 'historicsign', #oldersign
+	lexicsign : 'lexicsign', #lexicosign
+	alternatesign : 'alternatesign',
+	equivalentsign : 'equivalentsign',
+	featuresign : 'featuresign',
 	# '.alt' : 'featuresignalt'
 }
 
@@ -51,45 +59,73 @@ def getCharInfo(item):
 		'types': types
 	}
 
-def cascadeAltsChar(charsline):
+def cascadeAltsChar(charsline, typestring = None):
 	chars_list = [getCharInfo(sign) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
+	resultunicodes = []
 	if not charsline: return ([],[])
 	for idx, item in enumerate(chars_list):
 		sign = item['sign']
 		unicodes = item['unicodes']
 		types = item['types']
 		alts = []
-		for uni in unicodes:
-			if uni not in uniqunicodes:
-				uniqunicodes.append(uni)
+		if unicodes and unicodes[0] and unicodes[0] not in uniqunicodes:
+			uniqunicodes.append(unicodes[0])
+			tp = None
+			if len(unicodes) == 1:
+				tp = types.copy()
+				if typestring:
+					tp.append(typestring)
+			item = {
+				'unicode': unicodes[0],
+				'types': tp,
+				'description': CD.getCharacterDescription(unicodes[0])
+			}
+			resultunicodes.append(item)
+
+		# for uni in unicodes:
+		# 	if uni not in uniqunicodes:
+		# 		uniqunicodes.append(uni)
 		for nextitem in chars_list[idx + 1:]:
 			_types = nextitem['types']
-			if signtypes['+'] in _types or signtypes['='] in _types:# or signtypes['&'] in _types:
+			if signtypes[alternatesign] in _types or signtypes[equivalentsign] in _types:# or signtypes['&'] in _types:
 				_unicodes = nextitem['unicodes']
 				nexttypes = nextitem['types'].copy()
-				if signtypes['+'] in nexttypes and signtypes['&'] in nexttypes:
-					nexttypes.remove(signtypes['+'])
+				if signtypes[alternatesign] in nexttypes and signtypes[equivalentsign] in nexttypes:
+					nexttypes.remove(signtypes[alternatesign])
 				alts.append({
 					'sign': nextitem['sign'],
 					'unicodes': _unicodes,
 					'types': nexttypes, #nextitem['types'],
 					'alts': []
 				})
-				for uni in _unicodes:
-					if uni not in uniqunicodes:
-						uniqunicodes.append(uni)
+				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
+					uniqunicodes.append(_unicodes[0])
+					tp = None
+					if len(_unicodes) == 1:
+						tp = nexttypes.copy()
+						if typestring:
+							tp.append(typestring)
+					item = {
+						'unicode': _unicodes[0],
+						'types': tp,
+						'description': CD.getCharacterDescription(_unicodes[0])
+					}
+					resultunicodes.append(item)
+				# for uni in _unicodes:
+				# 	if uni not in uniqunicodes:
+				# 		uniqunicodes.append(uni)
 			else:
 				break
-		if signtypes['+'] not in types and signtypes['='] not in types:# and signtypes['&'] not in types:
+		if signtypes[alternatesign] not in types and signtypes[equivalentsign] not in types:# and signtypes['&'] not in types:
 			chars_list_wrap.append({
 				'sign': sign,
 				'unicodes': unicodes,
 				'types': types,
 				'alts': alts
 			})
-	return (chars_list_wrap, uniqunicodes)
+	return (chars_list_wrap, resultunicodes) # uniqunicodes
 
 
 with open(codeslangfile, "r") as read_file:
@@ -125,32 +161,51 @@ for name in names:
 	(uppercase_alphabet, uppercase_unicodes) = cascadeAltsChar(uppercase_alphabet)
 	(lowercase_alphabet, lowercase_unicodes) = cascadeAltsChar(lowercase_alphabet)
 
-	(uppercase_dialect, uppercase_dialect_unicodes) = cascadeAltsChar(uppercase_dialect)
-	(lowercase_dialect, lowercase_dialect_unicodes) = cascadeAltsChar(lowercase_dialect)
+	(uppercase_dialect, uppercase_dialect_unicodes) = cascadeAltsChar(uppercase_dialect, typestring = signtypes[dialectsign])
+	(lowercase_dialect, lowercase_dialect_unicodes) = cascadeAltsChar(lowercase_dialect, typestring = signtypes[dialectsign])
 
-	(uppercase_historic, uppercase_historic_unicodes) = cascadeAltsChar(uppercase_historic)
-	(lowercase_historic, lowercase_historic_unicodes) = cascadeAltsChar(lowercase_historic)
+	(uppercase_historic, uppercase_historic_unicodes) = cascadeAltsChar(uppercase_historic, typestring = signtypes[historicsign])
+	(lowercase_historic, lowercase_historic_unicodes) = cascadeAltsChar(lowercase_historic, typestring = signtypes[historicsign])
 
-	(uppercase_lexic, uppercase_lexic_unicodes) = cascadeAltsChar(uppercase_lexic)
-	(lowercase_lexic, lowercase_lexic_unicodes) = cascadeAltsChar(lowercase_lexic)
+	(uppercase_lexic, uppercase_lexic_unicodes) = cascadeAltsChar(uppercase_lexic, typestring = signtypes[lexicsign])
+	(lowercase_lexic, lowercase_lexic_unicodes) = cascadeAltsChar(lowercase_lexic, typestring = signtypes[lexicsign])
 
 
 	# (uppercase_alphabet_adds, uppercase_unicodes_adds) = cascadeAltsChar(uppercase_alphabet_adds)
 	# (lowercase_alphabet_adds, lowercase_unicodes_adds) = cascadeAltsChar(lowercase_alphabet_adds)
-	l1 = set(uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes)
-	lowercase_unicodes_list = set(lowercase_unicodes + lowercase_dialect_unicodes + lowercase_historic_unicodes + lowercase_lexic_unicodes)
-	uppercase_unicodes_list = set(l1).difference(lowercase_unicodes_list)
-	uppercase_unicodes_list = SC.getSortedCyrillicList(uppercase_unicodes_list)
-	lowercase_unicodes_list = SC.getSortedCyrillicList(lowercase_unicodes_list)
+	# l1 = set(uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes)
+	# lowercase_unicodes_list = set(lowercase_unicodes + lowercase_dialect_unicodes + lowercase_historic_unicodes + lowercase_lexic_unicodes)
+	# uppercase_unicodes_list = set(l1).difference(lowercase_unicodes_list)
+	uppercase_unicodes_list = uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes#SC.getSortedCyrillicList(uppercase_unicodes_list)
+	lowercase_unicodes_list = lowercase_unicodes + lowercase_dialect_unicodes + lowercase_historic_unicodes + lowercase_lexic_unicodes#SC.getSortedCyrillicList(lowercase_unicodes_list)
 	# print (name, uppercase_unicodes_list)
+	# uppercase_unicodes_list_json = []
+	# for uni in uppercase_unicodes_list:
+	# 	types = []
+	#
+	# 	if uni in uppercase_dialect_unicodes:
+	# 		types.append(signtypes[dialectsign])
+	# 	if uni in uppercase_lexic_unicodes:
+	# 		types.append(signtypes[lexicsign])
+	# 	if uni in uppercase_historic_unicodes:
+	# 		types.append(signtypes[historicsign])
+	# 	# if uni in
+	#
+	# 	item = {
+	# 		'unicode': uni,
+	# 		'types': types,
+	# 		'description': CD.getCharacterDescription(uni)
+	# 	}
+	# 	uppercase_unicodes_list_json.append(item)
+
 
 	outputdata = {
 		'name_eng': name,
 
-		'uppercase_characters_string': ' '.join([chr(int(x, 16)) for x in uppercase_unicodes_list]),
-		'lowercase_characters_string': ' '.join([chr(int(x, 16)) for x in lowercase_unicodes_list]),
-		'uppercase_unicodes_string': ' '.join(uppercase_unicodes_list),
-		'lowercase_unicodes_string': ' '.join(lowercase_unicodes_list),
+		# 'uppercase_characters_string': ' '.join([chr(int(x, 16)) for x in uppercase_unicodes_list]),
+		# 'lowercase_characters_string': ' '.join([chr(int(x, 16)) for x in lowercase_unicodes_list]),
+		# 'uppercase_unicodes_string': ' '.join(uppercase_unicodes_list),
+		# 'lowercase_unicodes_string': ' '.join(lowercase_unicodes_list),
 
 		'uppercase_alphabet': uppercase_alphabet,
 		'lowercase_alphabet': lowercase_alphabet,
@@ -167,8 +222,10 @@ for name in names:
 		# 'uppercase_alphabet_adds': uppercase_alphabet_adds,
 		# 'lowercase_alphabet_adds': lowercase_alphabet_adds,
 
-		'uppercase_unicodes_list': [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in uppercase_unicodes_list],
-		'lowercase_unicodes_list': [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in lowercase_unicodes_list],
+		'uppercase_unicodes_list': uppercase_unicodes_list,
+			# [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in uppercase_unicodes_list],
+		'lowercase_unicodes_list': lowercase_unicodes_list
+			# [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in lowercase_unicodes_list],
 	}
 
 	# print (outputdata)
