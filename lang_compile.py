@@ -66,7 +66,7 @@ def cascadeAltsChar(charsline):
 				uniqunicodes.append(uni)
 		for nextitem in chars_list[idx + 1:]:
 			_types = nextitem['types']
-			if signtypes['+'] in _types or signtypes['='] in _types or signtypes['&'] in _types:
+			if signtypes['+'] in _types or signtypes['='] in _types:# or signtypes['&'] in _types:
 				_unicodes = nextitem['unicodes']
 				alts.append({
 					'sign': nextitem['sign'],
@@ -79,7 +79,7 @@ def cascadeAltsChar(charsline):
 						uniqunicodes.append(uni)
 			else:
 				break
-		if signtypes['+'] not in types and signtypes['='] not in types and signtypes['&'] not in types:
+		if signtypes['+'] not in types and signtypes['='] not in types:# and signtypes['&'] not in types:
 			chars_list_wrap.append({
 				'sign': sign,
 				'unicodes': unicodes,
