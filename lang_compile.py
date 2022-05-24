@@ -3,7 +3,8 @@
 import json
 import os.path
 import importlib
-
+import random
+import string
 import PTLangLib
 importlib.reload(PTLangLib)
 from PTLangLib import *
@@ -36,6 +37,13 @@ signtypes = {
 
 SC = CyrillicOrderSorter(sortorderfile)
 CD = CharacherDescription(unicodelibfile)
+
+
+def ran_gen(size, chars=string.ascii_uppercase + string.digits):
+	return ''.join(random.choice(chars) for x in range(size))
+
+def getUniqName(cut=32):
+	return 'id' + ran_gen(cut, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
 def getCharInfo(item):
 	types = []
@@ -78,6 +86,7 @@ def cascadeAltsChar(charsline, typestring = None):
 				if typestring:
 					tp.append(typestring)
 			item = {
+				'id': getUniqName(),
 				'unicode': unicodes[0],
 				'types': tp,
 				'description': CD.getCharacterDescription(unicodes[0])
@@ -95,6 +104,7 @@ def cascadeAltsChar(charsline, typestring = None):
 				if signtypes[alternatesign] in nexttypes and signtypes[equivalentsign] in nexttypes:
 					nexttypes.remove(signtypes[alternatesign])
 				alts.append({
+					'id': getUniqName(),
 					'sign': nextitem['sign'],
 					'unicodes': _unicodes,
 					'types': nexttypes, #nextitem['types'],
@@ -108,6 +118,7 @@ def cascadeAltsChar(charsline, typestring = None):
 						if typestring:
 							tp.append(typestring)
 					item = {
+						'id': getUniqName(),
 						'unicode': _unicodes[0],
 						'types': tp,
 						'description': CD.getCharacterDescription(_unicodes[0])
@@ -120,6 +131,7 @@ def cascadeAltsChar(charsline, typestring = None):
 				break
 		if signtypes[alternatesign] not in types and signtypes[equivalentsign] not in types:# and signtypes['&'] not in types:
 			chars_list_wrap.append({
+				'id': getUniqName(),
 				'sign': sign,
 				'unicodes': unicodes,
 				'types': types,
