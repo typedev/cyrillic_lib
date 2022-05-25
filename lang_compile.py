@@ -109,7 +109,7 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 				nexttypes = nextitem['types'].copy()
 				# if typestring and nexttypes and typestring not in nexttypes:
 				# 	nexttypes.append(typestring)
-				if signtypes[alternatesign] in nexttypes and signtypes[equivalentsign] in nexttypes:
+				if signtypes[alternatesign] in nexttypes and signtypes[featuresign] in nexttypes:
 					nexttypes.remove(signtypes[alternatesign])
 				alts.append({
 					'id': getUniqName(),
@@ -120,6 +120,19 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 				})
 				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
 					uniqunicodes.append(_unicodes[0])
+					tp = None
+					if len(_unicodes) == 1:
+						tp = nexttypes.copy()
+						if typestring:
+							tp.append(typestring)
+					item = {
+						'id': getUniqName(),
+						'unicode': _unicodes[0],
+						'types': tp,
+						'description': CD.getCharacterDescription(_unicodes[0])
+					}
+					resultunicodes.append(item)
+				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
 					tp = None
 					if len(_unicodes) == 1:
 						tp = nexttypes.copy()
@@ -225,9 +238,7 @@ for name in names:
 
 
 		'uppercase_unicodes_list': uppercase_unicodes_list,
-			# [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in uppercase_unicodes_list],
 		'lowercase_unicodes_list': lowercase_unicodes_list
-			# [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in lowercase_unicodes_list],
 	}
 
 	outputJSONfile = os.path.join(workpath, outputpath, '%s.json' % name)
