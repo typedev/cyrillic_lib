@@ -45,10 +45,12 @@ def ran_gen(size, chars=string.ascii_uppercase + string.digits):
 def getUniqName(cut=32):
 	return 'id' + ran_gen(cut, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
-def getCharInfo(item):
+def getCharInfo(item, typestring = None):
 	types = []
 	unicodes = []
 	for mark in marks:
+		if typestring and typestring not in types:
+			types.append(typestring)
 		if mark in item:
 			item = item.replace(mark, '')
 			types.append(signtypes[mark]) # mark
@@ -68,7 +70,7 @@ def getCharInfo(item):
 	}
 
 def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
-	chars_list = [getCharInfo(sign) for sign in charsline.split(' ')]
+	chars_list = [getCharInfo(sign, typestring = typestring) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
 	if usedunicodes:
@@ -79,13 +81,15 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 		sign = item['sign']
 		unicodes = item['unicodes']
 		types = item['types']
+		# if typestring and types and typestring not in types:
+		# 	types.append(typestring)
 		alts = []
 		if unicodes and unicodes[0] and unicodes[0] not in uniqunicodes:
 			uniqunicodes.append(unicodes[0])
 			tp = None
 			if len(unicodes) == 1:
 				tp = types.copy()
-				if typestring:
+				if typestring and typestring not in tp:
 					tp.append(typestring)
 			item = {
 				'id': getUniqName(),
@@ -103,6 +107,8 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 			if signtypes[alternatesign] in _types or signtypes[equivalentsign] in _types:# or signtypes['&'] in _types:
 				_unicodes = nextitem['unicodes']
 				nexttypes = nextitem['types'].copy()
+				# if typestring and nexttypes and typestring not in nexttypes:
+				# 	nexttypes.append(typestring)
 				if signtypes[alternatesign] in nexttypes and signtypes[equivalentsign] in nexttypes:
 					nexttypes.remove(signtypes[alternatesign])
 				alts.append({
@@ -165,10 +171,6 @@ for name in names:
 	uppercase_lexic = data['uppercase_lexic']
 	lowercase_lexic = data['lowercase_lexic']
 
-	# uppercase_alphabet_adds = data['uppercase_alphabet_adds']
-	# lowercase_alphabet_adds = data['lowercase_alphabet_adds']
-
-
 	upper_txtlist = []
 	lower_txtlist = []
 
@@ -197,32 +199,8 @@ for name in names:
 	                                                                                      usedunicodes = lowercase_usedunicodes)
 
 
-	# (uppercase_alphabet_adds, uppercase_unicodes_adds) = cascadeAltsChar(uppercase_alphabet_adds)
-	# (lowercase_alphabet_adds, lowercase_unicodes_adds) = cascadeAltsChar(lowercase_alphabet_adds)
-	# l1 = set(uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes)
-	# lowercase_unicodes_list = set(lowercase_unicodes + lowercase_dialect_unicodes + lowercase_historic_unicodes + lowercase_lexic_unicodes)
-	# uppercase_unicodes_list = set(l1).difference(lowercase_unicodes_list)
 	uppercase_unicodes_list = uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes#SC.getSortedCyrillicList(uppercase_unicodes_list)
 	lowercase_unicodes_list = lowercase_unicodes + lowercase_dialect_unicodes + lowercase_historic_unicodes + lowercase_lexic_unicodes#SC.getSortedCyrillicList(lowercase_unicodes_list)
-	# print (name, uppercase_unicodes_list)
-	# uppercase_unicodes_list_json = []
-	# for uni in uppercase_unicodes_list:
-	# 	types = []
-	#
-	# 	if uni in uppercase_dialect_unicodes:
-	# 		types.append(signtypes[dialectsign])
-	# 	if uni in uppercase_lexic_unicodes:
-	# 		types.append(signtypes[lexicsign])
-	# 	if uni in uppercase_historic_unicodes:
-	# 		types.append(signtypes[historicsign])
-	# 	# if uni in
-	#
-	# 	item = {
-	# 		'unicode': uni,
-	# 		'types': types,
-	# 		'description': CD.getCharacterDescription(uni)
-	# 	}
-	# 	uppercase_unicodes_list_json.append(item)
 
 
 	outputdata = {
@@ -245,8 +223,6 @@ for name in names:
 		'uppercase_lexic': uppercase_lexic,
 		'lowercase_lexic': lowercase_lexic,
 
-		# 'uppercase_alphabet_adds': uppercase_alphabet_adds,
-		# 'lowercase_alphabet_adds': lowercase_alphabet_adds,
 
 		'uppercase_unicodes_list': uppercase_unicodes_list,
 			# [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in uppercase_unicodes_list],
@@ -254,7 +230,6 @@ for name in names:
 			# [{'unicode': uni, 'types': None, 'description': CD.getCharacterDescription(uni) } for uni in lowercase_unicodes_list],
 	}
 
-	# print (outputdata)
 	outputJSONfile = os.path.join(workpath, outputpath, '%s.json' % name)
 	with open(outputJSONfile, "w") as write_file:
 		json.dump(outputdata, write_file, indent = 4, ensure_ascii = False)
