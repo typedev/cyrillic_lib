@@ -69,14 +69,15 @@ def getCharInfo(item, typestring = None):
 		'types': types
 	}
 
-def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
+def cascadeAltsChar(charsline, typestring = None, usedunicodes = None, name_eng = None):
 	chars_list = [getCharInfo(sign, typestring = typestring) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
+	print ('usedunicodes input',usedunicodes)
 	if usedunicodes:
 		uniqunicodes.extend(usedunicodes)
 	resultunicodes = []
-	if not charsline: return ([],[],[])
+	if not charsline: return ([],[],usedunicodes)
 	for idx, item in enumerate(chars_list):
 		sign = item['sign']
 		unicodes = item['unicodes']
@@ -100,7 +101,9 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 				'description': CD.getCharacterDescription(unicodes[0])
 			}
 			resultunicodes.append(item)
-
+		# else:
+		# 	print ('l1', name_eng, sign, unicodes)
+			# break
 		# for uni in unicodes:
 		# 	if uni not in uniqunicodes:
 		# 		uniqunicodes.append(uni)
@@ -136,6 +139,7 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 						'description': CD.getCharacterDescription(_unicodes[0])
 					}
 					resultunicodes.append(item)
+					print('l2', name_eng, sign, unicodes)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
 					tp = None
 					if len(_unicodes) == 1:
@@ -151,6 +155,8 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 						'description': CD.getCharacterDescription(_unicodes[0])
 					}
 					resultunicodes.append(item)
+					print('l3', name_eng, sign, unicodes)
+					# print (item)
 				# for uni in _unicodes:
 				# 	if uni not in uniqunicodes:
 				# 		uniqunicodes.append(uni)
@@ -164,17 +170,27 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 				'types': types,
 				'alts': alts
 			})
+	print (name_eng, typestring)
+	t1 = ''
+	for i in resultunicodes:
+		t1 += i['sign'] + '\t'
+	print (t1)
+	t2 = ''
+	for i in uniqunicodes:
+		t2 += i + ' '
+	print(t2)
+	print('usedunicodes output', usedunicodes, uniqunicodes)
 	return (chars_list_wrap, resultunicodes, uniqunicodes) # uniqunicodes
 
 
 with open(codeslangfile, "r") as read_file:
 	data = json.load(read_file)
 
+# names = ['Koryak','Abkhazian']
 names = []
-
-for item in data:
-	# print(item)
-	names.append(item['name_eng'])
+if not names:
+	for item in data:
+		names.append(item['name_eng'])
 
 for name in names:
 	namefile = os.path.join(workpath, '%s.json' % name)
@@ -193,29 +209,51 @@ for name in names:
 	upper_txtlist = []
 	lower_txtlist = []
 
-	(uppercase_alphabet, uppercase_unicodes, uppercase_usedunicodes) = cascadeAltsChar(uppercase_alphabet)
-	(lowercase_alphabet, lowercase_unicodes, lowercase_usedunicodes) = cascadeAltsChar(lowercase_alphabet)
+	(uppercase_alphabet,
+	 uppercase_unicodes,
+	 uppercase_usedunicodes) = cascadeAltsChar(uppercase_alphabet, name_eng = name)
+	(lowercase_alphabet,
+	 lowercase_unicodes,
+	 lowercase_usedunicodes) = cascadeAltsChar(lowercase_alphabet, name_eng = name)
 
-	(uppercase_dialect, uppercase_dialect_unicodes, uppercase_usedunicodes) = cascadeAltsChar(uppercase_dialect,
-	                                                                                           typestring = signtypes[dialectsign],
-	                                                                                           usedunicodes = uppercase_usedunicodes)
-	(lowercase_dialect, lowercase_dialect_unicodes, lowercase_usedunicodes) = cascadeAltsChar(lowercase_dialect,
-	                                                                  typestring = signtypes[dialectsign],
-	                                                                  usedunicodes = lowercase_usedunicodes)
+	(uppercase_dialect,
+	 uppercase_dialect_unicodes,
+	 uppercase_usedunicodes) = cascadeAltsChar(uppercase_dialect,
+	                                           typestring = signtypes[dialectsign],
+	                                           usedunicodes = uppercase_usedunicodes,
+	                                           name_eng = name)
+	(lowercase_dialect,
+	 lowercase_dialect_unicodes,
+	 lowercase_usedunicodes) = cascadeAltsChar(lowercase_dialect,
+	                                           typestring = signtypes[dialectsign],
+	                                           usedunicodes = lowercase_usedunicodes,
+	                                           name_eng = name)
 
-	(uppercase_historic, uppercase_historic_unicodes, uppercase_usedunicodes) = cascadeAltsChar(uppercase_historic,
-	                                                                                            typestring = signtypes[historicsign],
-	                                                                                            usedunicodes = uppercase_usedunicodes)
-	(lowercase_historic, lowercase_historic_unicodes, lowercase_usedunicodes) = cascadeAltsChar(lowercase_historic,
-	                                                                                            typestring = signtypes[historicsign],
-	                                                                                            usedunicodes = lowercase_usedunicodes)
+	(uppercase_historic,
+	 uppercase_historic_unicodes,
+	 uppercase_usedunicodes) = cascadeAltsChar(uppercase_historic,
+	                                           typestring = signtypes[historicsign],
+	                                           usedunicodes = uppercase_usedunicodes,
+	                                           name_eng = name)
+	(lowercase_historic,
+	 lowercase_historic_unicodes,
+	 lowercase_usedunicodes) = cascadeAltsChar(lowercase_historic,
+	                                           typestring = signtypes[historicsign],
+	                                           usedunicodes = lowercase_usedunicodes,
+	                                           name_eng = name)
 
-	(uppercase_lexic, uppercase_lexic_unicodes, uppercase_usedunicodes) = cascadeAltsChar(uppercase_lexic,
-	                                                                                      typestring = signtypes[lexicsign],
-	                                                                                      usedunicodes = uppercase_usedunicodes)
-	(lowercase_lexic, lowercase_lexic_unicodes, lowercase_usedunicodes) = cascadeAltsChar(lowercase_lexic,
-	                                                                                      typestring = signtypes[lexicsign],
-	                                                                                      usedunicodes = lowercase_usedunicodes)
+	(uppercase_lexic,
+	 uppercase_lexic_unicodes,
+	 uppercase_usedunicodes) = cascadeAltsChar(uppercase_lexic,
+	                                           typestring = signtypes[lexicsign],
+	                                           usedunicodes = uppercase_usedunicodes,
+	                                           name_eng = name)
+	(lowercase_lexic,
+	 lowercase_lexic_unicodes,
+	 lowercase_usedunicodes) = cascadeAltsChar(lowercase_lexic,
+	                                           typestring = signtypes[lexicsign],
+	                                           usedunicodes = lowercase_usedunicodes,
+	                                           name_eng = name)
 
 
 	uppercase_unicodes_list = uppercase_unicodes + uppercase_dialect_unicodes + uppercase_historic_unicodes + uppercase_lexic_unicodes#SC.getSortedCyrillicList(uppercase_unicodes_list)
