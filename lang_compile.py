@@ -93,7 +93,9 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 					tp.append(typestring)
 			item = {
 				'id': getUniqName(),
+				'sign': chr(int(unicodes[0], 16)),
 				'unicode': unicodes[0],
+				'display_unicode': unicodes[0],
 				'types': tp,
 				'description': CD.getCharacterDescription(unicodes[0])
 			}
@@ -127,7 +129,9 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 							tp.append(typestring)
 					item = {
 						'id': getUniqName(),
+						'sign': chr(int(_unicodes[0], 16)),
 						'unicode': _unicodes[0],
+						'display_unicode': _unicodes[0],
 						'types': tp,
 						'description': CD.getCharacterDescription(_unicodes[0])
 					}
@@ -140,7 +144,9 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None):
 							tp.append(typestring)
 					item = {
 						'id': getUniqName(),
+						'sign': chr(int(_unicodes[0], 16)),
 						'unicode': _unicodes[0],
+						'display_unicode': _unicodes[0],
 						'types': tp,
 						'description': CD.getCharacterDescription(_unicodes[0])
 					}
@@ -235,7 +241,6 @@ for name in names:
 
 		'uppercase_lexic': uppercase_lexic,
 		'lowercase_lexic': lowercase_lexic,
-
 
 		'uppercase_unicodes_list': uppercase_unicodes_list,
 		'lowercase_unicodes_list': lowercase_unicodes_list
