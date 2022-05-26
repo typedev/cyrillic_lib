@@ -73,7 +73,7 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None, name_eng 
 	chars_list = [getCharInfo(sign, typestring = typestring) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
-	print ('usedunicodes input',usedunicodes)
+	# print ('usedunicodes input',usedunicodes)
 	if usedunicodes:
 		uniqunicodes.extend(usedunicodes)
 	resultunicodes = []
@@ -155,7 +155,7 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None, name_eng 
 						'description': CD.getCharacterDescription(_unicodes[0])
 					}
 					resultunicodes.append(item)
-					print('l3', name_eng, sign, unicodes)
+					# print('l3', name_eng, sign, unicodes)
 					# print (item)
 				# for uni in _unicodes:
 				# 	if uni not in uniqunicodes:
@@ -170,24 +170,24 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None, name_eng 
 				'types': types,
 				'alts': alts
 			})
-	print (name_eng, typestring)
-	t1 = ''
-	for i in resultunicodes:
-		t1 += i['sign'] + '\t'
-	print (t1)
-	t2 = ''
-	for i in uniqunicodes:
-		t2 += i + ' '
-	print(t2)
-	print('usedunicodes output', usedunicodes, uniqunicodes)
+	# print (name_eng, typestring)
+	# t1 = ''
+	# for i in resultunicodes:
+	# 	t1 += i['sign'] + '\t'
+	# print (t1)
+	# t2 = ''
+	# for i in uniqunicodes:
+	# 	t2 += i + ' '
+	# print(t2)
+	# print('usedunicodes output', usedunicodes, uniqunicodes)
 	return (chars_list_wrap, resultunicodes, uniqunicodes) # uniqunicodes
 
 
 with open(codeslangfile, "r") as read_file:
 	data = json.load(read_file)
 
-# names = ['Koryak','Abkhazian']
-names = []
+names = ['Avar']
+# names = []
 if not names:
 	for item in data:
 		names.append(item['name_eng'])
