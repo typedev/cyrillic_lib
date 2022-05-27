@@ -139,7 +139,7 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None, name_eng 
 						'description': CD.getCharacterDescription(_unicodes[0])
 					}
 					resultunicodes.append(item)
-					print('l2', name_eng, sign, unicodes)
+					# print('l2', name_eng, sign, unicodes)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
 					tp = None
 					if len(_unicodes) == 1:
@@ -186,8 +186,9 @@ def cascadeAltsChar(charsline, typestring = None, usedunicodes = None, name_eng 
 with open(codeslangfile, "r") as read_file:
 	data = json.load(read_file)
 
-names = ['Avar']
-# names = []
+# names = ['Avar']
+names = []
+
 if not names:
 	for item in data:
 		names.append(item['name_eng'])
