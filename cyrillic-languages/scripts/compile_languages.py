@@ -159,7 +159,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					'unicodes': _unicodes,
 					'types': nexttypes, #nextitem['types'],
 					'alts': [],
-					'description': ' '.join(_unicodes)
+					'description': ', '.join(_unicodes)
 				})
 				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
 					uniqunicodes.append(_unicodes[0])
@@ -207,7 +207,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'unicodes': unicodes,
 				'types': types,
 				'alts': alts,
-				'description': ' '.join(unicodes)
+				'description': ', '.join(unicodes)
 			})
 
 	return (chars_list_wrap, resultunicodes, uniqunicodes)
