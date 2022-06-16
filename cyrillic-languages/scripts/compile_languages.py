@@ -2,12 +2,9 @@
 import sys
 import json
 import os.path
-import importlib
 import random
 import string
-# import PTLangLib
-# importlib.reload(PTLangLib)
-# from PTLangLib import *
+
 
 
 marks = ['*', '$', '#', '@', '(', ')', '[', ']', '+', '=', '&', '.alt']  # , '.alt'
@@ -153,7 +150,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				if signtypes[alternatesign] in nexttypes and signtypes[featuresign] in nexttypes:
 					nexttypes.remove(signtypes[alternatesign])
 				elif signtypes[alternatesign] in nexttypes and signtypes[featuresign] in types:
-					print ('founded replacement', name_eng, item)
+					# print ('founded replacement', name_eng, item)
 					nexttypes.remove(signtypes[alternatesign])
 					nexttypes.append(signtypes[replacementsign])
 				alts.append({
@@ -162,7 +159,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					'unicodes': _unicodes,
 					'types': nexttypes, #nextitem['types'],
 					'alts': [],
-					'description': _unicodes
+					'description': ' '.join(_unicodes)
 				})
 				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
 					uniqunicodes.append(_unicodes[0])
@@ -210,19 +207,10 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'unicodes': unicodes,
 				'types': types,
 				'alts': alts,
-				'description': unicodes
+				'description': ' '.join(unicodes)
 			})
-	# print (name_eng, typestring)
-	# t1 = ''
-	# for i in resultunicodes:
-	# 	t1 += i['sign'] + '\t'
-	# print (t1)
-	# t2 = ''
-	# for i in uniqunicodes:
-	# 	t2 += i + ' '
-	# print(t2)
-	# print('usedunicodes output', usedunicodes, uniqunicodes)
-	return (chars_list_wrap, resultunicodes, uniqunicodes) # uniqunicodes
+
+	return (chars_list_wrap, resultunicodes, uniqunicodes)
 
 def main(names = None): # names = ['Avar']
 
