@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import sys
 import json
 import os.path
 import importlib
@@ -18,6 +18,7 @@ lexicsign = '$'
 alternatesign = '+'
 equivalentsign = '='
 featuresign = '&'
+replacementsign = '*'
 
 signtypes = {
 	# '*' : 'notrussiansign',
@@ -27,6 +28,7 @@ signtypes = {
 	alternatesign : 'alternatesign',
 	equivalentsign : 'equivalentsign',
 	featuresign : 'featuresign',
+	replacementsign : 'replacementsign'
 	# '.alt' : 'featuresignalt'
 }
 
@@ -150,12 +152,17 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				# 	nexttypes.append(typestring)
 				if signtypes[alternatesign] in nexttypes and signtypes[featuresign] in nexttypes:
 					nexttypes.remove(signtypes[alternatesign])
+				elif signtypes[alternatesign] in nexttypes and signtypes[featuresign] in types:
+					print ('founded replacement', name_eng, item)
+					nexttypes.remove(signtypes[alternatesign])
+					nexttypes.append(signtypes[replacementsign])
 				alts.append({
 					'id': getUniqName(),
 					'sign': nextitem['sign'],
 					'unicodes': _unicodes,
 					'types': nexttypes, #nextitem['types'],
-					'alts': []
+					'alts': [],
+					'description': _unicodes
 				})
 				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
 					uniqunicodes.append(_unicodes[0])
@@ -358,4 +365,4 @@ def main(names = None): # names = ['Avar']
 
 
 if __name__ == '__main__':
-	main()
+	main(names = sys.argv[1:])

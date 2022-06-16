@@ -77,7 +77,7 @@ for item in strukt:
 		_data['name_rus'] = data['name_rus']
 		_data['local'] = data['local']
 		_data['language_group_eng'] = item['language_group_eng']
-		_data['language_group_rus'] = data['language_group']
+		_data['language_group_rus'] = data['language_group_rus']
 		_data['alt_names_eng'] = data['alt_names_eng']
 		_data['description_eng'] = item['description_eng']
 		_data['description_rus'] = data['description_rus']
