@@ -1,2 +1,1 @@
-# cyrillic_lib
-Cyrillic languages library
+# cyrillic-languages 
