@@ -41,8 +41,10 @@ signtypes = {
 # sortorderfile = 'sortorder_cyrillic.txt'
 libraryMainFile = 'cyrillic_library.json'
 libraryGlyphsList = 'glyphs_list_categories.json'
+sortOrderFile = 'sortorder_cyrillic.txt'
 unicodeLibFiles = ['unicode14.txt', 'PT_PUA_unicodes-descritions.txt']
 
+DEVELOPMENT = True
 
 class CharacherDescription(object):
 	dangersymbols = {
@@ -98,8 +100,9 @@ class PanCyrillicOrderSorter(object):
 
 		self.missigChars = {}
 		print ('Initializing sorting keys..')
-
+		print ('from file: %s' % sortorderfile)
 		f = open(sortorderfile, mode = 'r')
+
 		self.upperlist = []
 		self.lowerlist = []
 		for idx, line in enumerate(f):
@@ -126,17 +129,22 @@ class PanCyrillicOrderSorter(object):
 					# sign = chr(int(uni, 16))
 					self.lowerlist.append(uni)
 		self.sortkey = self.upperlist + self.lowerlist
-		# print (self.sortkey)
+		print (self.sortkey)
+		f.close()
 		print ('..done')
 
-	def getSortedCyrillicList(self, characherslist, lang = None):
+	def getSortedGlyphsList(self, characherslist):
 		result = []
+		# print (tuple(characherslist))
 		for ch in self.sortkey:
 			if ch in characherslist and ch not in result:
-				result.append(ch)
+				result.append(characherslist[ch])
 
-		# for ch in characherslist:
-		# 	if ch not in self.sortkey:
+		for ch in characherslist:
+			if ch not in self.sortkey:
+				print ('*** Unicode not in SortOrder', ch)
+		# 		and ch not in self.missigChars:
+		# 		self.missigChars[ch] =
 		# 		if ch not in self.missigChars:
 		# 			sfx = ''
 		# 			_ch = ch
@@ -228,7 +236,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'display_unicode': unicodes[0],
 				'types': tp,
 				'description': CharDesc.getCharacterDescription(unicodes[0]),
-				'id': getUniqName()
+				'id': getUniqName(8)
 			}
 			resultunicodes.append(item)
 		elif unicodes and unicodes[0] and unicodes[0] not in uniqunicodes and signtypes[featuresign] in types:
@@ -250,7 +258,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'display_unicode': display_unicode,
 				'types': tp,
 				'description': CharDesc.getCharacterDescription(unicodes[0]),
-				'id': getUniqName()
+				'id': getUniqName(8)
 			}
 			resultunicodes.append(item)
 
@@ -273,7 +281,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					'local': localdef,
 					'types': nexttypes, #nextitem['types'],
 					'description': ', '.join(_unicodes),
-					'id': getUniqName(),
+					'id': getUniqName(8),
 					'alts': [],
 
 				})
@@ -293,7 +301,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'display_unicode': _unicodes[0],
 						'types': tp,
 						'description': CharDesc.getCharacterDescription(_unicodes[0]),
-						'id': getUniqName()
+						'id': getUniqName(8)
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
@@ -313,7 +321,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'display_unicode': '', #_unicodes[0],
 						'types': tp,
 						'description': CharDesc.getCharacterDescription(_unicodes[0]),
-						'id': getUniqName()
+						'id': getUniqName(8)
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[replacementsign] in nexttypes:
@@ -333,7 +341,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'display_unicode': _unicodes[0],
 						'types': tp,
 						'description': CharDesc.getCharacterDescription(_unicodes[0]),
-						'id': getUniqName()
+						'id': getUniqName(8)
 					}
 					resultunicodes.append(item)
 			else:
@@ -357,7 +365,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'local': _local,
 				'types': types,
 				'description': description,
-				'id': getUniqName(),
+				'id': getUniqName(8),
 				'alts': alts,
 			})
 
@@ -386,7 +394,6 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 		print('Main library GlyphsList categories file not found: %s' % libraryGlyphsListPath)
 		return
 	print('libraryGlyphsList: %s' % libraryGlyphsListPath)
-
 
 	CharDesc = CharacherDescription()
 	for ulf in unicodeLibFiles:
@@ -464,8 +471,11 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 				'uppercase': uppercase_list_unicodes,
 				'lowercase': lowercase_list_unicodes
 			})
+			indent = None
+			if DEVELOPMENT:
+				indent = 4
 			with open(outputJSONfile, "w") as write_file:
-				json.dump(outputdata, write_file, indent = 4, ensure_ascii = False)
+				json.dump(outputdata, write_file, indent = indent, ensure_ascii = False) #indent = 4,
 		else:
 			print('*** Not found: %s path:%s' % (name, namefile))
 
@@ -504,7 +514,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					display_unicode = display_unicode,
 					description = description,
 					languages = [dict(name = name, types = types)],
-					id = getUniqName()
+					id = getUniqName(8)
 				)
 			else:
 				nonunicodedlist['%s.%s' % (unicodes[0], local)]['languages'].append(dict(name = name, types = types))
@@ -518,7 +528,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					display_unicode = display_unicode,
 					description = description,
 					languages = [dict(name = name, types = types)],
-					id = getUniqName()
+					id = getUniqName(8)
 				)
 			else:
 				puazonelist[unicodes[0]]['languages'].append(dict(name = name, types = types))
@@ -531,20 +541,29 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					display_unicode = display_unicode,
 					description = description,
 					languages = [dict(name = name, types = types)],
-					id = getUniqName()
+					id = getUniqName(8)
 				)
 			else:
 				unicodedlist[unicodes[0]]['languages'].append(dict(name = name, types = types))
 
 	return unicodedlist, puazonelist, nonunicodedlist
 
-def sortGlyphsList(glyphslist, names):
+def sortGlyphsList(glyphslist, names, sortOrder = None):
 	resultList = []
-	for k, v in sorted(glyphslist.items()):
-		if len(v['languages']) == len(names):
-			v['languages'].append(dict(name = 'All', types = ['alphabet']))
-			# print('*** SAME QUANTITY', k, v['sign'])
-		resultList.append(v)
+
+	if not sortOrder:
+		sortedGlyphsList = sorted(glyphslist.items())
+		for k, v in sortedGlyphsList:
+			if len(v['languages']) == len(names):
+				v['languages'].append(dict(name = 'All', types = ['alphabet']))
+			resultList.append(v)
+	else:
+		sortedGlyphsList = sortOrder.getSortedGlyphsList(glyphslist)
+		for v in sortedGlyphsList:
+			if len(v['languages']) == len(names):
+				v['languages'].append(dict(name = 'All', types = ['alphabet']))
+			resultList.append(v)
+
 	return resultList
 
 
@@ -562,6 +581,14 @@ def makeMainCharactersSet(workPath):
 		print('Main library file not found: %s' % libraryMainFilePath)
 		return
 	print('libraryMainFile: %s' % libraryMainFilePath)
+
+
+	sortOrderFilePath = os.path.join(basePath, sortOrderFile)
+	SortOrderCyrl = None
+	if os.path.exists(sortOrderFilePath):
+		SortOrderCyrl = PanCyrillicOrderSorter(sortOrderFilePath)
+	else:
+		print('SortOrder file not found: %s' % sortOrderFilePath)
 
 	with open(libraryMainFilePath, "r") as read_file:
 		data = json.load(read_file)
@@ -608,17 +635,17 @@ def makeMainCharactersSet(workPath):
 				unicodedlist_UC, puazonelist_UC, nonunicodedlist_UC = filterCharacters(name, local, uppercase_unicodes_list, unicodedlist_UC, puazonelist_UC, nonunicodedlist_UC)
 				unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC = filterCharacters(name, local, lowercase_unicodes_list, unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC)
 
-	UC_unicoded_list = sortGlyphsList(unicodedlist_UC, names)
+	UC_unicoded_list = sortGlyphsList(unicodedlist_UC, names, sortOrder = SortOrderCyrl)
 
-	UC_pua_list = sortGlyphsList(puazonelist_UC, names)
+	UC_pua_list = sortGlyphsList(puazonelist_UC, names, sortOrder = SortOrderCyrl)
 
-	UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names)
+	UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names, sortOrder = SortOrderCyrl)
 
-	LC_unicoded_list = sortGlyphsList(unicodedlist_LC, names)
+	LC_unicoded_list = sortGlyphsList(unicodedlist_LC, names, sortOrder = SortOrderCyrl)
 
-	LC_pua_list = sortGlyphsList(puazonelist_LC, names)
+	LC_pua_list = sortGlyphsList(puazonelist_LC, names, sortOrder = SortOrderCyrl)
 
-	LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names)
+	LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names, sortOrder = SortOrderCyrl)
 
 
 	dataset = dict(
@@ -632,8 +659,11 @@ def makeMainCharactersSet(workPath):
 		lowercase_nonunicode_list = LC_nonunicoded_list,
 	)
 	outputJSONfile = os.path.join(basePath, 'site', 'cyrillic_characters_lib.json')
+	indent = None
+	if DEVELOPMENT:
+		indent = 4
 	with open(outputJSONfile, "w") as write_file:
-		json.dump(dataset, write_file, indent = 4, ensure_ascii = False)
+		json.dump(dataset, write_file, indent = indent, ensure_ascii = False) #indent = 4,
 
 
 
