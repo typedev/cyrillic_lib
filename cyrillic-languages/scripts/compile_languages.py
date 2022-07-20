@@ -102,7 +102,7 @@ class PanCyrillicOrderSorter(object):
 		print ('Initializing sorting keys..')
 		print ('from file: %s' % sortorderfile)
 		f = open(sortorderfile, mode = 'r')
-
+		locales = ['', '.ru', '.ba', '.bg', '.cv', '.sr']
 		self.upperlist = []
 		self.lowerlist = []
 		for idx, line in enumerate(f):
@@ -122,36 +122,30 @@ class PanCyrillicOrderSorter(object):
 					# sign = rawupper.split('=')[0]
 					uni = rawupper.split('=')[1]
 					# sign = chr(int(uni,16))
-					self.upperlist.append(uni)
+					for local in locales:
+						self.upperlist.append('%s%s' % (uni, local))
 				if rawlower:
 					# sign = rawlower.split('=')[0]
 					uni = rawlower.split('=')[1]
 					# sign = chr(int(uni, 16))
-					self.lowerlist.append(uni)
+					for local in locales:
+						self.lowerlist.append('%s%s' % (uni, local))
 		self.sortkey = self.upperlist + self.lowerlist
-		print (self.sortkey)
+		# print (self.sortkey)
 		f.close()
 		print ('..done')
 
 	def getSortedGlyphsList(self, characherslist):
 		result = []
-		# print (tuple(characherslist))
 		for ch in self.sortkey:
 			if ch in characherslist and ch not in result:
 				result.append(characherslist[ch])
 
 		for ch in characherslist:
 			if ch not in self.sortkey:
-				print ('*** Unicode not in SortOrder', ch)
-		# 		and ch not in self.missigChars:
-		# 		self.missigChars[ch] =
-		# 		if ch not in self.missigChars:
-		# 			sfx = ''
-		# 			_ch = ch
-		# 			if '.alt' in ch:
-		# 				_ch = ch.replace('.alt','')
-		# 				sfx = '.alt'
-		# 			self.missigChars[ch] = ( chr(int(_ch,16))+'.alt', lang)
+				print ('*** Unicode not in SortOrder, added to the end of the list ', ch)
+				result.append(characherslist[ch])
+
 		return result
 
 
