@@ -36,7 +36,7 @@ signtypes = {
 # SC = CyrillicOrderSorter(sortorderfile)
 # sortorderfile = 'sortorder_cyrillic.txt'
 libraryMainFile = 'cyrillic_library.json'
-libraryGlyphsList = 'glyphs_list.json'
+libraryGlyphsList = 'glyphs_list_categories.json'
 unicodeLibFiles = ['unicode14.txt', 'PT_PUA_unicodes-descritions.txt']
 # libraryPath =   # langlib
 # outputPath = 'site'
@@ -123,11 +123,22 @@ def getCharInfo(item, typestring = None):
 		'overuni': overrideunicode
 	}
 
+
+def checkTypeSign(typesign, name_eng):
+	if typesign:
+		if len(typesign)>1:
+			while 'alphabet' in typesign:
+				typesign.remove('alphabet')
+		return typesign
+	else:
+		print ('ERROR', name_eng, typesign)
+		return None
+
+
 def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None, wrapedunicodes = None, name_eng = None, localdef = 'ru', local = None):
 	chars_list = [getCharInfo(sign, typestring = typestring) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
-	# print ('usedunicodes input',usedunicodes)
 	if not local:
 		local = localdef
 	if usedunicodes:
@@ -145,6 +156,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 		# 	types.append(typestring)
 		alts = []
 		if unicodes and unicodes[0] and unicodes[0] not in uniqunicodes and signtypes[featuresign] not in types:
+			""" знак с уникальным юникодом и не локальная форма """
 			uniqunicodes.append(unicodes[0])
 			tp = None
 			if len(unicodes) == 1:
@@ -162,12 +174,14 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 			}
 			resultunicodes.append(item)
 		elif unicodes and unicodes[0] and unicodes[0] not in uniqunicodes and signtypes[featuresign] in types:
+			""" знак с уникальным юникодом и локальная форма """
 			uniqunicodes.append(unicodes[0])
 			tp = None
 			if len(unicodes) == 1:
 				tp = types.copy()
 				if typestring and typestring not in tp:
 					tp.append(typestring)
+			tp = checkTypeSign(tp, name_eng)
 			display_unicode = ''
 			if orrideunicode:
 				display_unicode = unicodes[0]
@@ -181,25 +195,20 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'id': getUniqName()
 			}
 			resultunicodes.append(item)
-		# else:
-		# 	print ('l1', name_eng, sign, unicodes)
-			# break
-		# for uni in unicodes:
-		# 	if uni not in uniqunicodes:
-		# 		uniqunicodes.append(uni)
+
 		for nextitem in chars_list[idx + 1:]:
+			""" проверяем следующий по порядку знак """
 			_types = nextitem['types']
-			if signtypes[alternatesign] in _types or signtypes[equivalentsign] in _types:# or signtypes['&'] in _types:
+			if signtypes[alternatesign] in _types or signtypes[equivalentsign] in _types:
+				""" следующий знак - альтернатива или эквивалент """
 				_unicodes = nextitem['unicodes']
 				nexttypes = nextitem['types'].copy()
-				# if typestring and nexttypes and typestring not in nexttypes:
-				# 	nexttypes.append(typestring)
 				if signtypes[alternatesign] in nexttypes and signtypes[featuresign] in nexttypes:
 					nexttypes.remove(signtypes[alternatesign])
 				elif signtypes[alternatesign] in nexttypes and signtypes[featuresign] in types:
-					# print ('founded replacement', name_eng, item)
 					nexttypes.remove(signtypes[alternatesign])
 					nexttypes.append(signtypes[replacementsign])
+				nexttypes = checkTypeSign(nexttypes, name_eng)
 				alts.append({
 					'sign': nextitem['sign'],
 					'unicodes': _unicodes,
@@ -211,12 +220,14 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 
 				})
 				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
+					""" у знака уникальный юникод """
 					uniqunicodes.append(_unicodes[0])
 					tp = None
 					if len(_unicodes) == 1:
 						tp = nexttypes.copy()
-						if typestring:
+						if typestring and typestring not in tp:
 							tp.append(typestring)
+					tp = checkTypeSign(tp, name_eng)
 					item = {
 						'sign': chr(int(_unicodes[0], 16)),
 						'unicodes': [_unicodes[0]],
@@ -227,13 +238,16 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'id': getUniqName()
 					}
 					resultunicodes.append(item)
-					# print('l2', name_eng, sign, unicodes)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
+					""" юникод знака уже встречался в списке, 
+						но ну него тип альтернативы и локальной формы - &a +a 
+					"""
 					tp = None
 					if len(_unicodes) == 1:
 						tp = nexttypes.copy()
-						if typestring:
+						if typestring and typestring not in tp:
 							tp.append(typestring)
+					tp = checkTypeSign(tp, name_eng)
 					item = {
 						'sign': chr(int(_unicodes[0], 16)),
 						'unicodes': [_unicodes[0]],
@@ -245,11 +259,15 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[replacementsign] in nexttypes:
+					""" юникод знака уже встречался в списке, 
+						но ну него тип replacement и локальной формы - &a *a 
+					"""
 					tp = None
 					if len(_unicodes) == 1:
 						tp = nexttypes.copy()
-						if typestring:
+						if typestring and typestring not in tp:
 							tp.append(typestring)
+					tp = checkTypeSign(tp, name_eng)
 					item = {
 						'sign': chr(int(_unicodes[0], 16)),
 						'unicodes': [_unicodes[0]],
@@ -262,7 +280,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					resultunicodes.append(item)
 			else:
 				break
-		if signtypes[alternatesign] not in types and signtypes[equivalentsign] not in types:# and signtypes['&'] not in types:
+		if signtypes[alternatesign] not in types and signtypes[equivalentsign] not in types:
 			description = ', '.join(unicodes)
 			_local = localdef
 			if signtypes[featuresign] in types:
@@ -274,6 +292,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					if unicodes:
 						adddesrc = '(%s)' % ', '.join(unicodes)
 					description = 'Localized form of %s %s' % (', '.join(alts[0]['unicodes']), adddesrc)
+			types = checkTypeSign(types, name_eng)
 			chars_list_wrap.append({
 				'sign': sign,
 				'unicodes': unicodes,
