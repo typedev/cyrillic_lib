@@ -1,1531 +1,1986 @@
 {
     "name_eng": "Chukchi",
-    "uppercase_alphabet": [
-        {
-            "id": "idI1HPX4PNNP0IGXB8PMBLGFLPWRP9OP4V",
-            "sign": "А",
-            "unicodes": [
-                "0410"
-            ],
-            "types": [],
-            "description": "0410",
-            "alts": []
-        },
-        {
-            "id": "idJ7O30FX26IAJQ6MWYCN6PUXLL2LSJE6L",
-            "sign": "Б",
-            "unicodes": [
-                "0411"
-            ],
-            "types": [],
-            "description": "0411",
-            "alts": []
-        },
-        {
-            "id": "idBTTCC5RF6GSCE24QPS55O6ZJNJQL98ZY",
-            "sign": "В",
-            "unicodes": [
-                "0412"
-            ],
-            "types": [],
-            "description": "0412",
-            "alts": []
-        },
-        {
-            "id": "idXI9B8ELICMI5KTGWUO2UZMXDJJPQIADL",
-            "sign": "Г",
-            "unicodes": [
-                "0413"
-            ],
-            "types": [],
-            "description": "0413",
-            "alts": []
-        },
-        {
-            "id": "idD75F8HWCRW2GJWEAVRTZNYAMJ60W94RE",
-            "sign": "Д",
-            "unicodes": [
-                "0414"
-            ],
-            "types": [],
-            "description": "0414",
-            "alts": []
-        },
-        {
-            "id": "idYLS5YZZZQR8UEFP4BI98PN009FCUU9A9",
-            "sign": "Е",
-            "unicodes": [
-                "0415"
-            ],
-            "types": [],
-            "description": "0415",
-            "alts": []
-        },
-        {
-            "id": "idVHVGR1P8OBZMIMP0CDEFBPIL7HGFNI3P",
-            "sign": "Ё",
-            "unicodes": [
-                "0401"
-            ],
-            "types": [],
-            "description": "0401",
-            "alts": []
-        },
-        {
-            "id": "id6K85Q8COZ281T68RTM5YPIYKMTFPHZ8T",
-            "sign": "Ж",
-            "unicodes": [
-                "0416"
-            ],
-            "types": [],
-            "description": "0416",
-            "alts": []
-        },
-        {
-            "id": "id3FWRQJ4M6Z4M42AQKIB8BLO1TZ35QBWJ",
-            "sign": "З",
-            "unicodes": [
-                "0417"
-            ],
-            "types": [],
-            "description": "0417",
-            "alts": []
-        },
-        {
-            "id": "id15RSFO48N7N4ZFA53MAE5HESDQTX9YL4",
-            "sign": "И",
-            "unicodes": [
-                "0418"
-            ],
-            "types": [],
-            "description": "0418",
-            "alts": []
-        },
-        {
-            "id": "idYQBO4XAYZO3A19S72JF8DNTAWEQJ3095",
-            "sign": "Й",
-            "unicodes": [
-                "0419"
-            ],
-            "types": [],
-            "description": "0419",
-            "alts": []
-        },
-        {
-            "id": "idTKY1RK2UR70GKJ9IQUATYG4LHN6HC4FA",
-            "sign": "К",
-            "unicodes": [
-                "041A"
-            ],
-            "types": [],
-            "description": "041A",
-            "alts": []
-        },
-        {
-            "id": "id2JN7ZI49JZ1JS2PMPYVM7W9C790SFAVE",
-            "sign": "Ӄ",
-            "unicodes": [
-                "04C3"
-            ],
-            "types": [],
-            "description": "04C3",
-            "alts": []
-        },
-        {
-            "id": "idI6N6OMVEWF3T33R8XQXQ9YTVMH4NLXW0",
-            "sign": "Л",
-            "unicodes": [
-                "041B"
-            ],
-            "types": [],
-            "description": "041B",
-            "alts": []
-        },
-        {
-            "id": "idM5SIN8EDE4XOA90UW8A7ZNSMJ3K50Q4Q",
-            "sign": "Ԓ",
-            "unicodes": [
-                "0512"
-            ],
-            "types": [],
-            "description": "0512",
-            "alts": []
-        },
-        {
-            "id": "id721Q778NYEV88VB85F4C32JVWCNNIH2T",
-            "sign": "М",
-            "unicodes": [
-                "041C"
-            ],
-            "types": [],
-            "description": "041C",
-            "alts": []
-        },
-        {
-            "id": "idA03Y2HCPV21AXPB3C56J05X1K4QTOL1R",
-            "sign": "Н",
-            "unicodes": [
-                "041D"
-            ],
-            "types": [],
-            "description": "041D",
-            "alts": []
-        },
-        {
-            "id": "idFLO5MBJXAZC1PJ8P86YCLWCFZ1X68RPA",
-            "sign": "Ӈ",
-            "unicodes": [
-                "04C7"
-            ],
-            "types": [],
-            "description": "04C7",
-            "alts": []
-        },
-        {
-            "id": "id19Q9AC0IX7ZZESAMSLCDPW1Q7ONU00U5",
-            "sign": "О",
-            "unicodes": [
-                "041E"
-            ],
-            "types": [],
-            "description": "041E",
-            "alts": []
-        },
-        {
-            "id": "id747FING4WNAM7TLYY61J5M832KJZ4SYS",
-            "sign": "П",
-            "unicodes": [
-                "041F"
-            ],
-            "types": [],
-            "description": "041F",
-            "alts": []
-        },
-        {
-            "id": "idNLBV6V0O614KC8WYAFRXR8GESZ9OSNOW",
-            "sign": "Р",
-            "unicodes": [
-                "0420"
-            ],
-            "types": [],
-            "description": "0420",
-            "alts": []
-        },
-        {
-            "id": "id54E2GQH4AKYGKLH6ER7O83XJ90FW1A3M",
-            "sign": "С",
-            "unicodes": [
-                "0421"
-            ],
-            "types": [],
-            "description": "0421",
-            "alts": []
-        },
-        {
-            "id": "idNVFU7ZAL7TLD0DD9WE9DJ9W3056YW4Q0",
-            "sign": "Т",
-            "unicodes": [
-                "0422"
-            ],
-            "types": [],
-            "description": "0422",
-            "alts": []
-        },
-        {
-            "id": "idLFZQAO9YQB2O1F3WZPQ1RZT397LBPFKN",
-            "sign": "У",
-            "unicodes": [
-                "0423"
-            ],
-            "types": [],
-            "description": "0423",
-            "alts": []
-        },
-        {
-            "id": "idAJ63V3AOUGYO08HIRYL8ODRQI8E4ORL3",
-            "sign": "Ф",
-            "unicodes": [
-                "0424"
-            ],
-            "types": [],
-            "description": "0424",
-            "alts": []
-        },
-        {
-            "id": "id7LVXTQ3XLTLWO1L6AZPXC7NYLR4K1RPN",
-            "sign": "Х",
-            "unicodes": [
-                "0425"
-            ],
-            "types": [],
-            "description": "0425",
-            "alts": []
-        },
-        {
-            "id": "id9SU2JRIKQAQ4P2KTLWZZ09CE83TKP7PN",
-            "sign": "Ц",
-            "unicodes": [
-                "0426"
-            ],
-            "types": [],
-            "description": "0426",
-            "alts": []
-        },
-        {
-            "id": "idGUMFFEGN6UFP817KB2HTI4K38OAFN6X3",
-            "sign": "Ч",
-            "unicodes": [
-                "0427"
-            ],
-            "types": [],
-            "description": "0427",
-            "alts": []
-        },
-        {
-            "id": "idFX28WYFIVKNXRX8WGGO0JPKG20OSJW0T",
-            "sign": "Ш",
-            "unicodes": [
-                "0428"
-            ],
-            "types": [],
-            "description": "0428",
-            "alts": []
-        },
-        {
-            "id": "id09MPPAOLGUEIV9BJYSMKAP3LO86GGV7K",
-            "sign": "Щ",
-            "unicodes": [
-                "0429"
-            ],
-            "types": [],
-            "description": "0429",
-            "alts": []
-        },
-        {
-            "id": "idCA2G6XVUM9NU03TDA6GPM6J9ZWVL6C8Q",
-            "sign": "Ъ",
-            "unicodes": [
-                "042A"
-            ],
-            "types": [],
-            "description": "042A",
-            "alts": []
-        },
-        {
-            "id": "id2VKOG23Q7KNA9CQW3G33T38FB6320ZL2",
-            "sign": "Ы",
-            "unicodes": [
-                "042B"
-            ],
-            "types": [],
-            "description": "042B",
-            "alts": []
-        },
-        {
-            "id": "id04XW0LDRQ063C09F2DNHTJS529RUF1WY",
-            "sign": "Ь",
-            "unicodes": [
-                "042C"
-            ],
-            "types": [],
-            "description": "042C",
-            "alts": []
-        },
-        {
-            "id": "idIES98OF2ISHY0WXTCURVHVE5PV5WNK5Z",
-            "sign": "Э",
-            "unicodes": [
-                "042D"
-            ],
-            "types": [],
-            "description": "042D",
-            "alts": []
-        },
-        {
-            "id": "idEM8TM41P65WK13N0JSQH2ISI8A0AOEOR",
-            "sign": "Ю",
-            "unicodes": [
-                "042E"
-            ],
-            "types": [],
-            "description": "042E",
-            "alts": []
-        },
-        {
-            "id": "idSX4LY6O8QZ3FQCDRVQ3S3WDTSXC5N0K6",
-            "sign": "Я",
-            "unicodes": [
-                "042F"
-            ],
-            "types": [],
-            "description": "042F",
-            "alts": []
-        },
-        {
-            "id": "idQ89VMDG9TE1LFJ79K2AGU5DG55V0A6QA",
-            "sign": "ʼ",
-            "unicodes": [
-                "02BC"
-            ],
-            "types": [],
-            "description": "02BC",
-            "alts": []
-        }
-    ],
-    "lowercase_alphabet": [
-        {
-            "id": "idAQ2XSJ3198IM59O1RBU1YO27JPS8TH07",
-            "sign": "а",
-            "unicodes": [
-                "0430"
-            ],
-            "types": [],
-            "description": "0430",
-            "alts": []
-        },
-        {
-            "id": "idXQCTC7MYJDCIXN0DZTB5N7184G2WAGFC",
-            "sign": "б",
-            "unicodes": [
-                "0431"
-            ],
-            "types": [],
-            "description": "0431",
-            "alts": []
-        },
-        {
-            "id": "idY3CFWMUSKPSKO1Y83DBHSBAKN1QAO4A2",
-            "sign": "в",
-            "unicodes": [
-                "0432"
-            ],
-            "types": [],
-            "description": "0432",
-            "alts": []
-        },
-        {
-            "id": "id2MDER5GT2LRDCCP48LAMDVC65IRIK21R",
-            "sign": "г",
-            "unicodes": [
-                "0433"
-            ],
-            "types": [],
-            "description": "0433",
-            "alts": []
-        },
-        {
-            "id": "idW8RINDBK5L1LEZ6J2PW90OK1NHYG9YOJ",
-            "sign": "д",
-            "unicodes": [
-                "0434"
-            ],
-            "types": [],
-            "description": "0434",
-            "alts": []
-        },
-        {
-            "id": "idQNYNE5BPQNQX9YCV6GSX9SP32GO1UTOJ",
-            "sign": "е",
-            "unicodes": [
-                "0435"
-            ],
-            "types": [],
-            "description": "0435",
-            "alts": []
-        },
-        {
-            "id": "idTWAWZ1H8PKZB9I47L3WD5LT0X7M69GFR",
-            "sign": "ё",
-            "unicodes": [
-                "0451"
-            ],
-            "types": [],
-            "description": "0451",
-            "alts": []
-        },
-        {
-            "id": "idWRHENOXA08D08Q1BB2046WZODX08U9EZ",
-            "sign": "ж",
-            "unicodes": [
-                "0436"
-            ],
-            "types": [],
-            "description": "0436",
-            "alts": []
-        },
-        {
-            "id": "idVWZ6MSP6SKLLLR4HMSDHYL9OEPLOVNSQ",
-            "sign": "з",
-            "unicodes": [
-                "0437"
-            ],
-            "types": [],
-            "description": "0437",
-            "alts": []
-        },
-        {
-            "id": "idEPEAMOR0YW5LNIQ8G0707FAIX87X7D8U",
-            "sign": "и",
-            "unicodes": [
-                "0438"
-            ],
-            "types": [],
-            "description": "0438",
-            "alts": []
-        },
-        {
-            "id": "id1FGPVXCLYK52X9BZVI9GP9VA9Y48W6MK",
-            "sign": "й",
-            "unicodes": [
-                "0439"
-            ],
-            "types": [],
-            "description": "0439",
-            "alts": []
-        },
-        {
-            "id": "idOA8NTIFPUMNQJJUJI7HXJV4GITO0PXLX",
-            "sign": "к",
-            "unicodes": [
-                "043A"
-            ],
-            "types": [],
-            "description": "043A",
-            "alts": []
-        },
-        {
-            "id": "idL4NUS2H3VEIPF7XR5Q223P6MAHK5SHNT",
-            "sign": "ӄ",
-            "unicodes": [
-                "04C4"
-            ],
-            "types": [],
-            "description": "04C4",
-            "alts": []
-        },
-        {
-            "id": "id55K4S7VUBA7YIFYZHE6QO1ZLI9Z3XPS7",
-            "sign": "л",
-            "unicodes": [
-                "043B"
-            ],
-            "types": [],
-            "description": "043B",
-            "alts": []
-        },
-        {
-            "id": "idD14Q6RNQ4JTGJXLHAWMB233VPFQZX3KK",
-            "sign": "ԓ",
-            "unicodes": [
-                "0513"
-            ],
-            "types": [],
-            "description": "0513",
-            "alts": []
-        },
-        {
-            "id": "id2DV0HQG46QSSUJ2R72GTS70YWAWDPKQU",
-            "sign": "м",
-            "unicodes": [
-                "043C"
-            ],
-            "types": [],
-            "description": "043C",
-            "alts": []
-        },
-        {
-            "id": "idFNRT5974ICMT20R7JN7LSZ1UDL2KRDJH",
-            "sign": "н",
-            "unicodes": [
-                "043D"
-            ],
-            "types": [],
-            "description": "043D",
-            "alts": []
-        },
-        {
-            "id": "id92783Y68JGNPPR5TPEMUMZ40Z3DLWXW5",
-            "sign": "ӈ",
-            "unicodes": [
-                "04C8"
-            ],
-            "types": [],
-            "description": "04C8",
-            "alts": []
-        },
-        {
-            "id": "idU4GP5H7CB9W7IIMGIA7GL9ZRLKVBJXYF",
-            "sign": "о",
-            "unicodes": [
-                "043E"
-            ],
-            "types": [],
-            "description": "043E",
-            "alts": []
-        },
-        {
-            "id": "idSBXSR90UIM33KKEF682ML51H7H17OO25",
-            "sign": "п",
-            "unicodes": [
-                "043F"
-            ],
-            "types": [],
-            "description": "043F",
-            "alts": []
-        },
-        {
-            "id": "id9JVNKEBMK6VORTCR76FSSB2GRYLEKF9Q",
-            "sign": "р",
-            "unicodes": [
-                "0440"
-            ],
-            "types": [],
-            "description": "0440",
-            "alts": []
-        },
-        {
-            "id": "id6XP65ACTWK3TD2HIGI9IG27A3V1TLWTE",
-            "sign": "с",
-            "unicodes": [
-                "0441"
-            ],
-            "types": [],
-            "description": "0441",
-            "alts": []
-        },
-        {
-            "id": "idBER7LR6GLHRP4K1IW4FZNFKWVCSBG1J9",
-            "sign": "т",
-            "unicodes": [
-                "0442"
-            ],
-            "types": [],
-            "description": "0442",
-            "alts": []
-        },
-        {
-            "id": "id81182NVIGS6X61EKK1UR6CTBO588AFNJ",
-            "sign": "у",
-            "unicodes": [
-                "0443"
-            ],
-            "types": [],
-            "description": "0443",
-            "alts": []
-        },
-        {
-            "id": "idZPOL6XRW6RX98W6OATEKQ906C2O9LHIU",
-            "sign": "ф",
-            "unicodes": [
-                "0444"
-            ],
-            "types": [],
-            "description": "0444",
-            "alts": []
-        },
-        {
-            "id": "id7OSAOXMLA6EUHXEP32JZDENQCFXO7LZH",
-            "sign": "х",
-            "unicodes": [
-                "0445"
-            ],
-            "types": [],
-            "description": "0445",
-            "alts": []
-        },
-        {
-            "id": "idRM28XO446PNGDI4WMCOAX4SU9XZY932X",
-            "sign": "ц",
-            "unicodes": [
-                "0446"
-            ],
-            "types": [],
-            "description": "0446",
-            "alts": []
-        },
-        {
-            "id": "idQKCKBK03YSHFPSUZY1QLCPMI8SNXAU7N",
-            "sign": "ч",
-            "unicodes": [
-                "0447"
-            ],
-            "types": [],
-            "description": "0447",
-            "alts": []
-        },
-        {
-            "id": "idWQKZVU0NCUKUWAZ4SO4Q42YCCAFBME9V",
-            "sign": "ш",
-            "unicodes": [
-                "0448"
-            ],
-            "types": [],
-            "description": "0448",
-            "alts": []
-        },
-        {
-            "id": "id0Q6CPNCZXAE70B9FQ80XJDZNIUI0QPJO",
-            "sign": "щ",
-            "unicodes": [
-                "0449"
-            ],
-            "types": [],
-            "description": "0449",
-            "alts": []
-        },
-        {
-            "id": "id0T2K5800P5Z87UK1U7P7YAEB4Z8KZYEU",
-            "sign": "ъ",
-            "unicodes": [
-                "044A"
-            ],
-            "types": [],
-            "description": "044A",
-            "alts": []
-        },
-        {
-            "id": "id4LBYUWUVOXPXF4DMOJZJJDN5AQA67ANX",
-            "sign": "ы",
-            "unicodes": [
-                "044B"
-            ],
-            "types": [],
-            "description": "044B",
-            "alts": []
-        },
-        {
-            "id": "id5C2YMMVZXWB6S7I40W7EPEOQJHSSUHA4",
-            "sign": "ь",
-            "unicodes": [
-                "044C"
-            ],
-            "types": [],
-            "description": "044C",
-            "alts": []
-        },
-        {
-            "id": "idNJ8AQUE2KL9JLNW965Y3XQ038BYE82IC",
-            "sign": "э",
-            "unicodes": [
-                "044D"
-            ],
-            "types": [],
-            "description": "044D",
-            "alts": []
-        },
-        {
-            "id": "idI7HXJKI59ADCEQORJF8R0IWRW9KQJQYM",
-            "sign": "ю",
-            "unicodes": [
-                "044E"
-            ],
-            "types": [],
-            "description": "044E",
-            "alts": []
-        },
-        {
-            "id": "idUPN3XQAU5H2L7QODF0JCTDO69OQAKH1M",
-            "sign": "я",
-            "unicodes": [
-                "044F"
-            ],
-            "types": [],
-            "description": "044F",
-            "alts": []
-        }
-    ],
-    "uppercase_dialect": [],
-    "lowercase_dialect": [],
-    "uppercase_historic": [
-        {
-            "id": "id61TDT4YJPUTP93VFY7N0PMDXYOMAMVMS",
-            "sign": "Кʼ",
-            "unicodes": [
-                "041A",
-                "02BC"
-            ],
-            "types": [
-                "historicsign"
-            ],
-            "description": "041A, 02BC",
-            "alts": []
-        },
-        {
-            "id": "id442913MSL9MUNBRTP9CLENUX6JVTIYP9",
-            "sign": "Нʼ",
-            "unicodes": [
-                "041D",
-                "02BC"
-            ],
-            "types": [
-                "historicsign"
-            ],
-            "description": "041D, 02BC",
-            "alts": []
-        }
-    ],
-    "lowercase_historic": [
-        {
-            "id": "idTHVM8DI4C4KSQP50T552416TN964LEJT",
-            "sign": "кʼ",
-            "unicodes": [
-                "043A",
-                "02BC"
-            ],
-            "types": [
-                "historicsign"
-            ],
-            "description": "043A, 02BC",
-            "alts": []
-        },
-        {
-            "id": "idAXAUBO5WAVITPF74KJ91I4TCKBMKNKVL",
-            "sign": "нʼ",
-            "unicodes": [
-                "043D",
-                "02BC"
-            ],
-            "types": [
-                "historicsign"
-            ],
-            "description": "043D, 02BC",
-            "alts": []
-        }
-    ],
-    "uppercase_lexic": [],
-    "lowercase_lexic": [],
-    "uppercase_unicodes_list": [
-        {
-            "id": "idH14WVENOJEZ135TT6R83IP9K9IH2ZM91",
-            "sign": "А",
-            "unicodes": [
-                "0410"
-            ],
-            "display_unicode": "0410",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER A"
-        },
-        {
-            "id": "idAGCF8JLRMP3JFNJE6RDWH64TQ4LJVP0F",
-            "sign": "Б",
-            "unicodes": [
-                "0411"
-            ],
-            "display_unicode": "0411",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER BE"
-        },
-        {
-            "id": "idQSZV4EW6BAFSAEM7U66CUF0TZ4SWZC7K",
-            "sign": "В",
-            "unicodes": [
-                "0412"
-            ],
-            "display_unicode": "0412",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER VE"
-        },
-        {
-            "id": "idNT1UUVBIUQT4ZZ26K97349NCJ85EV63L",
-            "sign": "Г",
-            "unicodes": [
-                "0413"
-            ],
-            "display_unicode": "0413",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER GHE"
-        },
-        {
-            "id": "idUY0F65PCHRE0KLKP1Y7O2KVEN9SQLZK4",
-            "sign": "Д",
-            "unicodes": [
-                "0414"
-            ],
-            "display_unicode": "0414",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER DE"
-        },
-        {
-            "id": "id74NKDXDNWIHKJZDFU8O2LC7VZQIK74W0",
-            "sign": "Е",
-            "unicodes": [
-                "0415"
-            ],
-            "display_unicode": "0415",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER IE"
-        },
-        {
-            "id": "idO04GV94KDNOXFHV5R1TCXX4833B5HJFG",
-            "sign": "Ё",
-            "unicodes": [
-                "0401"
-            ],
-            "display_unicode": "0401",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER IO"
-        },
-        {
-            "id": "idMQM5381HQXOWO3C0VRUY7U176DKM4N0C",
-            "sign": "Ж",
-            "unicodes": [
-                "0416"
-            ],
-            "display_unicode": "0416",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER ZHE"
-        },
-        {
-            "id": "id61Z2KSN3D18WBWLBRODFLHEFAXAW34OR",
-            "sign": "З",
-            "unicodes": [
-                "0417"
-            ],
-            "display_unicode": "0417",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER ZE"
-        },
-        {
-            "id": "id9NYSW13F7446BA4E3UDFBZ59OV2Z0GOJ",
-            "sign": "И",
-            "unicodes": [
-                "0418"
-            ],
-            "display_unicode": "0418",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER I"
-        },
-        {
-            "id": "idQ26JUTZE8E1JX87ZAINNLSZ49HRNP9NP",
-            "sign": "Й",
-            "unicodes": [
-                "0419"
-            ],
-            "display_unicode": "0419",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER SHORT I"
-        },
-        {
-            "id": "idL3SNFZ5XH06LGLZBHX16WRQLPICN14FU",
-            "sign": "К",
-            "unicodes": [
-                "041A"
-            ],
-            "display_unicode": "041A",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER KA"
-        },
-        {
-            "id": "idES03MMXNJNDY4OAEXGSL1BKIUTWSZG21",
-            "sign": "Ӄ",
-            "unicodes": [
-                "04C3"
-            ],
-            "display_unicode": "04C3",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER KA WITH HOOK"
-        },
-        {
-            "id": "idI6HPV4I3PST45VCFAR0T67ZOJQORZKGM",
-            "sign": "Л",
-            "unicodes": [
-                "041B"
-            ],
-            "display_unicode": "041B",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER EL"
-        },
-        {
-            "id": "id55NLGLS5M3ESEL37ZOY3GAK3Q0L4NJMO",
-            "sign": "Ԓ",
-            "unicodes": [
-                "0512"
-            ],
-            "display_unicode": "0512",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER EL WITH HOOK"
-        },
-        {
-            "id": "idBSU7XY65HAOURS0UQ6D3S5S7EO02A7YE",
-            "sign": "М",
-            "unicodes": [
-                "041C"
-            ],
-            "display_unicode": "041C",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER EM"
-        },
-        {
-            "id": "idAC0OEGYVA11L76EJKGYVZLPX1MSVP1Y2",
-            "sign": "Н",
-            "unicodes": [
-                "041D"
-            ],
-            "display_unicode": "041D",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER EN"
-        },
-        {
-            "id": "idSM7XGU2N44DFD5MEFCEU922VVEQA79D5",
-            "sign": "Ӈ",
-            "unicodes": [
-                "04C7"
-            ],
-            "display_unicode": "04C7",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER EN WITH HOOK"
-        },
-        {
-            "id": "idPP3RST4QD00OG4EFUQEPWSSMJGR1Y7EJ",
-            "sign": "О",
-            "unicodes": [
-                "041E"
-            ],
-            "display_unicode": "041E",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER O"
-        },
-        {
-            "id": "idXQLYSKD973BBJ51BZUVZCNPBR2T7AI7Q",
-            "sign": "П",
-            "unicodes": [
-                "041F"
-            ],
-            "display_unicode": "041F",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER PE"
-        },
-        {
-            "id": "idM33I016SMZP85L4S9XAZQ63EE0FH9DH1",
-            "sign": "Р",
-            "unicodes": [
-                "0420"
-            ],
-            "display_unicode": "0420",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER ER"
-        },
-        {
-            "id": "idZ3XEM4LUJ9A7UTH5TUNGY64EO6I83F9I",
-            "sign": "С",
-            "unicodes": [
-                "0421"
-            ],
-            "display_unicode": "0421",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER ES"
-        },
-        {
-            "id": "id0WJFPPI8OEINZGE4PHS03UZY6QL458VY",
-            "sign": "Т",
-            "unicodes": [
-                "0422"
-            ],
-            "display_unicode": "0422",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER TE"
-        },
-        {
-            "id": "idXOX27I13J9KSDVOW4DROJEZPOISYGSK9",
-            "sign": "У",
-            "unicodes": [
-                "0423"
-            ],
-            "display_unicode": "0423",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER U"
-        },
-        {
-            "id": "idM7M9Z6LGN8JJFSRQDR7DNRKWAP6R9GTW",
-            "sign": "Ф",
-            "unicodes": [
-                "0424"
-            ],
-            "display_unicode": "0424",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER EF"
-        },
-        {
-            "id": "id0ZI4W9ME1FKKAY912H1GOJOULBGXL82M",
-            "sign": "Х",
-            "unicodes": [
-                "0425"
-            ],
-            "display_unicode": "0425",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER HA"
-        },
-        {
-            "id": "idCWIZO4RWK2JW5ODY2820MWW36FD0QH16",
-            "sign": "Ц",
-            "unicodes": [
-                "0426"
-            ],
-            "display_unicode": "0426",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER TSE"
-        },
-        {
-            "id": "idUJRJNKIHLJFNG7DESXEZNURMKNC14F90",
-            "sign": "Ч",
-            "unicodes": [
-                "0427"
-            ],
-            "display_unicode": "0427",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER CHE"
-        },
-        {
-            "id": "idMDP6XCPL0HP67WSXKB0MPXBICCJC5Z5D",
-            "sign": "Ш",
-            "unicodes": [
-                "0428"
-            ],
-            "display_unicode": "0428",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER SHA"
-        },
-        {
-            "id": "idVIGWSCV10ARMYWBVA3DUJIPCUFX679LZ",
-            "sign": "Щ",
-            "unicodes": [
-                "0429"
-            ],
-            "display_unicode": "0429",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER SHCHA"
-        },
-        {
-            "id": "idODLRZG74SXC2O13HPBI20JPPGK3GICXM",
-            "sign": "Ъ",
-            "unicodes": [
-                "042A"
-            ],
-            "display_unicode": "042A",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER HARD SIGN"
-        },
-        {
-            "id": "id76TVNXKQONLG0HPJONL4GPLH7DZPTZM8",
-            "sign": "Ы",
-            "unicodes": [
-                "042B"
-            ],
-            "display_unicode": "042B",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER YERU"
-        },
-        {
-            "id": "id88DYZ567W347ZATZK8YUPE7EMPNAY6AR",
-            "sign": "Ь",
-            "unicodes": [
-                "042C"
-            ],
-            "display_unicode": "042C",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER SOFT SIGN"
-        },
-        {
-            "id": "idEGI81T1IKZRJW4A625NIV0KV05O3P9I6",
-            "sign": "Э",
-            "unicodes": [
-                "042D"
-            ],
-            "display_unicode": "042D",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER E"
-        },
-        {
-            "id": "idPTAT5GV79ZQWSD231BP6BIBR43PZW4U0",
-            "sign": "Ю",
-            "unicodes": [
-                "042E"
-            ],
-            "display_unicode": "042E",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER YU"
-        },
-        {
-            "id": "idHFXK9YXOZ3FY391DQ84VO1F7ZR0GPDOV",
-            "sign": "Я",
-            "unicodes": [
-                "042F"
-            ],
-            "display_unicode": "042F",
-            "types": [],
-            "description": "CYRILLIC CAPITAL LETTER YA"
-        },
-        {
-            "id": "idLHXGS1MPGU26C8SPD0LDC1RSV5AKZC3Y",
-            "sign": "ʼ",
-            "unicodes": [
-                "02BC"
-            ],
-            "display_unicode": "02BC",
-            "types": [],
-            "description": "MODIFIER LETTER APOSTROPHE"
-        }
-    ],
-    "lowercase_unicodes_list": [
-        {
-            "id": "idM5J1OA3JS8J9A1UGH4OVJ6KI6TE2XMYX",
-            "sign": "а",
-            "unicodes": [
-                "0430"
-            ],
-            "display_unicode": "0430",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER A"
-        },
-        {
-            "id": "id8O3KMOXBPUAYEQOXZ3AU05NPUGSG6PLF",
-            "sign": "б",
-            "unicodes": [
-                "0431"
-            ],
-            "display_unicode": "0431",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER BE"
-        },
-        {
-            "id": "idUQZDZ9I1AJVPFMDG7ZIZBDRHP602K6Y4",
-            "sign": "в",
-            "unicodes": [
-                "0432"
-            ],
-            "display_unicode": "0432",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER VE"
-        },
-        {
-            "id": "idINCBUX9M9AFG9ZZAXY4WUVTQQSL3P0LS",
-            "sign": "г",
-            "unicodes": [
-                "0433"
-            ],
-            "display_unicode": "0433",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER GHE"
-        },
-        {
-            "id": "idUI04LBPH26K3V5O4VK7RWNYCYMJR6KXJ",
-            "sign": "д",
-            "unicodes": [
-                "0434"
-            ],
-            "display_unicode": "0434",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER DE"
-        },
-        {
-            "id": "id59HKR0K3P63YNC0ZXMG9ZTLJGXICW5VG",
-            "sign": "е",
-            "unicodes": [
-                "0435"
-            ],
-            "display_unicode": "0435",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER IE"
-        },
-        {
-            "id": "idNZT99RZMHQ9508B7RHG0IG0WBWU4PHVH",
-            "sign": "ё",
-            "unicodes": [
-                "0451"
-            ],
-            "display_unicode": "0451",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER IO"
-        },
-        {
-            "id": "id4AAZN8F0QWGF0Y2F66UIH09RLMP7HJRK",
-            "sign": "ж",
-            "unicodes": [
-                "0436"
-            ],
-            "display_unicode": "0436",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER ZHE"
-        },
-        {
-            "id": "idPVVM1FP652KFSY71UMNZQAVNC74X10CV",
-            "sign": "з",
-            "unicodes": [
-                "0437"
-            ],
-            "display_unicode": "0437",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER ZE"
-        },
-        {
-            "id": "idI3VPASJIDMUFUA295XN2M21OGOXCDX4L",
-            "sign": "и",
-            "unicodes": [
-                "0438"
-            ],
-            "display_unicode": "0438",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER I"
-        },
-        {
-            "id": "idINJ71YT7LDI2VEPXVARO7ZYPST4D6N5N",
-            "sign": "й",
-            "unicodes": [
-                "0439"
-            ],
-            "display_unicode": "0439",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER SHORT I"
-        },
-        {
-            "id": "idCQVVMLCV5G6OLZMUSE9X1J3QDYJVXVQT",
-            "sign": "к",
-            "unicodes": [
-                "043A"
-            ],
-            "display_unicode": "043A",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER KA"
-        },
-        {
-            "id": "idS2STRGGRPYAEKBYTXDCKWZ5FQEXUSFTH",
-            "sign": "ӄ",
-            "unicodes": [
-                "04C4"
-            ],
-            "display_unicode": "04C4",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER KA WITH HOOK"
-        },
-        {
-            "id": "idVFPCO5IKL8O1C1E9OHDI351KHMM7B9MU",
-            "sign": "л",
-            "unicodes": [
-                "043B"
-            ],
-            "display_unicode": "043B",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER EL"
-        },
-        {
-            "id": "id4M5L8PHU2L07NF4HZGWGO3MV1YWRGDRG",
-            "sign": "ԓ",
-            "unicodes": [
-                "0513"
-            ],
-            "display_unicode": "0513",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER EL WITH HOOK"
-        },
-        {
-            "id": "id2WTKXO2ZY4PVWKQS98POYB7UJHJJNHSB",
-            "sign": "м",
-            "unicodes": [
-                "043C"
-            ],
-            "display_unicode": "043C",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER EM"
-        },
-        {
-            "id": "id2EJA0J41A3G06XJG2VSIRXFODCYNUG6K",
-            "sign": "н",
-            "unicodes": [
-                "043D"
-            ],
-            "display_unicode": "043D",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER EN"
-        },
-        {
-            "id": "idUIE89EI4P1WNCPQ6O8KKMGG4T64ZH76M",
-            "sign": "ӈ",
-            "unicodes": [
-                "04C8"
-            ],
-            "display_unicode": "04C8",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER EN WITH HOOK"
-        },
-        {
-            "id": "idT7FQO4JXR2SBY5E08LC6LK8JUTJBE579",
-            "sign": "о",
-            "unicodes": [
-                "043E"
-            ],
-            "display_unicode": "043E",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER O"
-        },
-        {
-            "id": "idA23CB5H4DUK73LUKS8J6QGCDJJFA9PNM",
-            "sign": "п",
-            "unicodes": [
-                "043F"
-            ],
-            "display_unicode": "043F",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER PE"
-        },
-        {
-            "id": "idI1WGQI8WH6B6Y8XZDISMFHLL7V9KSCEJ",
-            "sign": "р",
-            "unicodes": [
-                "0440"
-            ],
-            "display_unicode": "0440",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER ER"
-        },
-        {
-            "id": "idY34S9D35FNXAQVY59VGUUML77X3H1C43",
-            "sign": "с",
-            "unicodes": [
-                "0441"
-            ],
-            "display_unicode": "0441",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER ES"
-        },
-        {
-            "id": "idAHN7NWOGGHG4ZPXK9RWAGV4WYZ5ANGZH",
-            "sign": "т",
-            "unicodes": [
-                "0442"
-            ],
-            "display_unicode": "0442",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER TE"
-        },
-        {
-            "id": "idK8203N08P0GQK8BA0J3H0903CYNAVA9F",
-            "sign": "у",
-            "unicodes": [
-                "0443"
-            ],
-            "display_unicode": "0443",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER U"
-        },
-        {
-            "id": "id076S4ODHQ9Y7O0WAUANEGMWF94TCCH07",
-            "sign": "ф",
-            "unicodes": [
-                "0444"
-            ],
-            "display_unicode": "0444",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER EF"
-        },
-        {
-            "id": "idZD88REDAV5T80MSUY3O12JTP0WTHWWA9",
-            "sign": "х",
-            "unicodes": [
-                "0445"
-            ],
-            "display_unicode": "0445",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER HA"
-        },
-        {
-            "id": "idLICD4YY4DQ78Z2PLGO15M2G1PFYJ30I8",
-            "sign": "ц",
-            "unicodes": [
-                "0446"
-            ],
-            "display_unicode": "0446",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER TSE"
-        },
-        {
-            "id": "idS0HG79WFKZXMD144H02JYM7YWSVYVSUR",
-            "sign": "ч",
-            "unicodes": [
-                "0447"
-            ],
-            "display_unicode": "0447",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER CHE"
-        },
-        {
-            "id": "idG4INN63VBHZVYMSC1I9RN47IW7KEWIGQ",
-            "sign": "ш",
-            "unicodes": [
-                "0448"
-            ],
-            "display_unicode": "0448",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER SHA"
-        },
-        {
-            "id": "id34H42SBAFUDGLR2D6PEIVAJSHRQZ7Y39",
-            "sign": "щ",
-            "unicodes": [
-                "0449"
-            ],
-            "display_unicode": "0449",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER SHCHA"
-        },
-        {
-            "id": "idBEIQB1BE0UK84U8U8JK22AIIG9VX4EOF",
-            "sign": "ъ",
-            "unicodes": [
-                "044A"
-            ],
-            "display_unicode": "044A",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER HARD SIGN"
-        },
-        {
-            "id": "idZ9L84B1BYQPP62SQWW2KZN8LZYZY21LJ",
-            "sign": "ы",
-            "unicodes": [
-                "044B"
-            ],
-            "display_unicode": "044B",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER YERU"
-        },
-        {
-            "id": "id69QRAIVPSPO6HJAOZBBFN13L5VF6UEIT",
-            "sign": "ь",
-            "unicodes": [
-                "044C"
-            ],
-            "display_unicode": "044C",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER SOFT SIGN"
-        },
-        {
-            "id": "idDTYDQHVL2IIB50886ER8T7NDYV8LL6LE",
-            "sign": "э",
-            "unicodes": [
-                "044D"
-            ],
-            "display_unicode": "044D",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER E"
-        },
-        {
-            "id": "idI0RM2NM1YOJ7V45P5U555Y840ENEVT1Y",
-            "sign": "ю",
-            "unicodes": [
-                "044E"
-            ],
-            "display_unicode": "044E",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER YU"
-        },
-        {
-            "id": "id3KPVZ8QXOP43NWEX6IQ2N1LD0RITIUDW",
-            "sign": "я",
-            "unicodes": [
-                "044F"
-            ],
-            "display_unicode": "044F",
-            "types": [],
-            "description": "CYRILLIC SMALL LETTER YA"
+    "glyphs_list": [
+        {
+            "type": "alphabet",
+            "title": "Alphabet",
+            "show_unicodes": false,
+            "uppercase": [
+                {
+                    "sign": "А",
+                    "unicodes": [
+                        "0410"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0410",
+                    "id": "id6FFENLBHVOB0X2LX2NBWSL30F29EJLVF",
+                    "alts": []
+                },
+                {
+                    "sign": "Б",
+                    "unicodes": [
+                        "0411"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0411",
+                    "id": "idILBR9L5QBU959QE9P7D10SB42KF7BYHA",
+                    "alts": []
+                },
+                {
+                    "sign": "В",
+                    "unicodes": [
+                        "0412"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0412",
+                    "id": "id6PQ2TE13S9G56L71Y8POCKA9S168C6PL",
+                    "alts": []
+                },
+                {
+                    "sign": "Г",
+                    "unicodes": [
+                        "0413"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0413",
+                    "id": "idQIHECPYV7WIWXCWYVU2DY52IY5C722P2",
+                    "alts": []
+                },
+                {
+                    "sign": "Д",
+                    "unicodes": [
+                        "0414"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0414",
+                    "id": "idUXEJT6LAZ2XO6HZVIT994U1QSGLM2B44",
+                    "alts": []
+                },
+                {
+                    "sign": "Е",
+                    "unicodes": [
+                        "0415"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0415",
+                    "id": "id5O0U8MZQR74EW64USXQBYMGY58CB22EL",
+                    "alts": []
+                },
+                {
+                    "sign": "Ё",
+                    "unicodes": [
+                        "0401"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0401",
+                    "id": "idJUQHKOC18OGO35UIUBEZ464ZAWMJHBRF",
+                    "alts": []
+                },
+                {
+                    "sign": "Ж",
+                    "unicodes": [
+                        "0416"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0416",
+                    "id": "idI9HAAYW1SQTAZTK9K0RGS6WJNJCN83RM",
+                    "alts": []
+                },
+                {
+                    "sign": "З",
+                    "unicodes": [
+                        "0417"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0417",
+                    "id": "idYQB04MVPJU6FVXEAFAQBZY1PB8DQI5VP",
+                    "alts": []
+                },
+                {
+                    "sign": "И",
+                    "unicodes": [
+                        "0418"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0418",
+                    "id": "idO3MBI1WQQ3UP59LO05CJGA9K0ATZM94J",
+                    "alts": []
+                },
+                {
+                    "sign": "Й",
+                    "unicodes": [
+                        "0419"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0419",
+                    "id": "id0985QVVIDYCULJ6Q2DH13GWMRQ36LOU7",
+                    "alts": []
+                },
+                {
+                    "sign": "К",
+                    "unicodes": [
+                        "041A"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "041A",
+                    "id": "id5JAML3Z2XXUZPANMZAJ0UNB0H5KEEULS",
+                    "alts": []
+                },
+                {
+                    "sign": "Ӄ",
+                    "unicodes": [
+                        "04C3"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "04C3",
+                    "id": "idUMM0PLJS7SBAVNHUOBUY3WJ9SE0QWWLW",
+                    "alts": []
+                },
+                {
+                    "sign": "Л",
+                    "unicodes": [
+                        "041B"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "041B",
+                    "id": "idP4D5MBPKXQZ5VXRYV0ZSLM44Q610U9MM",
+                    "alts": []
+                },
+                {
+                    "sign": "Ԓ",
+                    "unicodes": [
+                        "0512"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0512",
+                    "id": "id34B7YRHVLQK7MOFH37AQVUS7VZBOTBTC",
+                    "alts": []
+                },
+                {
+                    "sign": "М",
+                    "unicodes": [
+                        "041C"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "041C",
+                    "id": "id9RV1D1K21RC0JHUFV7G2W0DI1LY0W0WX",
+                    "alts": []
+                },
+                {
+                    "sign": "Н",
+                    "unicodes": [
+                        "041D"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "041D",
+                    "id": "idX8VCHW0MTKAY6O05P3SUAVVSA7LTA3YV",
+                    "alts": []
+                },
+                {
+                    "sign": "Ӈ",
+                    "unicodes": [
+                        "04C7"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "04C7",
+                    "id": "idDZVYP17YMQ7M5VA3LTP1UGYY4O0IFY32",
+                    "alts": []
+                },
+                {
+                    "sign": "О",
+                    "unicodes": [
+                        "041E"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "041E",
+                    "id": "idXG143H0EN45XDBQTBX28W4OURQYW2XT6",
+                    "alts": []
+                },
+                {
+                    "sign": "П",
+                    "unicodes": [
+                        "041F"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "041F",
+                    "id": "idASQ2V6YO8MD43NNGEWUSNR7NHC8NOIV0",
+                    "alts": []
+                },
+                {
+                    "sign": "Р",
+                    "unicodes": [
+                        "0420"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0420",
+                    "id": "idSPMGQSZQHT7V3HAOGGOZ67NRIWBWR516",
+                    "alts": []
+                },
+                {
+                    "sign": "С",
+                    "unicodes": [
+                        "0421"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0421",
+                    "id": "idN7R2YKHCV2PXA5GB84VFO96I0SX0DG7N",
+                    "alts": []
+                },
+                {
+                    "sign": "Т",
+                    "unicodes": [
+                        "0422"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0422",
+                    "id": "idUDF0WSE14Z81TUD2EJ84BEVYXAIYHA7D",
+                    "alts": []
+                },
+                {
+                    "sign": "У",
+                    "unicodes": [
+                        "0423"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0423",
+                    "id": "idWQ6GKAK9W4EEOVK1I5F0HDLC8LZ5KP6U",
+                    "alts": []
+                },
+                {
+                    "sign": "Ф",
+                    "unicodes": [
+                        "0424"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0424",
+                    "id": "id8W1HRZQTG58CNX9N9CGX1RJT06O39LV2",
+                    "alts": []
+                },
+                {
+                    "sign": "Х",
+                    "unicodes": [
+                        "0425"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0425",
+                    "id": "idXSJSIV80QKQSEOGY0KM3937DBJ8NY65U",
+                    "alts": []
+                },
+                {
+                    "sign": "Ц",
+                    "unicodes": [
+                        "0426"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0426",
+                    "id": "idYCV6ZX03L7LW100N4Y144IY80OR6VQ90",
+                    "alts": []
+                },
+                {
+                    "sign": "Ч",
+                    "unicodes": [
+                        "0427"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0427",
+                    "id": "idHDW662C0446IZT1QKWW6T1VCT6FFFNFO",
+                    "alts": []
+                },
+                {
+                    "sign": "Ш",
+                    "unicodes": [
+                        "0428"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0428",
+                    "id": "idY67NWW3IBBASQII4T3NOOEWRWUMYVHJN",
+                    "alts": []
+                },
+                {
+                    "sign": "Щ",
+                    "unicodes": [
+                        "0429"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0429",
+                    "id": "idETYC5NBLNPVZGHP1X7RKG49BTIWNIB97",
+                    "alts": []
+                },
+                {
+                    "sign": "Ъ",
+                    "unicodes": [
+                        "042A"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042A",
+                    "id": "id1OX0TYXRMQ1HS9R59860DD8ZS2L3G293",
+                    "alts": []
+                },
+                {
+                    "sign": "Ы",
+                    "unicodes": [
+                        "042B"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042B",
+                    "id": "idPSLTKYQPT18ODHP3CO3CUYBA4RRO5UTB",
+                    "alts": []
+                },
+                {
+                    "sign": "Ь",
+                    "unicodes": [
+                        "042C"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042C",
+                    "id": "idCEO56LZL01VK995WDV0TZREX7X2SPT1J",
+                    "alts": []
+                },
+                {
+                    "sign": "Э",
+                    "unicodes": [
+                        "042D"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042D",
+                    "id": "idO9TLN1BSFRP8VNNDSBF369B1UHM3QS5V",
+                    "alts": []
+                },
+                {
+                    "sign": "Ю",
+                    "unicodes": [
+                        "042E"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042E",
+                    "id": "idN5TK61OM9PTP8D90DQJINSTIL56MCY1A",
+                    "alts": []
+                },
+                {
+                    "sign": "Я",
+                    "unicodes": [
+                        "042F"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042F",
+                    "id": "id2B2MKG07WZLPU9QLLJRCHCQUZBC5SIHO",
+                    "alts": []
+                },
+                {
+                    "sign": "ʼ",
+                    "unicodes": [
+                        "02BC"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "02BC",
+                    "id": "idCH4QYZ4X6UKZ7JE2PM5B68Q776Q741H5",
+                    "alts": []
+                }
+            ],
+            "lowercase": [
+                {
+                    "sign": "а",
+                    "unicodes": [
+                        "0430"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0430",
+                    "id": "idSIU6KUONWIJM4KNDFOQATK61HD94SIGB",
+                    "alts": []
+                },
+                {
+                    "sign": "б",
+                    "unicodes": [
+                        "0431"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0431",
+                    "id": "idL91E1YYMEXVFDHGLMO1KZEY0KRCYO0EL",
+                    "alts": []
+                },
+                {
+                    "sign": "в",
+                    "unicodes": [
+                        "0432"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0432",
+                    "id": "id9CA34PCACG5VCUY0BS3380HTL04PADQQ",
+                    "alts": []
+                },
+                {
+                    "sign": "г",
+                    "unicodes": [
+                        "0433"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0433",
+                    "id": "id9YQ4DG7B8EW24NWWIXSWBMVL4J3F9Y9E",
+                    "alts": []
+                },
+                {
+                    "sign": "д",
+                    "unicodes": [
+                        "0434"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0434",
+                    "id": "idYUPUD4G7NS6YNGG90DKXRCSLLWISH6FI",
+                    "alts": []
+                },
+                {
+                    "sign": "е",
+                    "unicodes": [
+                        "0435"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0435",
+                    "id": "idRJSLF6OO6T5GUJP74JRHFT7CSW6J6MVH",
+                    "alts": []
+                },
+                {
+                    "sign": "ё",
+                    "unicodes": [
+                        "0451"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0451",
+                    "id": "idO5BUN0PN4FCGB6ZPAUTOQNSS35Z4IJB6",
+                    "alts": []
+                },
+                {
+                    "sign": "ж",
+                    "unicodes": [
+                        "0436"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0436",
+                    "id": "id4916W1Y3OLNZDCDFZ7MY9JX34LRW4BZS",
+                    "alts": []
+                },
+                {
+                    "sign": "з",
+                    "unicodes": [
+                        "0437"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0437",
+                    "id": "idX3G9E1LEYGEUZLJN60BWFIOMKRSRDYAH",
+                    "alts": []
+                },
+                {
+                    "sign": "и",
+                    "unicodes": [
+                        "0438"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0438",
+                    "id": "idLS1N74WEF4XS4LM63HXJXF96A85UX0MR",
+                    "alts": []
+                },
+                {
+                    "sign": "й",
+                    "unicodes": [
+                        "0439"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0439",
+                    "id": "idTQY12U2E8BGLMHOCCVB8M6EBVW63LWN2",
+                    "alts": []
+                },
+                {
+                    "sign": "к",
+                    "unicodes": [
+                        "043A"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "043A",
+                    "id": "idT5QMKW5Y5VTCEQB604C3QCXWJ9URYDTM",
+                    "alts": []
+                },
+                {
+                    "sign": "ӄ",
+                    "unicodes": [
+                        "04C4"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "04C4",
+                    "id": "idPDXY5GOM2L3DMXII8VFRRZQFRYDTSOKS",
+                    "alts": []
+                },
+                {
+                    "sign": "л",
+                    "unicodes": [
+                        "043B"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "043B",
+                    "id": "idNFNVZM39Y6AKCMZGGYCLP5LWJEHCDZPZ",
+                    "alts": []
+                },
+                {
+                    "sign": "ԓ",
+                    "unicodes": [
+                        "0513"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0513",
+                    "id": "idAJRLRFIBRVJQH9EE7CZ6OOYPY170CRIH",
+                    "alts": []
+                },
+                {
+                    "sign": "м",
+                    "unicodes": [
+                        "043C"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "043C",
+                    "id": "idPTOHZ0S7HZR80OP27Y6AJ9R3VEMBJC80",
+                    "alts": []
+                },
+                {
+                    "sign": "н",
+                    "unicodes": [
+                        "043D"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "043D",
+                    "id": "idIIAFPCZDE9THQMTTFGO995OJG9S4EXBC",
+                    "alts": []
+                },
+                {
+                    "sign": "ӈ",
+                    "unicodes": [
+                        "04C8"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "04C8",
+                    "id": "idLQM2747WWJQEIZE4YN2H7C4K5UIIJLFT",
+                    "alts": []
+                },
+                {
+                    "sign": "о",
+                    "unicodes": [
+                        "043E"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "043E",
+                    "id": "idTOBC9Q9QV8XBK5LAZ553MMR4DSK0RRAL",
+                    "alts": []
+                },
+                {
+                    "sign": "п",
+                    "unicodes": [
+                        "043F"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "043F",
+                    "id": "idLPTP8VAO6AEUNBRN4DILIME418XB21R9",
+                    "alts": []
+                },
+                {
+                    "sign": "р",
+                    "unicodes": [
+                        "0440"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0440",
+                    "id": "id7F1AXDR9DUGHFWOZQ13GL6FJWHS5LT4V",
+                    "alts": []
+                },
+                {
+                    "sign": "с",
+                    "unicodes": [
+                        "0441"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0441",
+                    "id": "idQIDTGE2HXBZO26KRK6ZL7GZNS4HLQHO2",
+                    "alts": []
+                },
+                {
+                    "sign": "т",
+                    "unicodes": [
+                        "0442"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0442",
+                    "id": "idFSZJLXO1IFWOMKGDFKQHI5VR7BKJ9PIW",
+                    "alts": []
+                },
+                {
+                    "sign": "у",
+                    "unicodes": [
+                        "0443"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0443",
+                    "id": "idOK6VQCXF8VSTKJZ3WEIP2M8EKYOEMUNA",
+                    "alts": []
+                },
+                {
+                    "sign": "ф",
+                    "unicodes": [
+                        "0444"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0444",
+                    "id": "id3Z1TVH682FNPYU15ZDOG6PEZG6S3SSV1",
+                    "alts": []
+                },
+                {
+                    "sign": "х",
+                    "unicodes": [
+                        "0445"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0445",
+                    "id": "idEXS5R4R2Y9R7569SVXPHS4WLOJVL59T6",
+                    "alts": []
+                },
+                {
+                    "sign": "ц",
+                    "unicodes": [
+                        "0446"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0446",
+                    "id": "idTZKJTVRXI8HOPXNFRLAZTHAPM1Q9TRHE",
+                    "alts": []
+                },
+                {
+                    "sign": "ч",
+                    "unicodes": [
+                        "0447"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0447",
+                    "id": "idF4C74MQXHXOL2BVFZGYKWX3ZMLU9RCCU",
+                    "alts": []
+                },
+                {
+                    "sign": "ш",
+                    "unicodes": [
+                        "0448"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0448",
+                    "id": "idZ4OZI57FUU0SWXIRXYO6AIZXM33DWZC7",
+                    "alts": []
+                },
+                {
+                    "sign": "щ",
+                    "unicodes": [
+                        "0449"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0449",
+                    "id": "id2XCC6IGYX2A7QP7ABJM86OWSDLFU5H5N",
+                    "alts": []
+                },
+                {
+                    "sign": "ъ",
+                    "unicodes": [
+                        "044A"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044A",
+                    "id": "id5J8OKBARX9SA6SN5M4425U7AW2UC8OW4",
+                    "alts": []
+                },
+                {
+                    "sign": "ы",
+                    "unicodes": [
+                        "044B"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044B",
+                    "id": "idN3S9FYB3OWBJNESU5GE70S1SQ22Y5SSH",
+                    "alts": []
+                },
+                {
+                    "sign": "ь",
+                    "unicodes": [
+                        "044C"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044C",
+                    "id": "idCMXWOEWAHUFPM1E8SUD3S70208TDOSCZ",
+                    "alts": []
+                },
+                {
+                    "sign": "э",
+                    "unicodes": [
+                        "044D"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044D",
+                    "id": "id2HZCEX8C6PBHYIS3K2MRN523RFN5AQHN",
+                    "alts": []
+                },
+                {
+                    "sign": "ю",
+                    "unicodes": [
+                        "044E"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044E",
+                    "id": "idUNOL53GZGA3ZHKS1K3E4486I83SW2R66",
+                    "alts": []
+                },
+                {
+                    "sign": "я",
+                    "unicodes": [
+                        "044F"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044F",
+                    "id": "idOLAWPK7MLGMUQ03QJP8J5QE7LDQ2UOZL",
+                    "alts": []
+                }
+            ]
+        },
+        {
+            "type": "historic",
+            "title": "Historical Graphemes",
+            "show_unicodes": false,
+            "uppercase": [
+                {
+                    "sign": "Кʼ",
+                    "unicodes": [
+                        "041A",
+                        "02BC"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "041A, 02BC",
+                    "id": "idXN0IZ050HK8N915EASS2UKFB3QLKHXTH",
+                    "alts": []
+                },
+                {
+                    "sign": "Нʼ",
+                    "unicodes": [
+                        "041D",
+                        "02BC"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "041D, 02BC",
+                    "id": "idZD6TE6CJM7VRE30V4VDF37KJJR883W7E",
+                    "alts": []
+                }
+            ],
+            "lowercase": [
+                {
+                    "sign": "кʼ",
+                    "unicodes": [
+                        "043A",
+                        "02BC"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "043A, 02BC",
+                    "id": "idVJRMPFTWME5G49X4NIGAZNVOERL64RBG",
+                    "alts": []
+                },
+                {
+                    "sign": "нʼ",
+                    "unicodes": [
+                        "043D",
+                        "02BC"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "043D, 02BC",
+                    "id": "id4ZFHINWFDUOPDXJ8Y7O4U05RJNMOOK3K",
+                    "alts": []
+                }
+            ]
+        },
+        {
+            "type": "charset",
+            "title": "Character Set",
+            "show_unicodes": true,
+            "uppercase": [
+                {
+                    "sign": "А",
+                    "unicodes": [
+                        "0410"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0410",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER A",
+                    "id": "id0430LDOGW13Q0AA3YUMXI2NI1PXVUHKZ"
+                },
+                {
+                    "sign": "Б",
+                    "unicodes": [
+                        "0411"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0411",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER BE",
+                    "id": "id1BK3OH6XQRZH3TVT55CTE0YLRDEPST5N"
+                },
+                {
+                    "sign": "В",
+                    "unicodes": [
+                        "0412"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0412",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER VE",
+                    "id": "idRIHE9JN1Q9R9OQ04IBTMTMLFEVRTOT3S"
+                },
+                {
+                    "sign": "Г",
+                    "unicodes": [
+                        "0413"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0413",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER GHE",
+                    "id": "id4VI5R7PHTRORZW57AX40BK7DGP7KV0YQ"
+                },
+                {
+                    "sign": "Д",
+                    "unicodes": [
+                        "0414"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0414",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER DE",
+                    "id": "idX9UM8BWU0YHUZ7Z89JXTIGXBMEWY8C9W"
+                },
+                {
+                    "sign": "Е",
+                    "unicodes": [
+                        "0415"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0415",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER IE",
+                    "id": "idTX47CDPD6RDGV1433WU6280GPR1S4JGT"
+                },
+                {
+                    "sign": "Ё",
+                    "unicodes": [
+                        "0401"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0401",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER IO",
+                    "id": "idKSTE3084HQ30WXPZ5E6BHTONFQ1LEVVF"
+                },
+                {
+                    "sign": "Ж",
+                    "unicodes": [
+                        "0416"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0416",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER ZHE",
+                    "id": "idUDUIMBEXKOMHERJF2P4R16JVZSM6ST16"
+                },
+                {
+                    "sign": "З",
+                    "unicodes": [
+                        "0417"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0417",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER ZE",
+                    "id": "idLLNCAJB2R4U26KDQLLG427LW273MD860"
+                },
+                {
+                    "sign": "И",
+                    "unicodes": [
+                        "0418"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0418",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER I",
+                    "id": "idITVO059MZQMX8URBFB89M4LZOEZIMBVP"
+                },
+                {
+                    "sign": "Й",
+                    "unicodes": [
+                        "0419"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0419",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER SHORT I",
+                    "id": "idXRFO1G87DU1SXZORPDCO90ZCDX80LZ0C"
+                },
+                {
+                    "sign": "К",
+                    "unicodes": [
+                        "041A"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "041A",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER KA",
+                    "id": "idLI1UK3VQYRW9B882JFE6WEL0NBZWHRUY"
+                },
+                {
+                    "sign": "Ӄ",
+                    "unicodes": [
+                        "04C3"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "04C3",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER KA WITH HOOK",
+                    "id": "idF8P2F6JQ7HIW7GCBC7739N75AXPBCUGO"
+                },
+                {
+                    "sign": "Л",
+                    "unicodes": [
+                        "041B"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "041B",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER EL",
+                    "id": "idA6A98YQMP4X3U3N3OVAYTYDLY7REN4GX"
+                },
+                {
+                    "sign": "Ԓ",
+                    "unicodes": [
+                        "0512"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0512",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER EL WITH HOOK",
+                    "id": "idUFT0YLDG3ESC5L50WLA350UTY8H9A0UK"
+                },
+                {
+                    "sign": "М",
+                    "unicodes": [
+                        "041C"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "041C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER EM",
+                    "id": "idRPT9IN7OAD4EJQCGPUATB85VK7KFYXUO"
+                },
+                {
+                    "sign": "Н",
+                    "unicodes": [
+                        "041D"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "041D",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER EN",
+                    "id": "id1ZJSY6IWTX792UYHEQ2VKDV3X1DH0MX8"
+                },
+                {
+                    "sign": "Ӈ",
+                    "unicodes": [
+                        "04C7"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "04C7",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER EN WITH HOOK",
+                    "id": "idXTZ7I2T84NRQ5C3HCGAZ6U5XCJK51FML"
+                },
+                {
+                    "sign": "О",
+                    "unicodes": [
+                        "041E"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "041E",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER O",
+                    "id": "idDPOZ0203X36CXAU51DPNDN6K4OBH9237"
+                },
+                {
+                    "sign": "П",
+                    "unicodes": [
+                        "041F"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "041F",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER PE",
+                    "id": "idHAXPY4JFY7HVOV5CGCZI5E6VJWD1OVPW"
+                },
+                {
+                    "sign": "Р",
+                    "unicodes": [
+                        "0420"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0420",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER ER",
+                    "id": "idDQ761OFFWHDP4E68E92KPNGJVKV0NDWT"
+                },
+                {
+                    "sign": "С",
+                    "unicodes": [
+                        "0421"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0421",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER ES",
+                    "id": "idH0SIISJ76KI758I0G5Q41UDG6CQC7Y6Q"
+                },
+                {
+                    "sign": "Т",
+                    "unicodes": [
+                        "0422"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0422",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER TE",
+                    "id": "idHC23PSWS3WOLWQYP2QVFZM4H002QQ98K"
+                },
+                {
+                    "sign": "У",
+                    "unicodes": [
+                        "0423"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0423",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER U",
+                    "id": "idL9IGLJHS3E8B19BOCNYZZ6QXKCUPKDUW"
+                },
+                {
+                    "sign": "Ф",
+                    "unicodes": [
+                        "0424"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0424",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER EF",
+                    "id": "id0CR9X36MVVSRZ1GB2XRKYBM0SA75Z6KM"
+                },
+                {
+                    "sign": "Х",
+                    "unicodes": [
+                        "0425"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0425",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER HA",
+                    "id": "idBEABOQB21FDV33KR54AKGBB8QWZH8QAB"
+                },
+                {
+                    "sign": "Ц",
+                    "unicodes": [
+                        "0426"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0426",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER TSE",
+                    "id": "idDCECNFYQEMYY556BA8AMYRF84IQBDCXI"
+                },
+                {
+                    "sign": "Ч",
+                    "unicodes": [
+                        "0427"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0427",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER CHE",
+                    "id": "idSGHSAD6DTUKRZM3XXXE7JJK80GXHRJ4X"
+                },
+                {
+                    "sign": "Ш",
+                    "unicodes": [
+                        "0428"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0428",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER SHA",
+                    "id": "idONNTX0MVIQC5HRO4L4MORKJVANMMOD9T"
+                },
+                {
+                    "sign": "Щ",
+                    "unicodes": [
+                        "0429"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0429",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER SHCHA",
+                    "id": "idAM0M60L5B286IEOWZ4AUP2FKGR2ZA3M3"
+                },
+                {
+                    "sign": "Ъ",
+                    "unicodes": [
+                        "042A"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042A",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER HARD SIGN",
+                    "id": "idQEA7TIL73VDOF3WTINPZZYWY9Z84LAIL"
+                },
+                {
+                    "sign": "Ы",
+                    "unicodes": [
+                        "042B"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042B",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER YERU",
+                    "id": "idUBAO4TTRPBWON61T3S2U7EW6MXRN8Z9P"
+                },
+                {
+                    "sign": "Ь",
+                    "unicodes": [
+                        "042C"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER SOFT SIGN",
+                    "id": "idYB3D6JY5AKKHH804Y5K13X4TA7JZTSKJ"
+                },
+                {
+                    "sign": "Э",
+                    "unicodes": [
+                        "042D"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042D",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER E",
+                    "id": "idAF73KI1IFJBC2DG5VCXLXOZ6XL8TI08V"
+                },
+                {
+                    "sign": "Ю",
+                    "unicodes": [
+                        "042E"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042E",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER YU",
+                    "id": "idCZSGZOBV6S1GNE93GWZESWCYMZDODQMV"
+                },
+                {
+                    "sign": "Я",
+                    "unicodes": [
+                        "042F"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042F",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC CAPITAL LETTER YA",
+                    "id": "id916Y83OMLRESVR7IUOP2IFM6FNTTL8VM"
+                },
+                {
+                    "sign": "ʼ",
+                    "unicodes": [
+                        "02BC"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "02BC",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "MODIFIER LETTER APOSTROPHE",
+                    "id": "idDVPHTNNBWHI82L40GXHRXEB8TV92W49U"
+                }
+            ],
+            "lowercase": [
+                {
+                    "sign": "а",
+                    "unicodes": [
+                        "0430"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0430",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER A",
+                    "id": "idDKPLWTJPBVBH0SQY4ZMRD4UASTZ7V5MA"
+                },
+                {
+                    "sign": "б",
+                    "unicodes": [
+                        "0431"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0431",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER BE",
+                    "id": "idRM7FY0LP0ESYXITM9HJTYQWZDSHKMDUL"
+                },
+                {
+                    "sign": "в",
+                    "unicodes": [
+                        "0432"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0432",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER VE",
+                    "id": "idCO43RKZ248QIBK4EFVFGX6TQR3Y4L5SE"
+                },
+                {
+                    "sign": "г",
+                    "unicodes": [
+                        "0433"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0433",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER GHE",
+                    "id": "id46A5KUOAF4WRS1CHOI9XZL9S1YOP6ZGA"
+                },
+                {
+                    "sign": "д",
+                    "unicodes": [
+                        "0434"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0434",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER DE",
+                    "id": "id0FLF0RKMGS838DPGT6ZZPMHA6MTCLDU7"
+                },
+                {
+                    "sign": "е",
+                    "unicodes": [
+                        "0435"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0435",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER IE",
+                    "id": "id777P6TFBEJIT4RMNX5IRNLYO1U0Z3L0U"
+                },
+                {
+                    "sign": "ё",
+                    "unicodes": [
+                        "0451"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0451",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER IO",
+                    "id": "idLHHL35ZQB6S9I458JOCRBPMIBZQGTJEK"
+                },
+                {
+                    "sign": "ж",
+                    "unicodes": [
+                        "0436"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0436",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER ZHE",
+                    "id": "idK72ORQXOSLEFMPGDQFN835K2ZCHXS0W8"
+                },
+                {
+                    "sign": "з",
+                    "unicodes": [
+                        "0437"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0437",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER ZE",
+                    "id": "id05UWF0845Z8E9DVAENSC5QVWJXMKJLHA"
+                },
+                {
+                    "sign": "и",
+                    "unicodes": [
+                        "0438"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0438",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER I",
+                    "id": "id8I26MXAHSZ0OYAOJU8AJZ22F61VJTG4T"
+                },
+                {
+                    "sign": "й",
+                    "unicodes": [
+                        "0439"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0439",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER SHORT I",
+                    "id": "idN1HZLKVTUQRWZU94SK1ARF2H55L5A8X9"
+                },
+                {
+                    "sign": "к",
+                    "unicodes": [
+                        "043A"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "043A",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER KA",
+                    "id": "idY4IB9JZWXWDGKXR6BUZTICFMBKKDVIA4"
+                },
+                {
+                    "sign": "ӄ",
+                    "unicodes": [
+                        "04C4"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "04C4",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER KA WITH HOOK",
+                    "id": "id4RJE1HWQVI8TT62O745FPKESBABNQB55"
+                },
+                {
+                    "sign": "л",
+                    "unicodes": [
+                        "043B"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "043B",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER EL",
+                    "id": "idWDFV574A19PBQJLWZYM8IXSX8YRF5QFA"
+                },
+                {
+                    "sign": "ԓ",
+                    "unicodes": [
+                        "0513"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0513",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER EL WITH HOOK",
+                    "id": "idUPJI8WT4GBTH5SW861QAT19QD41BTNSH"
+                },
+                {
+                    "sign": "м",
+                    "unicodes": [
+                        "043C"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "043C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER EM",
+                    "id": "id8BI7L4UAWJB5GCZSF34N6HL2M4BWCU0V"
+                },
+                {
+                    "sign": "н",
+                    "unicodes": [
+                        "043D"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "043D",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER EN",
+                    "id": "id51EDFE03LTQ7RR72CA4NMTP6BNVCRPWF"
+                },
+                {
+                    "sign": "ӈ",
+                    "unicodes": [
+                        "04C8"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "04C8",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER EN WITH HOOK",
+                    "id": "idLBTIE0BLF7GQYVFNE7XWO7B1HKEGYCS3"
+                },
+                {
+                    "sign": "о",
+                    "unicodes": [
+                        "043E"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "043E",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER O",
+                    "id": "idA4TZM6Y7VOF56Q4CGBV88M2FASALN0T4"
+                },
+                {
+                    "sign": "п",
+                    "unicodes": [
+                        "043F"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "043F",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER PE",
+                    "id": "id4FTSKZ8QKKKK4LX7XF0DP2XXY434N08X"
+                },
+                {
+                    "sign": "р",
+                    "unicodes": [
+                        "0440"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0440",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER ER",
+                    "id": "idGQZXCIS8FPCZTR2HIOB6NLAWBAYCUB8O"
+                },
+                {
+                    "sign": "с",
+                    "unicodes": [
+                        "0441"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0441",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER ES",
+                    "id": "id8G1AMV0EFAUBM02HURHP4P925TOXFRCS"
+                },
+                {
+                    "sign": "т",
+                    "unicodes": [
+                        "0442"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0442",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER TE",
+                    "id": "idOVJA1ZH25T5UK6MY9MUX1UXAF71RL83H"
+                },
+                {
+                    "sign": "у",
+                    "unicodes": [
+                        "0443"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0443",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER U",
+                    "id": "id8372FB2YNHXOPTRKE4NXDCWN121LG0NB"
+                },
+                {
+                    "sign": "ф",
+                    "unicodes": [
+                        "0444"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0444",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER EF",
+                    "id": "id6ZFWT2UKCQMJQXKG4KC0L9VDUK2B4T12"
+                },
+                {
+                    "sign": "х",
+                    "unicodes": [
+                        "0445"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0445",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER HA",
+                    "id": "idGRIIVTS12Z5FDT4PMEZEUBIJNCYH5FUV"
+                },
+                {
+                    "sign": "ц",
+                    "unicodes": [
+                        "0446"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0446",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER TSE",
+                    "id": "idOKJXBFTK232BJ6TX53N3RQO8W3472L2V"
+                },
+                {
+                    "sign": "ч",
+                    "unicodes": [
+                        "0447"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0447",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER CHE",
+                    "id": "id0T8GUK4SM2MN42CKQBK3ET47ZLVHKKT4"
+                },
+                {
+                    "sign": "ш",
+                    "unicodes": [
+                        "0448"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0448",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER SHA",
+                    "id": "id1M8FI2C79Q98LGIJCN1A814UU75KI00H"
+                },
+                {
+                    "sign": "щ",
+                    "unicodes": [
+                        "0449"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0449",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER SHCHA",
+                    "id": "idMQA1AKQ9MMG2INLMQJT4MJSF5CETLHR6"
+                },
+                {
+                    "sign": "ъ",
+                    "unicodes": [
+                        "044A"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044A",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER HARD SIGN",
+                    "id": "id3MRIT7WU5V024Y758K4KQ763Y9242JQ6"
+                },
+                {
+                    "sign": "ы",
+                    "unicodes": [
+                        "044B"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044B",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER YERU",
+                    "id": "idIPWDGL0AOACPRP3FX7B5VC9FXCPZ8R00"
+                },
+                {
+                    "sign": "ь",
+                    "unicodes": [
+                        "044C"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER SOFT SIGN",
+                    "id": "idT6JQCKZD6GHCP2Z3IF8E1AHQ48CLSBPE"
+                },
+                {
+                    "sign": "э",
+                    "unicodes": [
+                        "044D"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044D",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER E",
+                    "id": "idCO2LSDHDW05FYGG633Q0JV758SF2ZAZK"
+                },
+                {
+                    "sign": "ю",
+                    "unicodes": [
+                        "044E"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044E",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER YU",
+                    "id": "idJGN17KZHZYILGEBEZ0A7EU7ASK0OBH4I"
+                },
+                {
+                    "sign": "я",
+                    "unicodes": [
+                        "044F"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044F",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "CYRILLIC SMALL LETTER YA",
+                    "id": "idTVF8LDI1SHWNHWA14ASKRGQS3A48JP22"
+                }
+            ]
         }
     ]
 }
