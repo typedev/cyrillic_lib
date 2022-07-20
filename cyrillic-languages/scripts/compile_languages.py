@@ -3,11 +3,11 @@ import sys
 import json
 import os.path
 import random
-import string
+import string, re
 
 
 
-marks = ['*', '$', '#', '@', '(', ')', '[', ']', '+', '=', '&', '.alt']  # , '.alt'
+marks = ['*', '$', '#', '@', '(', ')', '[', ']', '+', '=', '&', '.alt', '.ita', '.str']
 
 dialectsign = '@'
 historicsign = '#'
@@ -18,18 +18,22 @@ featuresign = '&'
 replacementsign = '*'
 digraph = ':'
 alphabet = '<'
+italiconly = '.ita'
+straightonly = '.str'
 
 signtypes = {
 	# '*' : 'notrussiansign',
 	dialectsign : 'dialect',
-	historicsign : 'historic', #oldersign
-	lexicsign : 'extended', #lexicosign
+	historicsign : 'historic',
+	lexicsign : 'extended',
 	digraph : 'digraph',
 	alternatesign : 'alternatesign',
 	equivalentsign : 'equivalentsign',
 	featuresign : 'localform',
 	replacementsign : 'replacementsign',
-	alphabet : 'alphabet'
+	alphabet : 'alphabet',
+	italiconly : 'italic',
+	straightonly : 'straight'
 	# '.alt' : 'featuresignalt'
 }
 
@@ -38,9 +42,7 @@ signtypes = {
 libraryMainFile = 'cyrillic_library.json'
 libraryGlyphsList = 'glyphs_list_categories.json'
 unicodeLibFiles = ['unicode14.txt', 'PT_PUA_unicodes-descritions.txt']
-# libraryPath =   # langlib
-# outputPath = 'site'
-# outputLibraryPath = 'baselib'
+
 
 class CharacherDescription(object):
 	dangersymbols = {
@@ -88,6 +90,62 @@ class CharacherDescription(object):
 			return r #self.stuct[unicodechar].strip().replace('\t','')
 		else:
 			return ''
+
+
+class PanCyrillicOrderSorter(object):
+
+	def __init__(self, sortorderfile):
+
+		self.missigChars = {}
+		print ('Initializing sorting keys..')
+
+		f = open(sortorderfile, mode = 'r')
+		self.upperlist = []
+		self.lowerlist = []
+		for idx, line in enumerate(f):
+			line = line.strip()
+			line = re.sub("\s\s+" , " ", line)
+			if line and not line.startswith('#'):
+				rawline = line.split('/')
+				rawupper, rawlower = None, None
+				if len(rawline) == 2:
+					rawupper = rawline[0]
+					rawlower = rawline[1]
+				elif len(rawline) == 1:
+					rawupper = rawline[0]
+				else:
+					print ('ERROR', sortorderfile, idx)
+				if rawupper:
+					# sign = rawupper.split('=')[0]
+					uni = rawupper.split('=')[1]
+					# sign = chr(int(uni,16))
+					self.upperlist.append(uni)
+				if rawlower:
+					# sign = rawlower.split('=')[0]
+					uni = rawlower.split('=')[1]
+					# sign = chr(int(uni, 16))
+					self.lowerlist.append(uni)
+		self.sortkey = self.upperlist + self.lowerlist
+		# print (self.sortkey)
+		print ('..done')
+
+	def getSortedCyrillicList(self, characherslist, lang = None):
+		result = []
+		for ch in self.sortkey:
+			if ch in characherslist and ch not in result:
+				result.append(ch)
+
+		# for ch in characherslist:
+		# 	if ch not in self.sortkey:
+		# 		if ch not in self.missigChars:
+		# 			sfx = ''
+		# 			_ch = ch
+		# 			if '.alt' in ch:
+		# 				_ch = ch.replace('.alt','')
+		# 				sfx = '.alt'
+		# 			self.missigChars[ch] = ( chr(int(_ch,16))+'.alt', lang)
+		return result
+
 
 
 def ran_gen(size, chars=string.ascii_uppercase + string.digits):
@@ -438,7 +496,6 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 			print(unicodes[0], sign)
 
 		if not display_unicode:
-			# TODO надо попробовать name заменить на local, чтобы избавится от дубля Македонского и Сербского
 			if '%s.%s' % (unicodes[0], local) not in nonunicodedlist:
 				nonunicodedlist['%s.%s' % (unicodes[0], local)] = dict(
 					sign = sign,
@@ -450,10 +507,8 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					id = getUniqName()
 				)
 			else:
-				# print ('*** WRONG LOCALES')
-				# print (name, '%s.%s' % (unicodes[0],local))
 				nonunicodedlist['%s.%s' % (unicodes[0], local)]['languages'].append(dict(name = name, types = types))
-				# nonunicodedlist[unicodes[0]]['languages'].append(dict(name = name, types = types))
+
 		elif display_unicode.startswith('F'):
 			if unicodes[0] not in puazonelist:
 				puazonelist[unicodes[0]] = dict(
@@ -480,7 +535,17 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 				)
 			else:
 				unicodedlist[unicodes[0]]['languages'].append(dict(name = name, types = types))
+
 	return unicodedlist, puazonelist, nonunicodedlist
+
+def sortGlyphsList(glyphslist, names):
+	resultList = []
+	for k, v in sorted(glyphslist.items()):
+		if len(v['languages']) == len(names):
+			v['languages'].append(dict(name = 'All', types = ['alphabet']))
+			# print('*** SAME QUANTITY', k, v['sign'])
+		resultList.append(v)
+	return resultList
 
 
 def makeMainCharactersSet(workPath):
@@ -543,25 +608,18 @@ def makeMainCharactersSet(workPath):
 				unicodedlist_UC, puazonelist_UC, nonunicodedlist_UC = filterCharacters(name, local, uppercase_unicodes_list, unicodedlist_UC, puazonelist_UC, nonunicodedlist_UC)
 				unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC = filterCharacters(name, local, lowercase_unicodes_list, unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC)
 
-	UC_unicoded_list = []
-	for k,v in sorted(unicodedlist_UC.items()):
-		UC_unicoded_list.append(v)
-	UC_pua_list = []
-	for k,v in sorted(puazonelist_UC.items()):
-		UC_pua_list.append(v)
-	UC_nonunicoded_list = []
-	for k,v in sorted(nonunicodedlist_UC.items()):
-		UC_nonunicoded_list.append(v)
+	UC_unicoded_list = sortGlyphsList(unicodedlist_UC, names)
 
-	LC_unicoded_list = []
-	for k,v in sorted(unicodedlist_LC.items()):
-		LC_unicoded_list.append(v)
-	LC_pua_list = []
-	for k,v in sorted(puazonelist_LC.items()):
-		LC_pua_list.append(v)
-	LC_nonunicoded_list = []
-	for k,v in sorted(nonunicodedlist_LC.items()):
-		LC_nonunicoded_list.append(v)
+	UC_pua_list = sortGlyphsList(puazonelist_UC, names)
+
+	UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names)
+
+	LC_unicoded_list = sortGlyphsList(unicodedlist_LC, names)
+
+	LC_pua_list = sortGlyphsList(puazonelist_LC, names)
+
+	LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names)
+
 
 	dataset = dict(
 		uppercase_unicodes_list = UC_unicoded_list,

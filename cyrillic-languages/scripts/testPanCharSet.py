@@ -67,11 +67,17 @@ def testCharactersSet(workPath):
 					lowercase_unicodes_list = glyphslist['lowercase']
 			if uppercase_unicodes_list and lowercase_unicodes_list:
 				for item in uppercase_unicodes_list:
-					if len(item['types']) != 1:
-						print (item['sign'], item['types'])
+					if item['types']:
+						if len(item['types']) != 1:
+							print (item['sign'], item['types'])
+					else:
+						print ('&&&', item['sign'], item['types'], name)
 				for item in lowercase_unicodes_list:
-					if len(item['types']) != 1:
-						print(item['sign'], item['types'])
+					if item['types']:
+						if len(item['types']) != 1:
+							print(item['sign'], item['types'])
+					else:
+						print ('&&&',item['sign'], item['types'], name)
 
 
 
