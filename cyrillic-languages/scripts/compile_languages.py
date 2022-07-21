@@ -344,8 +344,8 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				elif alts and alts[0]['unicodes'] != unicodes:
 					adddesrc = ''
 					if unicodes:
-						adddesrc = '(%s)' % ', '.join(unicodes)
-					description = 'Localized form of %s %s' % (', '.join(alts[0]['unicodes']), adddesrc)
+						adddesrc = '%s ' % ', '.join(unicodes)
+					description = '%sLocalized form of %s' % (adddesrc, ', '.join(alts[0]['unicodes']))
 			types = checkTypeSign(types, name_eng)
 			chars_list_wrap.append({
 				'sign': sign,
