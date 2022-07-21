@@ -9,6 +9,19 @@ libraryMainFile = 'cyrillic_library.json'
 libraryGlyphsList = 'glyphs_list_categories.json'
 unicodeLibFiles = ['unicode14.txt', 'PT_PUA_unicodes-descritions.txt']
 
+def checkType(unicodes_list, globaltypes, language):
+	for item in unicodes_list:
+		if item['types']:
+			for t in item['types']:
+				if t not in globaltypes:
+					globaltypes.append(t)
+			if len(item['types']) != 1:
+				print(item['sign'], item['types'])
+		else:
+			print('&&&', item['sign'], item['types'], language)
+	return globaltypes
+
+
 def testCharactersSet(workPath):
 	print('*' * 60)
 	print('testing MainCharactersSet')
@@ -39,7 +52,7 @@ def testCharactersSet(workPath):
 	unicodedlist_LC = {}
 	nonunicodedlist_LC = {}
 	puazonelist_LC = {}
-
+	globaltypes = []
 	for name in names:
 		mainfile = os.path.join(libraryPath, '%s.json' % name)
 		inputJSONfile = os.path.join(basePath, 'site', 'baselib', '%s.json' % name)
@@ -55,7 +68,7 @@ def testCharactersSet(workPath):
 					maindata = json.load(read_file)
 				print('%s path:%s' % (name, mainfile))
 				local = maindata['local']
-			print('LOCAL:', local)
+			# print('LOCAL:', local)
 
 			uppercase_unicodes_list = None
 			lowercase_unicodes_list = None
@@ -65,20 +78,31 @@ def testCharactersSet(workPath):
 				if typelist == 'charset':
 					uppercase_unicodes_list = glyphslist['uppercase']
 					lowercase_unicodes_list = glyphslist['lowercase']
+
 			if uppercase_unicodes_list and lowercase_unicodes_list:
 				for item in uppercase_unicodes_list:
 					if item['types']:
+						for t in item['types']:
+							if t not in globaltypes:
+								globaltypes.append(t)
 						if len(item['types']) != 1:
-							print (item['sign'], item['types'])
+							print(item['sign'], item['types'])
 					else:
-						print ('&&&', item['sign'], item['types'], name)
+						print('&&&', item['sign'], item['types'], name)
+
+				# globaltypes.extend(checkType(uppercase_unicodes_list, globaltypes, name))
+				# globaltypes.extend(checkType(lowercase_unicodes_list, globaltypes, name))
 				for item in lowercase_unicodes_list:
 					if item['types']:
+						for t in item['types']:
+							if t not in globaltypes:
+								globaltypes.append(t)
 						if len(item['types']) != 1:
 							print(item['sign'], item['types'])
 					else:
 						print ('&&&',item['sign'], item['types'], name)
 
+	print ('All types:\n%s' % ('\n'.join(globaltypes)))
 
 
 def main (names=None):
