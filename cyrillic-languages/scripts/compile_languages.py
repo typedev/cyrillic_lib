@@ -95,9 +95,7 @@ class CharacherDescription(object):
 
 
 class PanCyrillicOrderSorter(object):
-
 	def __init__(self, sortorderfile):
-
 		self.missigChars = {}
 		print ('Initializing sorting keys..')
 		print ('from file: %s' % sortorderfile)
@@ -149,12 +147,10 @@ class PanCyrillicOrderSorter(object):
 		return result
 
 
-
-def ran_gen(size, chars=string.ascii_uppercase + string.digits):
-	return ''.join(random.choice(chars) for x in range(size))
-
 def getUniqName(cut=32):
-	return 'id' + ran_gen(cut, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+	def ran_gen (size, chars=string.ascii_uppercase + string.digits):
+		return ''.join(random.choice(chars) for x in range(size))
+	return 'id%s' % ran_gen(cut, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
 def getCharInfo(item, typestring = None):
 	types = []
@@ -366,9 +362,6 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 	return (chars_list_wrap, resultunicodes, uniqunicodes)
 
 def compileLagnuages(workPath, names = None): # names = ['Avar']
-
-	# workPath = os.path.dirname(__file__)
-
 	print('*' * 60)
 	print('Started compiling the language library')
 	print(workPath)
@@ -402,7 +395,6 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 	categories = {}
 	for gl in glcategories:
 		categories[gl['type']] = dict (show_unicodes = gl['show_unicodes'], title = gl['title'])
-	# print (categories)
 
 	if not names:
 		names = []
@@ -430,6 +422,9 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 				'name_eng': name,
 				'glyphs_list': []
 			}
+			makeCharSet = True
+			# if 'charset' not in data:
+			# 	makeCharSet = False
 
 			for glyphlist in glyphslists:
 				typelist = glyphlist['type']
@@ -457,14 +452,14 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 					'uppercase': uppercase_list,
 					'lowercase': lowercase_list
 				})
-
-			outputdata['glyphs_list'].append({
-				'type': 'charset',
-				'title': categories['charset']['title'],
-				'show_unicodes': categories['charset']['show_unicodes'],
-				'uppercase': uppercase_list_unicodes,
-				'lowercase': lowercase_list_unicodes
-			})
+			if makeCharSet:
+				outputdata['glyphs_list'].append({
+					'type': 'charset',
+					'title': categories['charset']['title'],
+					'show_unicodes': categories['charset']['show_unicodes'],
+					'uppercase': uppercase_list_unicodes,
+					'lowercase': lowercase_list_unicodes
+				})
 			indent = None
 			if DEVELOPMENT:
 				indent = 4
@@ -630,15 +625,11 @@ def makeMainCharactersSet(workPath):
 				unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC = filterCharacters(name, local, lowercase_unicodes_list, unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC)
 
 	UC_unicoded_list = sortGlyphsList(unicodedlist_UC, names, sortOrder = SortOrderCyrl)
-
 	UC_pua_list = sortGlyphsList(puazonelist_UC, names, sortOrder = SortOrderCyrl)
-
 	UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names, sortOrder = SortOrderCyrl)
 
 	LC_unicoded_list = sortGlyphsList(unicodedlist_LC, names, sortOrder = SortOrderCyrl)
-
 	LC_pua_list = sortGlyphsList(puazonelist_LC, names, sortOrder = SortOrderCyrl)
-
 	LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names, sortOrder = SortOrderCyrl)
 
 
