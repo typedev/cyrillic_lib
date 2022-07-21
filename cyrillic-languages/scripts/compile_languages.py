@@ -129,9 +129,7 @@ class PanCyrillicOrderSorter(object):
 					for local in locales:
 						self.lowerlist.append('%s%s' % (uni, local))
 		self.sortkey = self.upperlist + self.lowerlist
-		# print (self.sortkey)
 		f.close()
-		print ('..done')
 
 	def getSortedGlyphsList(self, characherslist):
 		result = []
@@ -364,7 +362,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 def compileLagnuages(workPath, names = None): # names = ['Avar']
 	print('*' * 60)
 	print('Started compiling the language library')
-	print(workPath)
+	# print(workPath)
 	basePath, _s = os.path.split(workPath)
 	print('basePath: %s' % basePath)
 	libraryPath = os.path.join(basePath, 'library')
@@ -558,8 +556,8 @@ def sortGlyphsList(glyphslist, names, sortOrder = None):
 
 def makeMainCharactersSet(workPath):
 	print('*' * 60)
-	print('making MainCharactersSet')
-	print(workPath)
+	print('making MainCharactersSet..')
+	# print(workPath)
 	basePath, _s = os.path.split(workPath)
 	print('basePath: %s' % basePath)
 	libraryPath = os.path.join(basePath, 'library')
@@ -602,15 +600,14 @@ def makeMainCharactersSet(workPath):
 		if os.path.exists(inputJSONfile):
 			with open(inputJSONfile, "r") as read_file:
 				data = json.load(read_file)
-			print('%s path:%s' % (name, inputJSONfile))
+			# print('%s path:%s' % (name, inputJSONfile))
 
 			local = 'ru'
 			if os.path.exists(mainfile):
 				with open(mainfile, "r") as read_file:
 					maindata = json.load(read_file)
-				print('%s path:%s' % (name, mainfile))
+				# print('%s path:%s' % (name, mainfile))
 				local = maindata['local']
-			print('LOCAL:', local)
 
 			uppercase_unicodes_list = None
 			lowercase_unicodes_list = None
@@ -649,6 +646,7 @@ def makeMainCharactersSet(workPath):
 		indent = 4
 	with open(outputJSONfile, "w") as write_file:
 		json.dump(dataset, write_file, indent = indent, ensure_ascii = False) #indent = 4,
+	print('..done')
 
 
 
