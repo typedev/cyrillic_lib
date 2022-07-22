@@ -89,6 +89,7 @@ class CharacherDescription(object):
 			r = self.stuct[unicodechar].strip()
 			for k,v in self.dangersymbols.items():
 				r = r.replace(k, v)
+			r = r.title()
 			return r #self.stuct[unicodechar].strip().replace('\t','')
 		else:
 			return ''
@@ -641,7 +642,7 @@ def makeMainCharactersSet(workPath):
 			with open(inputJSONfile, "r") as read_file:
 				data = json.load(read_file)
 			# print('%s path:%s' % (name, inputJSONfile))
-			print('%s' % name)
+
 			local = 'ru'
 			if os.path.exists(mainfile):
 				with open(mainfile, "r") as read_file:
