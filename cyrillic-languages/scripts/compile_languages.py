@@ -662,24 +662,24 @@ def makeMainCharactersSet(workPath):
 				unicodedlist_UC, puazonelist_UC, nonunicodedlist_UC = filterCharacters(name, local, uppercase_unicodes_list, unicodedlist_UC, puazonelist_UC, nonunicodedlist_UC)
 				unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC = filterCharacters(name, local, lowercase_unicodes_list, unicodedlist_LC, puazonelist_LC, nonunicodedlist_LC)
 
-	UC_unicoded_list = sortGlyphsList(unicodedlist_UC, names, sortOrder = SortOrderCyrl)
-	UC_pua_list = sortGlyphsList(puazonelist_UC, names, sortOrder = SortOrderCyrl)
-	UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names, sortOrder = SortOrderCyrl)
+	UC_unicoded_list = sortGlyphsList({ **unicodedlist_UC, **puazonelist_UC, **nonunicodedlist_UC}, names, sortOrder = SortOrderCyrl)
+	# UC_pua_list = sortGlyphsList(puazonelist_UC, names, sortOrder = SortOrderCyrl)
+	# UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names, sortOrder = SortOrderCyrl)
 
-	LC_unicoded_list = sortGlyphsList(unicodedlist_LC, names, sortOrder = SortOrderCyrl)
-	LC_pua_list = sortGlyphsList(puazonelist_LC, names, sortOrder = SortOrderCyrl)
-	LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names, sortOrder = SortOrderCyrl)
+	LC_unicoded_list = sortGlyphsList({ **unicodedlist_LC, **puazonelist_LC, **nonunicodedlist_LC}, names, sortOrder = SortOrderCyrl)
+	# LC_pua_list = sortGlyphsList(puazonelist_LC, names, sortOrder = SortOrderCyrl)
+	# LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names, sortOrder = SortOrderCyrl)
 
 
 	dataset = dict(
 		uppercase_unicodes_list = UC_unicoded_list,
 		lowercase_unicodes_list = LC_unicoded_list,
 
-		uppercase_puazone_list = UC_pua_list,
-		lowercase_puazone_list = LC_pua_list,
+		uppercase_puazone_list = [], # UC_pua_list,
+		lowercase_puazone_list = [], # LC_pua_list,
 
-		uppercase_nonunicode_list = UC_nonunicoded_list,
-		lowercase_nonunicode_list = LC_nonunicoded_list,
+		uppercase_nonunicode_list = [], # UC_nonunicoded_list,
+		lowercase_nonunicode_list = [], # LC_nonunicoded_list,
 	)
 	outputJSONfile = os.path.join(basePath, 'site', 'cyrillic_characters_lib.json')
 	indent = None
