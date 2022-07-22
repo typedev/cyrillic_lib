@@ -528,10 +528,10 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 			print(unicodes)
 		elif len(unicodes) < 1:
 			print('*** NO UNICODES')
-			print(unicodes[0], sign)
+			print(unicodes, sign)
 		elif not unicodes:
 			print('*** NULL UNICODE')
-			print(unicodes[0], sign)
+			print(unicodes, sign)
 
 		if not display_unicode:
 			if '%s.%s' % (unicodes[0], local) not in nonunicodedlist:
