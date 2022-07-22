@@ -362,8 +362,6 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'id': getUniqName(8),
 				'alts': alts,
 			})
-	# if usedunicodes:
-	# extendedglyph = []
 	for idx, item in enumerate(_chars_list):
 		sign = item['sign']
 		unicodes = item['unicodes']
@@ -372,7 +370,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 			for uni in unicodes[1:]:
 				if uni not in uniqunicodes:
 					# print ('% % % % Founded glyph',chr(int(uni, 16)) , uni, name_eng, typestring)
-					if (uni, casesign, typestring) not in _extendedglyph:
+					if (uni, casesign, 'alphabet') not in _extendedglyph and (uni, casesign, typestring) not in _extendedglyph:
 						_extendedglyph.append((uni, casesign, typestring))
 					# for item in chars_list_wrap:
 					# 	if len(item['unicodes']) > 1:
@@ -433,7 +431,7 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 			with open(namefile, "r") as read_file:
 				data = json.load(read_file)
 			# print('%s path:%s' % (name, namefile))
-
+			print('%s' % name)
 			usedunicodes = None
 			uppercase_usedunicodes = None
 			lowercase_usedunicodes = None
@@ -643,7 +641,7 @@ def makeMainCharactersSet(workPath):
 			with open(inputJSONfile, "r") as read_file:
 				data = json.load(read_file)
 			# print('%s path:%s' % (name, inputJSONfile))
-
+			print('%s' % name)
 			local = 'ru'
 			if os.path.exists(mainfile):
 				with open(mainfile, "r") as read_file:
