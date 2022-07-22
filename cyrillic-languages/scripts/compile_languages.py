@@ -665,8 +665,9 @@ def makeMainCharactersSet(workPath):
 	UC_unicoded_list = sortGlyphsList({ **unicodedlist_UC, **puazonelist_UC, **nonunicodedlist_UC}, names, sortOrder = SortOrderCyrl)
 	# UC_pua_list = sortGlyphsList(puazonelist_UC, names, sortOrder = SortOrderCyrl)
 	# UC_nonunicoded_list = sortGlyphsList(nonunicodedlist_UC, names, sortOrder = SortOrderCyrl)
-
+	UC_sorted_list = sortGlyphsList({ **unicodedlist_UC, **puazonelist_UC, **nonunicodedlist_UC}, names)
 	LC_unicoded_list = sortGlyphsList({ **unicodedlist_LC, **puazonelist_LC, **nonunicodedlist_LC}, names, sortOrder = SortOrderCyrl)
+	LC_sorted_list = sortGlyphsList({ **unicodedlist_LC, **puazonelist_LC, **nonunicodedlist_LC}, names)
 	# LC_pua_list = sortGlyphsList(puazonelist_LC, names, sortOrder = SortOrderCyrl)
 	# LC_nonunicoded_list = sortGlyphsList(nonunicodedlist_LC, names, sortOrder = SortOrderCyrl)
 
@@ -680,6 +681,9 @@ def makeMainCharactersSet(workPath):
 
 		uppercase_nonunicode_list = [], # UC_nonunicoded_list,
 		lowercase_nonunicode_list = [], # LC_nonunicoded_list,
+
+		uppercase_sorted_by_unicodes = UC_sorted_list,
+		lowercase_sorted_by_unicodes = LC_sorted_list,
 	)
 	outputJSONfile = os.path.join(basePath, 'site', 'cyrillic_characters_lib.json')
 	indent = None
