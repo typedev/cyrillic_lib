@@ -367,19 +367,10 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 		sign = item['sign']
 		unicodes = item['unicodes']
 		if len(unicodes) > 1:
-			# print('& & & & XXXGraph', sign, unicodes, name_eng, typestring)
 			for uni in unicodes[1:]:
 				if uni not in uniqunicodes:
-					# print ('% % % % Founded glyph',chr(int(uni, 16)) , uni, name_eng, typestring)
 					if (uni, casesign, 'alphabet') not in _extendedglyph and (uni, casesign, typestring) not in _extendedglyph:
 						_extendedglyph.append((uni, casesign, typestring))
-					# for item in chars_list_wrap:
-					# 	if len(item['unicodes']) > 1:
-					# 		if item['unicodes'][1] == unicodes[1]:
-					# 			print('-- part of', item['sign'])
-	# if _extendedglyph:
-	# 	for uni in _extendedglyph:
-	# 		print('*** Extended glyph', chr(int(uni, 16)), uni, name_eng, typestring)
 
 	return (chars_list_wrap, resultunicodes, uniqunicodes, _extendedglyph)
 
@@ -526,10 +517,10 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 
 		hide = ''
 		if 'italic' in types:
-			print ('ITA:', name, sign, _local, unicodes)
+			# print ('ITA:', name, sign, _local, unicodes)
 			hide = 'straight'
 		elif 'straight' in types:
-			print('STR:',name, sign, _local, unicodes)
+			# print('STR:',name, sign, _local, unicodes)
 			hide = 'italic'
 		else:
 			hide = ''
