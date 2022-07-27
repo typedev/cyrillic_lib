@@ -524,6 +524,17 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 			types = []
 		description = item['description']
 
+		hide = ''
+		if 'italic' in types:
+			print ('ITA:', name, sign, _local, unicodes)
+			hide = 'straight'
+		elif 'straight' in types:
+			print('STR:',name, sign, _local, unicodes)
+			hide = 'italic'
+		else:
+			hide = ''
+			# print ('*')
+
 		if len(unicodes) > 1:
 			print('*** TOO MUCH UNICODES')
 			print(unicodes)
@@ -542,6 +553,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					local = _local,
 					display_unicode = display_unicode,
 					description = description,
+					hide = hide,
 					languages = [dict(name = name, types = types)],
 					id = getUniqName(8)
 				)
@@ -556,6 +568,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					local = _local,
 					display_unicode = display_unicode,
 					description = description,
+					hide = hide,
 					languages = [dict(name = name, types = types)],
 					id = getUniqName(8)
 				)
@@ -569,6 +582,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 					local = _local,
 					display_unicode = display_unicode,
 					description = description,
+					hide = hide,
 					languages = [dict(name = name, types = types)],
 					id = getUniqName(8)
 				)
