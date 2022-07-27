@@ -517,6 +517,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 		sign = item['sign']
 		unicodes = item['unicodes']
 		display_unicode = item['display_unicode']
+		_local = item['local']
 
 		types = item['types']
 		if not types:
@@ -534,25 +535,25 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 			print(unicodes, sign)
 
 		if not display_unicode:
-			if '%s.%s' % (unicodes[0], local) not in nonunicodedlist:
-				nonunicodedlist['%s.%s' % (unicodes[0], local)] = dict(
+			if '%s.%s' % (unicodes[0], _local) not in nonunicodedlist:
+				nonunicodedlist['%s.%s' % (unicodes[0], _local)] = dict(
 					sign = sign,
 					unicodes = [unicodes[0]],
-					local = local,
+					local = _local,
 					display_unicode = display_unicode,
 					description = description,
 					languages = [dict(name = name, types = types)],
 					id = getUniqName(8)
 				)
 			else:
-				nonunicodedlist['%s.%s' % (unicodes[0], local)]['languages'].append(dict(name = name, types = types))
+				nonunicodedlist['%s.%s' % (unicodes[0], _local)]['languages'].append(dict(name = name, types = types))
 
 		elif display_unicode.startswith('F'):
 			if unicodes[0] not in puazonelist:
 				puazonelist[unicodes[0]] = dict(
 					sign = sign,
 					unicodes = [unicodes[0]],
-					local = local,
+					local = _local,
 					display_unicode = display_unicode,
 					description = description,
 					languages = [dict(name = name, types = types)],
@@ -565,7 +566,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 				unicodedlist[unicodes[0]] = dict(
 					sign = sign,
 					unicodes = [unicodes[0]],
-					local = local,
+					local = _local,
 					display_unicode = display_unicode,
 					description = description,
 					languages = [dict(name = name, types = types)],
