@@ -231,7 +231,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'display_unicode': unicodes[0],
 				'types': tp,
 				'description': CharDesc.getCharacterDescription(unicodes[0]),
-				'id': getUniqName(8)
+				# 'id': getUniqName(8)
 			}
 			resultunicodes.append(item)
 		elif unicodes and unicodes[0] and unicodes[0] not in uniqunicodes and signtypes[featuresign] in types:
@@ -253,7 +253,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'display_unicode': display_unicode,
 				'types': tp,
 				'description': CharDesc.getCharacterDescription(unicodes[0]),
-				'id': getUniqName(8)
+				# 'id': getUniqName(8)
 			}
 			resultunicodes.append(item)
 
@@ -276,7 +276,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					'local': localdef,
 					'types': nexttypes, #nextitem['types'],
 					'description': ', '.join(_unicodes),
-					'id': getUniqName(8),
+					# 'id': getUniqName(8),
 					'alts': [],
 
 				})
@@ -296,7 +296,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'display_unicode': _unicodes[0],
 						'types': tp,
 						'description': CharDesc.getCharacterDescription(_unicodes[0]),
-						'id': getUniqName(8)
+						# 'id': getUniqName(8)
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
@@ -316,7 +316,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'display_unicode': '', #_unicodes[0],
 						'types': tp,
 						'description': CharDesc.getCharacterDescription(_unicodes[0]),
-						'id': getUniqName(8)
+						# 'id': getUniqName(8)
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[replacementsign] in nexttypes:
@@ -336,7 +336,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 						'display_unicode': _unicodes[0],
 						'types': tp,
 						'description': CharDesc.getCharacterDescription(_unicodes[0]),
-						'id': getUniqName(8)
+						# 'id': getUniqName(8)
 					}
 					resultunicodes.append(item)
 			else:
@@ -360,7 +360,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				'local': _local,
 				'types': types,
 				'description': description,
-				'id': getUniqName(8),
+				# 'id': getUniqName(8),
 				'alts': alts,
 			})
 	for idx, item in enumerate(_chars_list):
@@ -480,7 +480,7 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 						'display_unicode': uni,
 						'types': [typestring],
 						'description': CharDesc.getCharacterDescription(uni),
-						'id': getUniqName(8)
+						# 'id': getUniqName(8)
 					}
 					if casesign == 'lower':
 						lowercase_list_unicodes.append( extendeditem )
