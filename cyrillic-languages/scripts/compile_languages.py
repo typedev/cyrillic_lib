@@ -238,6 +238,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 			""" знак с уникальным юникодом и локальная форма """
 			uniqunicodes.append(unicodes[0])
 			tp = None
+			# print('+++')
 			if len(unicodes) == 1:
 				tp = types.copy()
 				if typestring and typestring not in tp:
@@ -246,13 +247,16 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 			display_unicode = ''
 			if orrideunicode:
 				display_unicode = unicodes[0]
+			# tt = ''
+			# if display_unicode:
+			# 	tt = '%s ' % display_unicode
 			item = {
 				'sign': chr(int(unicodes[0], 16)),
 				'unicodes': [unicodes[0]],
 				'local': local,
 				'display_unicode': display_unicode,
 				'types': tp,
-				'description': CharDesc.getCharacterDescription(unicodes[0]),
+				'description': CharDesc.getCharacterDescription(unicodes[0]) #'%sLocalized form of %s' % (tt, unicodes[0]) #
 				# 'id': getUniqName(8)
 			}
 			resultunicodes.append(item)
@@ -303,6 +307,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					""" юникод знака уже встречался в списке, 
 						но ну него тип альтернативы и локальной формы - &a +a 
 					"""
+					# print ('@@')
 					tp = None
 					if len(_unicodes) == 1:
 						tp = nexttypes.copy()
@@ -323,6 +328,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					""" юникод знака уже встречался в списке, 
 						но ну него тип replacement и локальной формы - &a *a 
 					"""
+					# print ('&&')
 					tp = None
 					if len(_unicodes) == 1:
 						tp = nexttypes.copy()
@@ -348,11 +354,13 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 				_local = local
 				if alts and alts[0]['unicodes'] == unicodes:
 					description = 'Localized form of %s' % ', '.join(alts[0]['unicodes'])
+					# print ('_+_', resultunicodes[-2], description)
 				elif alts and alts[0]['unicodes'] != unicodes:
 					adddesrc = ''
 					if unicodes:
 						adddesrc = '%s ' % ', '.join(unicodes)
 					description = '%sLocalized form of %s' % (adddesrc, ', '.join(alts[0]['unicodes']))
+					# print('_=_', resultunicodes[-2], description)
 			types = checkTypeSign(types, name_eng)
 			chars_list_wrap.append({
 				'sign': sign,
