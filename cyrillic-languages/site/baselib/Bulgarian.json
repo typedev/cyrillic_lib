@@ -527,8 +527,8 @@
                             ],
                             "local": "ru",
                             "types": [
-                                "equivalentsign",
-                                "straight"
+                                "straight",
+                                "replacementsign"
                             ],
                             "description": "0434",
                             "alts": []
@@ -1980,6 +1980,19 @@
                     "types": [
                         "localform",
                         "straight"
+                    ],
+                    "description": "Cyrillic Small Letter De"
+                },
+                {
+                    "sign": "д",
+                    "unicodes": [
+                        "0434"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0434",
+                    "types": [
+                        "straight",
+                        "replacementsign"
                     ],
                     "description": "Cyrillic Small Letter De"
                 },
