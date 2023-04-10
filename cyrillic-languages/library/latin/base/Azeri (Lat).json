@@ -1,0 +1,39 @@
+{
+    "name_eng": "Azeri (Lat)",
+    "name_rus": "Азербайджанский (Лат.)",
+    "local": "en",
+    "language_group_eng": [],
+    "language_group_rus": [
+        "Алтайские языки",
+        "Тюркские языки"
+    ],
+    "alt_names_eng": [
+        "Azerbaijan",
+        "Azerbaydzhani",
+        "Azeri Turk"
+    ],
+    "description_eng": "",
+    "description_rus": "",
+    "glyphs_list": [
+        {
+            "type": "alphabet",
+            "uppercase": "A B C Ç D E Ə F G Ğ H I İ J K L M N O Ö P Q R S Ş T U Ü V X Y Z",
+            "lowercase": "a b c ç d e ə f g ğ h ı i j k l m n o ö p q r s ş t u ü v x y z"
+        },
+        {
+            "type": "dialect",
+            "uppercase": "Ñ",
+            "lowercase": "ñ"
+        },
+        {
+            "type": "historic",
+            "uppercase": "Ä",
+            "lowercase": "ä"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Ā Ī Ū",
+            "lowercase": "ā ī ū"
+        }
+    ]
+}

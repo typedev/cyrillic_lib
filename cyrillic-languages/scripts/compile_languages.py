@@ -4,6 +4,7 @@ import json
 import os.path
 import random
 import string, re
+import argparse
 
 
 
@@ -39,9 +40,10 @@ signtypes = {
 
 # SC = CyrillicOrderSorter(sortorderfile)
 # sortorderfile = 'sortorder_cyrillic.txt'
-libraryMainFile = 'cyrillic_library.json'
-libraryGlyphsList = 'glyphs_list_categories.json'
-sortOrderFile = 'sortorder_cyrillic.txt'
+_libraryMainFile = 'cyrillic_library.json'
+_libraryGlyphsList = 'glyphs_list_categories.json'
+_sortOrderFile = 'sortorder_cyrillic.txt'
+_outputGeneralGlyphsList = 'cyrillic_characters_lib.json'
 unicodeLibFiles = ['unicode14.txt', 'PT_PUA_unicodes-descritions.txt']
 
 DEVELOPMENT = True
@@ -61,8 +63,8 @@ class CharacherDescription(object):
 			return
 		print ('Loading Unicode library: %s' % unicodelibfile)
 		filedesc = open(unicodelibfile, mode = 'r')
-		key = None
-		txt = ''
+		# key = None
+		# txt = ''
 		for line in filedesc:
 			line = line.rstrip()
 
@@ -95,15 +97,18 @@ class CharacherDescription(object):
 			return ''
 
 
-class PanCyrillicOrderSorter(object):
+class laguagesOrderSorter(object):
 	def __init__(self, sortorderfile):
 		self.missigChars = {}
-		print ('Initializing sorting keys..')
-		print ('from file: %s' % sortorderfile)
-		f = open(sortorderfile, mode = 'r')
-		locales = ['', '.ru', '.ba', '.bg', '.cv', '.sr']
+		locales = ['', '.ru', '.ba', '.bg', '.cv', '.sr', '.en']
 		self.upperlist = []
 		self.lowerlist = []
+		self.sortkey = None
+		print ('Initializing sorting keys..')
+		print ('from file: %s' % sortorderfile)
+		if not os.path.isfile(sortorderfile): return
+		f = open(sortorderfile, mode = 'r')
+
 		for idx, line in enumerate(f):
 			line = line.strip()
 			line = re.sub("\s\s+" , " ", line)
@@ -134,6 +139,7 @@ class PanCyrillicOrderSorter(object):
 
 	def getSortedGlyphsList(self, characherslist):
 		result = []
+		if not self.sortkey: return
 		for ch in self.sortkey:
 			if ch in characherslist and ch not in result:
 				result.append(characherslist[ch])
@@ -190,10 +196,11 @@ def checkTypeSign(typesign, name_eng):
 		return None
 
 
-def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None, wrapedunicodes = None, name_eng = None, localdef = 'ru', local = None, extendedglyph = None, casesign = None):
+def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None, wrapedunicodes = None, name_eng = None, localdef = 'en', local = None, extendedglyph = None, casesign = None):
 	chars_list = [getCharInfo(sign, typestring = typestring) for sign in charsline.split(' ')]
 	chars_list_wrap = []
 	uniqunicodes = []
+	# local = None
 	if not local:
 		local = localdef
 	if usedunicodes:
@@ -382,16 +389,64 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 
 	return (chars_list_wrap, resultunicodes, uniqunicodes, _extendedglyph)
 
-def compileLagnuages(workPath, names = None): # names = ['Avar']
+def checkSortOrderDigraphs(namelang, typelist, glyphslist):
+	names = 'Adyge Aghul Dargwa Kabardian Kumyk Lak Lezgin Rutul Tabasaran Tat Tsakhur Kabardino-Cirkassian'.split(' ')
+	# txt = glyphslist
+	exglyphs = 'Ё ё Э э'.split(' ')
+	if namelang not in names: return
+	if typelist != 'alphabet': return
+	inputtxt = []
+	for item in glyphslist:
+		# if item != 'Ё' and item != 'ё':
+		if item not in exglyphs:
+			inputtxt.append(item)
+	outputtxt = []
+	for item in sorted(glyphslist):
+		# if item != 'Ё' and item != 'ё':
+		if item not in exglyphs:
+			outputtxt.append(item)
+	tttin = ''
+	tttout = ''
+	for idx, item in enumerate(inputtxt):
+		# if item != 'Ё' and item != 'ё':
+		# print (item, outputtxt[idx])
+		if item != outputtxt[idx]:
+			tttin += item + ' '
+			tttout += outputtxt[idx] + ' '
+	if tttin and tttout:
+		print ('+++', namelang)
+		print(tttin)
+		print(tttout)
+
+def checkExtendedGlyphs(uni, casesign, typestring):
+	ignoreGlyphsList = [
+		{
+			'unicodesign': '04CF',
+			'casesign': 'lower',
+			'typestring': 'alphabet'
+		},
+		{
+			'unicodesign': '04CF',
+			'casesign': 'upper',
+			'typestring': 'alphabet'
+		},
+	]
+	for item in ignoreGlyphsList:
+		if uni == item['unicodesign'] and casesign == item['casesign'] and typestring == item['typestring']:
+			return False
+	return True
+
+
+def compileLagnuages(workPath, libraryMainFile, libraryGlyphsList, scriptlang, local_def, names = None): # names = ['Avar']
 	print('*' * 60)
 	print('Started compiling the language library')
 	# print(workPath)
 	basePath, _s = os.path.split(workPath)
 	print('basePath: %s' % basePath)
-	libraryPath = os.path.join(basePath, 'library')
+	libraryPath = os.path.join(basePath, 'library', scriptlang, 'base')
 	print('libraryPath: %s' % libraryPath)
 
-	libraryMainFilePath = os.path.join(basePath, libraryMainFile)
+	libraryMainFilePath = os.path.join(basePath, 'library', scriptlang, libraryMainFile)
 	if not os.path.exists(libraryMainFilePath):
 		print('Main library file not found: %s' % libraryMainFilePath)
 		return
@@ -425,13 +480,12 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 
 	for name in names:
 		namefile = os.path.join(libraryPath, '%s.json' % name)
-		outputJSONfile = os.path.join(basePath, 'site', 'baselib', '%s.json' % name)
+		outputJSONfile = os.path.join(basePath, 'site', scriptlang, 'base', '%s.json' % name)
 
 		if os.path.exists(namefile):
 			with open(namefile, "r") as read_file:
 				data = json.load(read_file)
 			# print('%s path:%s' % (name, namefile))
-			print('%s' % name)
 			usedunicodes = None
 			uppercase_usedunicodes = None
 			lowercase_usedunicodes = None
@@ -441,6 +495,9 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 
 			glyphslists = data['glyphs_list']
 			local = data['local']
+			# print(local)
+			print('%s; localdef: %s; local: %s' % (name, local_def, local))
+
 			outputdata = {
 				'name_eng': name,
 				'glyphs_list': []
@@ -454,13 +511,17 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 				uppercaselist = glyphlist['uppercase']
 				lowercaselist = glyphlist['lowercase']
 
+				# checkSortOrderDigraphs(name, typelist, uppercaselist.split(' '))
+				# checkSortOrderDigraphs(name, typelist, lowercaselist.split(' '))
+
 				(lowercase_list,
 				 lowercase_list_unicodes,
 				 usedunicodes, extendedglyphs) = cascadeAltsChar(CharDesc, lowercaselist,
 				                                           typestring = typelist,
 				                                           usedunicodes = usedunicodes,
 				                                           wrapedunicodes = lowercase_list_unicodes,
-				                                           name_eng = name, local = local, extendedglyph = extendedglyphs, casesign = 'lower')
+				                                           name_eng = name, localdef = local_def, local = local,
+				                                                 extendedglyph = extendedglyphs, casesign = 'lower')
 
 				(uppercase_list,
 				 uppercase_list_unicodes,
@@ -468,7 +529,8 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 				                                           typestring = typelist,
 				                                           usedunicodes = usedunicodes,
                                                            wrapedunicodes = uppercase_list_unicodes,
-				                                           name_eng = name, local = local, extendedglyph = extendedglyphs, casesign = 'upper')
+				                                           name_eng = name, localdef = local_def, local = local,
+				                                                 extendedglyph = extendedglyphs, casesign = 'upper')
 
 				outputdata['glyphs_list'].append({
 					'type': typelist,
@@ -480,20 +542,21 @@ def compileLagnuages(workPath, names = None): # names = ['Avar']
 			if extendedglyphs:
 				for exglyph in extendedglyphs:
 					(uni, casesign, typestring) = exglyph
-					print ('*** Extended glyph:', name, chr(int(uni, 16)), uni, casesign, typestring )
-					extendeditem = {
-						'sign': chr(int(uni, 16)),
-						'unicodes': [uni],
-						'local': local,
-						'display_unicode': uni,
-						'types': [typestring],
-						'description': CharDesc.getCharacterDescription(uni),
-						# 'id': getUniqName(8)
-					}
-					if casesign == 'lower':
-						lowercase_list_unicodes.append( extendeditem )
-					elif casesign == 'upper':
-						uppercase_list_unicodes.append( extendeditem )
+					if checkExtendedGlyphs(uni, casesign, typestring):
+						print ('*** Extended glyph:', name, chr(int(uni, 16)), uni, casesign, typestring )
+						extendeditem = {
+							'sign': chr(int(uni, 16)),
+							'unicodes': [uni],
+							'local': local,
+							'display_unicode': uni,
+							'types': [typestring],
+							'description': CharDesc.getCharacterDescription(uni),
+							# 'id': getUniqName(8)
+						}
+						if casesign == 'lower':
+							lowercase_list_unicodes.append( extendeditem )
+						elif casesign == 'upper':
+							uppercase_list_unicodes.append( extendeditem )
 			if makeCharSet:
 				outputdata['glyphs_list'].append({
 					'type': 'charset',
@@ -594,6 +657,7 @@ def sortGlyphsList(glyphslist, names, sortOrder = None):
 	resultList = []
 
 	if not sortOrder:
+		print('Sorting by unicodes..')
 		sortedGlyphsList = sorted(glyphslist.items())
 		for k, v in sortedGlyphsList:
 			if len(v['languages']) == len(names):
@@ -609,26 +673,26 @@ def sortGlyphsList(glyphslist, names, sortOrder = None):
 	return resultList
 
 
-def makeMainCharactersSet(workPath):
+def makeMainCharactersSet(workPath, libraryMainFile, sortOrderFile, outputGeneralGlyphsList, scriptlang):
 	print('*' * 60)
 	print('making MainCharactersSet..')
 	# print(workPath)
 	basePath, _s = os.path.split(workPath)
 	print('basePath: %s' % basePath)
-	libraryPath = os.path.join(basePath, 'library')
+	libraryPath = os.path.join(basePath, 'library', scriptlang, 'base')
 	print('libraryPath: %s' % libraryPath)
 
-	libraryMainFilePath = os.path.join(basePath, libraryMainFile)
+	libraryMainFilePath = os.path.join(basePath, 'library', scriptlang, libraryMainFile)
 	if not os.path.exists(libraryMainFilePath):
 		print('Main library file not found: %s' % libraryMainFilePath)
 		return
 	print('libraryMainFile: %s' % libraryMainFilePath)
 
 
-	sortOrderFilePath = os.path.join(basePath, sortOrderFile)
+	sortOrderFilePath = os.path.join(basePath, 'library', scriptlang, sortOrderFile)
 	SortOrderCyrl = None
-	if os.path.exists(sortOrderFilePath):
-		SortOrderCyrl = PanCyrillicOrderSorter(sortOrderFilePath)
+	if os.path.isfile(sortOrderFilePath):
+		SortOrderCyrl = laguagesOrderSorter(sortOrderFilePath)
 	else:
 		print('SortOrder file not found: %s' % sortOrderFilePath)
 
@@ -650,20 +714,20 @@ def makeMainCharactersSet(workPath):
 
 	for name in names:
 		mainfile = os.path.join(libraryPath, '%s.json' % name)
-		inputJSONfile = os.path.join(basePath, 'site', 'baselib', '%s.json' % name)
+		inputJSONfile = os.path.join(basePath, 'site', scriptlang, 'base', '%s.json' % name)
 
 		if os.path.exists(inputJSONfile):
 			with open(inputJSONfile, "r") as read_file:
 				data = json.load(read_file)
 			# print('%s path:%s' % (name, inputJSONfile))
 
-			local = 'ru'
+			local = 'en'
 			if os.path.exists(mainfile):
 				with open(mainfile, "r") as read_file:
 					maindata = json.load(read_file)
 				# print('%s path:%s' % (name, mainfile))
 				local = maindata['local']
-
+			# print(local)
 			uppercase_unicodes_list = None
 			lowercase_unicodes_list = None
 			glyphs_lists = data['glyphs_list']
@@ -699,7 +763,7 @@ def makeMainCharactersSet(workPath):
 		uppercase_sorted_by_unicodes = UC_sorted_list,
 		lowercase_sorted_by_unicodes = LC_sorted_list,
 	)
-	outputJSONfile = os.path.join(basePath, 'site', 'cyrillic_characters_lib.json')
+	outputJSONfile = os.path.join(basePath, 'site', scriptlang, outputGeneralGlyphsList)
 	indent = None
 	if DEVELOPMENT:
 		indent = 4
@@ -707,14 +771,56 @@ def makeMainCharactersSet(workPath):
 		json.dump(dataset, write_file, indent = indent, ensure_ascii = False) #indent = 4,
 	print('..done')
 
+def loadLanguagesSettings(workpath, argv):
+	parser = argparse.ArgumentParser(
+		prog = 'CompileLanguages',)
+		# description = 'What the program does',
+		# epilog = 'Text at the bottom of help')
+	parser.add_argument('-s', '--script')
+	parser.add_argument('-n', '--names', nargs = '+', default = [])
+	arg = parser.parse_args()
+	# print(arg.script, arg.names)
+
+	print ('Loading settings')
+	print (workpath)
+
+	basePath, _s = os.path.split(workpath)
+	settingfilepath = os.path.join(basePath, 'languages.json')
+	if os.path.exists(settingfilepath):
+		with open(settingfilepath, "r") as read_file:
+			data = json.load(read_file)
+
+		if arg.script:
+			for item in data:
+				if item['script'] == arg.script:
+					print('work on:', arg.script)
+					if item['enable']:
+						compileLagnuages(workpath, item['list_of_languages'], _libraryGlyphsList, arg.script, item['local_default'], arg.names)
+						makeMainCharactersSet(workpath, item['list_of_languages'], item['sort_order'], item['glyphs_library'], arg.script)
+					break
+		else:
+			print('work on all scripts')
+			for item in data:
+				# print(item)
+				if item['enable']:
+					compileLagnuages(workpath, item['list_of_languages'], _libraryGlyphsList, item['script'], item['local_default'], arg.names)
+					makeMainCharactersSet(workpath, item['list_of_languages'], item['sort_order'], item['glyphs_library'], item['script'])
+
+	else:
+		print ('ERROR: Settings file no found')
 
 
-def main(names = None):
+
+
+def main(argv = None):
+
 	pathname = os.path.dirname(sys.argv[0])
 	workPath = os.path.abspath(pathname)
-	compileLagnuages(workPath, names)
-	makeMainCharactersSet(workPath)
+	loadLanguagesSettings(workPath, argv)
+	# names = argv[1:]
+	# compileLagnuages(workPath, names)
+	# makeMainCharactersSet(workPath)
 
 
 if __name__ == '__main__':
-	main(names = sys.argv[1:])
+	main(argv = sys.argv) # [1:]

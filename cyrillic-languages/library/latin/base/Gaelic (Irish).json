@@ -1,0 +1,30 @@
+{
+    "name_eng": "Gaelic (Irish)",
+    "name_rus": "Гэльский (Ирландский)",
+    "local": "en",
+    "language_group_eng": [],
+    "language_group_rus": [
+        "Индоевропейские языки",
+        "Кельтские языки",
+        "Гойдельские языки"
+    ],
+    "alt_names_eng": [
+        "Erse",
+        "Gaeilge",
+        "Irish"
+    ],
+    "description_eng": "",
+    "description_rus": "",
+    "glyphs_list": [
+        {
+            "type": "alphabet",
+            "uppercase": "A =Á B =Bh C =Ch D =Dh E =É F =Fh G =Gh H I =Í J K L M =Mh N O =Ó P =Ph Q R S =Sh T =Th U =Ú V W X Y Z",
+            "lowercase": "a =á b =bh c =ch d =dh e =é f =fh g =gh h i =í j k l m =mh n o =ó p =ph q r s =sh t =th u =ú v w x y z"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Ā Ē Ī Ō Ū",
+            "lowercase": "ā ē ī ō ū ɼ"
+        }
+    ]
+}

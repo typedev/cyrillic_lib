@@ -1,0 +1,23 @@
+[
+    {
+        "script": "cyrillic",
+        "name_eng": "Cyrillic",
+        "name_rus": "Кириллица",
+        "enable": true,
+        "local_default": "ru",
+        "list_of_languages": "cyrillic_library.json",
+        "sort_order": "sortorder_cyrillic.txt",
+        "glyphs_library": "cyrillic_characters_lib.json"
+
+    },
+    {
+        "script": "latin",
+        "name_eng": "Latin",
+        "name_rus": "Латиница",
+        "enable": true,
+        "local_default": "en",
+        "list_of_languages": "latin_library.json",
+        "sort_order": "sortorder_latin.txt",
+        "glyphs_library": "latin_characters_lib.json"
+    }
+]

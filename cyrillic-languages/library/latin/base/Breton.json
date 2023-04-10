@@ -1,0 +1,33 @@
+{
+    "name_eng": "Breton",
+    "name_rus": "Бретонский",
+    "local": "en",
+    "language_group_eng": [],
+    "language_group_rus": [
+        "Индоевропейские языки",
+        "Кельтские языки",
+        "Бриттские языки"
+    ],
+    "alt_names_eng": [
+        "Breton"
+    ],
+    "description_eng": "",
+    "description_rus": "",
+    "glyphs_list": [
+        {
+            "type": "alphabet",
+            "uppercase": "A =À =Â B C Ch C’h D E =É =Ê F G H I =Ï J K L =Lh M N =Ñ O =Ô =Ou =Où P Q R S =Sh T U =Ù =Û =Ü V W X Y Z =Zh ’",
+            "lowercase": "a =à =â b c ch c’h d e =é =ê f g h i =ï j k l =lh m n =ñ o =ô =ou =où p q r s =sh t u =ù =û =ü v w x y z =zh"
+        },
+        {
+            "type": "historic",
+            "uppercase": "Ā Æ Ç Ë Ē Ī Rh Ō Ū",
+            "lowercase": "ā æ ç ë ē ī rh ō ū ſ"
+        },
+        {
+            "type": "extended",
+            "uppercase": "È Î Œ Ÿ",
+            "lowercase": "è î œ ÿ"
+        }
+    ]
+}

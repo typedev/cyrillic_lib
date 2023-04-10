@@ -63,7 +63,7 @@ def main (ufofolder = None):
 
 	libraryPath = 'library'  # langlib
 	outputPath = 'site'
-	outputLibraryPath = 'baselib'
+	outputLibraryPath = 'base'
 	libraryMainFile = 'cyrillic_library.json'
 	print ('*'*60)
 	print ('Testing of UFO files for language support has started')

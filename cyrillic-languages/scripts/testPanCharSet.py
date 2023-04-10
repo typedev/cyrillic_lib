@@ -57,7 +57,7 @@ def testCharactersSet(workPath):
 	emptydescriptions_lower = {}
 	for name in names:
 		mainfile = os.path.join(libraryPath, '%s.json' % name)
-		inputJSONfile = os.path.join(basePath, 'site', 'baselib', '%s.json' % name)
+		inputJSONfile = os.path.join(basePath, 'site', 'base', '%s.json' % name)
 
 		if os.path.exists(inputJSONfile):
 			with open(inputJSONfile, "r") as read_file:

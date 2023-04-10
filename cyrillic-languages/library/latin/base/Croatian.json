@@ -1,0 +1,27 @@
+{
+    "name_eng": "Croatian",
+    "name_rus": "Хорватский",
+    "local": "en",
+    "language_group_eng": [],
+    "language_group_rus": [
+        "Индоевропейские языки",
+        "Славянские языки"
+    ],
+    "alt_names_eng": [
+        "Hrvatski"
+    ],
+    "description_eng": "",
+    "description_rus": "",
+    "glyphs_list": [
+        {
+            "type": "alphabet",
+            "uppercase": "A B C Č Ć D Dž Đ E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž",
+            "lowercase": "a b c č ć d dž đ e f g h i j k l m n o p q r s š t u v w x y z ž"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Ǵ Ḱ À Ȁ Ȃ È Ȅ Ȇ Ì Ȉ Ȋ Ò Ȍ Ȏ Ȑ Ȓ Ù Ȕ Ȗ",
+            "lowercase": "ǵ ḱ à ȁ ȃ è ȅ ȇ ì ȉ ȋ ò ȍ ȏ ȑ ȓ ù ȕ ȗ"
+        }
+    ]
+}

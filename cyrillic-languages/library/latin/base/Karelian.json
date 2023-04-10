@@ -1,0 +1,32 @@
+{
+    "name_eng": "Karelian",
+    "name_rus": "Карельский",
+    "local": "en",
+    "language_group_eng": [],
+    "language_group_rus": [
+        "Уральские языки",
+        "Финно-Угорские языки",
+        "Прибалтийско-финские языки"
+    ],
+    "alt_names_eng": [
+        "Karel’skiy Jazyk",
+        "Karelian Proper",
+        "Karely",
+        "Severno-Karel’skij",
+        "Sobstvenno-Karel’skij-Jazyk"
+    ],
+    "description_eng": "",
+    "description_rus": "",
+    "glyphs_list": [
+        {
+            "type": "alphabet",
+            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Č Ĺ Ń Ŕ Ś Š Ź Ž Ü Ä Ö Ć Ǵ Ḱ Ḿ Ṕ ’",
+            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z č ĺ ń ŕ ś š ź ž ü ä ö ć ǵ ḱ ḿ ṕ"
+        },
+        {
+            "type": "extended",
+            "uppercase": "!F540 !F541 !F546 !F547 !F486 !F487",
+            "lowercase": "!F488 !F489 !F542 !F543 !F548 !F549"
+        }
+    ]
+}
