@@ -13,12 +13,17 @@
         "Tedesco"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "В составе современного немецкого алфавита 26 букв латинского алфавита, ряд знаков с диакритикой и одна лигатура (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены важные для языка знаки, не входящие в алфавит, использующиеся, в основном, в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ä Ö Ü ẞ À Â Ç È Ê Ë Î Ï Ĳ Ô É",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z ä ö ß ü à â ç è ê ë î ï ĳ ô é"
+            "uppercase": "A Ä B C D E É F G H I J K L M N O Ö P Q R S ẞ T U Ü V W X Y Z",
+            "lowercase": "a ä b c d e é f g h i j k l m n o ö p q r s ß t u ü v w x y z"
+        },
+        {
+            "type": "extended",
+            "uppercase": "À Â Ç È Ê Ë Î Ï Ĳ Ô",
+            "lowercase": "à â ç è ê ë î ï ĳ ô"
         }
     ]
 }

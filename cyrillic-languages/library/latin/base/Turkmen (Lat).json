@@ -16,17 +16,17 @@
         "Turkomans"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный Туркменский алфавит на основе латиницы введен в 1995 году. Он содержит 22 буквы латинского алфавита (буквы C, Q, V, X могут использоваться в заимствованиях) и ряд специфических знаков (отмечены красным). Зеленым выделены ранее использовавшиеся в языке знаки и исторические формы.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ç Ä Ž Ň Ö Ş Ü Ý Ə Ñ Ɵ Ÿ",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z ç ä ž ň ö ş ü ý ə ñ ɵ ÿ"
+            "uppercase": "A B C Ç D E Ä F G H I J Ž K L M N Ň O Ö P Q R S Ş T U Ü V W X Y Ý Z",
+            "lowercase": "a b c ç d e ä f g h i j ž k l m n ň o ö p q r s ş t u ü v w x y ý z"
         },
         {
-            "type": "extended",
-            "uppercase": "!F4B2",
-            "lowercase": "!F4B3"
+            "type": "historic",
+            "uppercase": "Ə Ñ Ɵ Ÿ !F4B2",
+            "lowercase": "ə ñ ɵ ÿ !F4B3"
         }
     ]
 }

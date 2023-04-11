@@ -14,12 +14,17 @@
         "Rumanian"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный румынский алфавит содержит 28 знаков. Буквы Q, V, X, как и выделенный зеленым знак Eacute, используются в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ă Â Î Ș Ț É",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z ă â î ș ț é"
+            "uppercase": "A Ă Â B C D E F G H I Î J K L M N O P Q R S Ș T Ț U V W X Y Z",
+            "lowercase": "a ă â b c d e f g h i î j k l m n o p q r s ș t ț u v w x y z"
+        },
+        {
+            "type": "extended",
+            "uppercase": "É",
+            "lowercase": "é"
         }
     ]
 }

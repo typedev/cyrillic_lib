@@ -12,12 +12,17 @@
         "Italiano"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный итальянский алфавит основан на латинском алфавите (буквы W и Y используются в заимствованиях). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым обозначены знаки, используемые в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z À É È Í Ì Ï Ó Ò Ú Ù Á Â Ä Ê Ë Î Ô Ö Û Ü",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z à é è í ì ï ó ò ú ù á â ä ê ë î ô ö û ü"
+            "uppercase": "A =À B C D E =É =È F G H I =Í =Ì =Ï J K L M N O =Ó =Ò P Q R S T U =Ú =Ù V W X Y Z",
+            "lowercase": "a =à b c d e =é =è f g h i =í =ì =ï j k l m n o =ó =ò p q r s t u =ú =ù v w x y z"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Á Â Ä Ê Ë Î Ô Ö Û Ü",
+            "lowercase": "á â ä ê ë î ô ö û ü"
         }
     ]
 }

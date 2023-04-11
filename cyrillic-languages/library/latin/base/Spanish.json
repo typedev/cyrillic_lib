@@ -14,12 +14,17 @@
         "Español"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный испанский алфавит состоит из знаков латинского алфавита (буквы K и W используются в заимствованиях) и ряда специфических знаков и сочетаний (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены ранее использовавшиеся в языке знаки и исторические формы. Звездочкой отмечен знак, использующийся в именах собственных.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Á É Í Ñ Ó Ú Ü Â Ç Ê Î Ô Û Ŷ Ý",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z á é í ñ ó ú ü â ç ê î ô û ŷ ý"
+            "uppercase": "A =Á B C Ch D E =É F G H I =Í J K L Ll M N Ñ O =Ó P Q R Rr S T U =Ú =Ü V W X Y Z",
+            "lowercase": "a =á b c ch d e =é f g h i =í j k l ll m n ñ o =ó p q r rr s t u =ú =ü v w x y z"
+        },
+        {
+            "type": "historic",
+            "uppercase": "Â Ç Ê Î Ô Û Ŷ Ý",
+            "lowercase": "â ç ê î ô û ŷ ý"
         }
     ]
 }

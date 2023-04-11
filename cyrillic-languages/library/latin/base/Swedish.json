@@ -13,12 +13,17 @@
         "Svenska"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный шведский алфавит состоит из знаков латинского алфавита (буква W используется в заимствованиях) и ряда специфических знаков (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены знаки, использующиеся в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z À É Å Ä Ö Á Â Ç Ć Č Ð È Ê Ë Í Ì Î Ï Ł Ń Ñ Ó Ò Ô Ř Ś Ŝ Ú Ù Û Ý Ü Æ Ø",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z à é å ä ö á â ç ć č ð è ê ë í ì î ï ł ń ñ ó ò ô ř ś ŝ ú ù û ý ü æ ø"
+            "uppercase": "A À B C D E É F G H I J K L M N O P Q R S T U V W X Y Z Å Ä Ö",
+            "lowercase": "a à b c d e é f g h i j k l m n o p q r s t u v w x y z å ä ö"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Á Â Ç Ć Č Ð È Ê Ë Í Ì Î Ï Ł Ń Ñ Ó Ò Ô Ř Ś Ŝ Ú Ù Û Ý Ü Æ Ø",
+            "lowercase": "á â ç ć č ð è ê ë í ì î ï ł ń ñ ó ò ô ř ś ŝ ú ù û ý ü æ ø"
         }
     ]
 }

@@ -18,12 +18,17 @@
         "Setswana"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный тсванский алфавит состоит из 22 букв латинского алфавита (Q, V, X, Z используются в заимствованиях) и 3 специфических знаков (выделены красным). Зеленым выделены знаки, используемые в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ê Ô Š È É Ñ Ó Ō",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z ê ô š è é ñ ó ō"
+            "uppercase": "A B C D E Ê F G H I J K L M N O Ô P Q R S Š T U V W X Y Z",
+            "lowercase": "a b c d e ê f g h i j k l m n o ô p q r s š t u v w x y z"
+        },
+        {
+            "type": "extended",
+            "uppercase": "È É Ñ Ó Ō",
+            "lowercase": "è é ñ ó ō"
         }
     ]
 }

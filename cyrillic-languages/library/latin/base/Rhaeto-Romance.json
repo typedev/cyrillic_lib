@@ -14,12 +14,12 @@
         "Romansh"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Ретороманский алфавит по составу совпадает с латинским (буквы K, W, Y используются в иностранных заимствованиях). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z À È É Ì Î Ò Ù",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z à è é ì î ò ù"
+            "uppercase": "A =À B C D E =È =É F G H I =Ì =Î J K L M N O =Ò P Q R S T U =Ù V W X Y Z",
+            "lowercase": "a =à b c d e =è =é f g h i =ì =î j k l m n o =ò p q r s t u =ù v w x y z"
         }
     ]
 }

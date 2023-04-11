@@ -16,17 +16,17 @@
         "Lyudic"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный людиковский карельский алфавит на основе латиницы состоит из 21 буквы латинского алфавита (отсутствуют C, Q, W, X, Y) и ряда специфических знаков (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены знаки, используемые в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B D E F G H I J K L M N O P R S T U V Z Č Ǯ Š Ü Ä Ö Ĺ Ń Ŕ Ś Ź Ž Ć C Ǵ Ḱ Ḿ Ṕ ’",
-            "lowercase": "a b d e f g h i j k l m n o p r s t u v z č ǯ š ü ä ö ĺ ń ŕ ś ź ž ć c ǵ ḱ ḿ ṕ"
+            "uppercase": "A B Č D Ǯ E F G H I J K L =Ĺ M N =Ń O P R =Ŕ S =Ś Š Z =Ź Ž T U V Ü Ä Ö ’",
+            "lowercase": "a b č d ǯ e f g h i j k l =ĺ m n =ń o p r =ŕ s =ś š z =ź ž t u v ü ä ö"
         },
         {
             "type": "extended",
-            "uppercase": "!F54C !F54D !F540 !F541 !F546 !F547 !F486",
-            "lowercase": "!F487 !F488 !F489 !F542 !F543 !F548 !F549"
+            "uppercase": "!F54C !F54D !F540 !F541 !F546 !F547 !F486 Ć C Ǵ Ḱ Ḿ Ṕ",
+            "lowercase": "!F487 !F488 !F489 !F542 !F543 !F548 !F549 ć c ǵ ḱ ḿ ṕ"
         }
     ]
 }

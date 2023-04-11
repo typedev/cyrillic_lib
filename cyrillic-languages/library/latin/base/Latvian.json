@@ -12,12 +12,17 @@
         "Lettish"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный латышский алфавит состоит из знаков латинского алфавита (буквы Q, W, X используются в заимствованиях) и ряда специфических знаков (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены ранее использовавшиеся в языке знаки и исторические формы.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ā Č Ē Ģ Ī Ķ Ļ Ņ Š Ū Ž Ä Ö Ō Ȫ Ŗ Ü Ǖ",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z ā č ē ģ ī ķ ļ ņ š ū ž ä ö ō ȫ ŗ ü ǖ"
+            "uppercase": "A Ā B C Č D E Ē F G Ģ H I =Y =Ī J K Ķ L Ļ M N Ņ O P Q R S Š T U Ū V W X Z Ž",
+            "lowercase": "a ā b c č d e ē f g ģ h i =y =ī j k ķ l ļ m n ņ o p q r s š t u ū v w x z ž"
+        },
+        {
+            "type": "historic",
+            "uppercase": "Ä Ö Ō Ȫ Ŗ Ü Ǖ",
+            "lowercase": "ä ö ō ȫ ŗ ü ǖ"
         }
     ]
 }

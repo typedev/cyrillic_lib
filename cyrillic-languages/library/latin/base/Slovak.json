@@ -11,12 +11,17 @@
         "Slovakian"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный словацкий алфавит состоит из знаков латинского алфавита (буква Q используется в заимствованиях) и ряда специфических знаков и сочетаний (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены знаки, используемые в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Á Ä Č Ď É Í Ĺ Ľ Ň Ó Ô Ŕ Š Ť Ú Ý Ž Ö Ő Ü Ű",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z á ä č ď é í ĺ ľ ň ó ô ŕ š ť ú ý ž ö ő ü ű"
+            "uppercase": "A =Á Ä B C Č D =Ď Dz Dž E =É F G H Ch I =Í J K L =Ĺ =Ľ M N =Ň O =Ó Ô P Q R =Ŕ S Š T =Ť U =Ú V W X Y =Ý Z Ž",
+            "lowercase": "a =á ä b c č d =ď dz dž e =é f g h ch i =í j k l =ĺ =ľ m n =ň o =ó ô p q r =ŕ s š t =ť u =ú v w x y =ý z ž"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Ö Ő Ü Ű",
+            "lowercase": "ö ő ü ű"
         }
     ]
 }

@@ -43,6 +43,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "Č",
+                    "unicodes": [
+                        "010C"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "010C",
+                    "alts": []
+                },
+                {
                     "sign": "D",
                     "unicodes": [
                         "0044"
@@ -235,6 +247,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "Š",
+                    "unicodes": [
+                        "0160"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0160",
+                    "alts": []
+                },
+                {
                     "sign": "T",
                     "unicodes": [
                         "0054"
@@ -319,30 +343,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "Č",
-                    "unicodes": [
-                        "010C"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "010C",
-                    "alts": []
-                },
-                {
-                    "sign": "Š",
-                    "unicodes": [
-                        "0160"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0160",
-                    "alts": []
-                },
-                {
                     "sign": "Ž",
                     "unicodes": [
                         "017D"
@@ -390,6 +390,18 @@
                         "alphabet"
                     ],
                     "description": "0063",
+                    "alts": []
+                },
+                {
+                    "sign": "č",
+                    "unicodes": [
+                        "010D"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "010D",
                     "alts": []
                 },
                 {
@@ -585,6 +597,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "š",
+                    "unicodes": [
+                        "0161"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0161",
+                    "alts": []
+                },
+                {
                     "sign": "t",
                     "unicodes": [
                         "0074"
@@ -669,30 +693,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "č",
-                    "unicodes": [
-                        "010D"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "010D",
-                    "alts": []
-                },
-                {
-                    "sign": "š",
-                    "unicodes": [
-                        "0161"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0161",
-                    "alts": []
-                },
-                {
                     "sign": "ž",
                     "unicodes": [
                         "017E"
@@ -746,6 +746,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter C"
+                },
+                {
+                    "sign": "Č",
+                    "unicodes": [
+                        "010C"
+                    ],
+                    "local": "en",
+                    "display_unicode": "010C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter C With Caron"
                 },
                 {
                     "sign": "D",
@@ -940,6 +952,18 @@
                     "description": "Latin Capital Letter S"
                 },
                 {
+                    "sign": "Š",
+                    "unicodes": [
+                        "0160"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0160",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter S With Caron"
+                },
+                {
                     "sign": "T",
                     "unicodes": [
                         "0054"
@@ -1024,30 +1048,6 @@
                     "description": "Latin Capital Letter Z"
                 },
                 {
-                    "sign": "Č",
-                    "unicodes": [
-                        "010C"
-                    ],
-                    "local": "en",
-                    "display_unicode": "010C",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter C With Caron"
-                },
-                {
-                    "sign": "Š",
-                    "unicodes": [
-                        "0160"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0160",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter S With Caron"
-                },
-                {
                     "sign": "Ž",
                     "unicodes": [
                         "017D"
@@ -1096,6 +1096,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter C"
+                },
+                {
+                    "sign": "č",
+                    "unicodes": [
+                        "010D"
+                    ],
+                    "local": "en",
+                    "display_unicode": "010D",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter C With Caron"
                 },
                 {
                     "sign": "d",
@@ -1290,6 +1302,18 @@
                     "description": "Latin Small Letter S"
                 },
                 {
+                    "sign": "š",
+                    "unicodes": [
+                        "0161"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0161",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter S With Caron"
+                },
+                {
                     "sign": "t",
                     "unicodes": [
                         "0074"
@@ -1372,30 +1396,6 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter Z"
-                },
-                {
-                    "sign": "č",
-                    "unicodes": [
-                        "010D"
-                    ],
-                    "local": "en",
-                    "display_unicode": "010D",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter C With Caron"
-                },
-                {
-                    "sign": "š",
-                    "unicodes": [
-                        "0161"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0161",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter S With Caron"
                 },
                 {
                     "sign": "ž",

@@ -19,6 +19,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "Ą",
+                    "unicodes": [
+                        "0104"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0104",
+                    "alts": []
+                },
+                {
                     "sign": "B",
                     "unicodes": [
                         "0042"
@@ -43,6 +55,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "Ć",
+                    "unicodes": [
+                        "0106"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0106",
+                    "alts": []
+                },
+                {
                     "sign": "D",
                     "unicodes": [
                         "0044"
@@ -64,6 +88,18 @@
                         "alphabet"
                     ],
                     "description": "0045",
+                    "alts": []
+                },
+                {
+                    "sign": "Ę",
+                    "unicodes": [
+                        "0118"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0118",
                     "alts": []
                 },
                 {
@@ -151,6 +187,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "Ł",
+                    "unicodes": [
+                        "0141"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0141",
+                    "alts": []
+                },
+                {
                     "sign": "M",
                     "unicodes": [
                         "004D"
@@ -175,6 +223,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "Ń",
+                    "unicodes": [
+                        "0143"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0143",
+                    "alts": []
+                },
+                {
                     "sign": "O",
                     "unicodes": [
                         "004F"
@@ -184,6 +244,18 @@
                         "alphabet"
                     ],
                     "description": "004F",
+                    "alts": []
+                },
+                {
+                    "sign": "Ó",
+                    "unicodes": [
+                        "00D3"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "00D3",
                     "alts": []
                 },
                 {
@@ -232,6 +304,18 @@
                         "alphabet"
                     ],
                     "description": "0053",
+                    "alts": []
+                },
+                {
+                    "sign": "Ś",
+                    "unicodes": [
+                        "015A"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "015A",
                     "alts": []
                 },
                 {
@@ -319,90 +403,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "Ą",
-                    "unicodes": [
-                        "0104"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0104",
-                    "alts": []
-                },
-                {
-                    "sign": "Ć",
-                    "unicodes": [
-                        "0106"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0106",
-                    "alts": []
-                },
-                {
-                    "sign": "Ę",
-                    "unicodes": [
-                        "0118"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0118",
-                    "alts": []
-                },
-                {
-                    "sign": "Ł",
-                    "unicodes": [
-                        "0141"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0141",
-                    "alts": []
-                },
-                {
-                    "sign": "Ń",
-                    "unicodes": [
-                        "0143"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0143",
-                    "alts": []
-                },
-                {
-                    "sign": "Ó",
-                    "unicodes": [
-                        "00D3"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "00D3",
-                    "alts": []
-                },
-                {
-                    "sign": "Ś",
-                    "unicodes": [
-                        "015A"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "015A",
-                    "alts": []
-                },
-                {
                     "sign": "Ź",
                     "unicodes": [
                         "0179"
@@ -425,18 +425,6 @@
                     ],
                     "description": "017B",
                     "alts": []
-                },
-                {
-                    "sign": "É",
-                    "unicodes": [
-                        "00C9"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "00C9",
-                    "alts": []
                 }
             ],
             "lowercase": [
@@ -450,6 +438,18 @@
                         "alphabet"
                     ],
                     "description": "0061",
+                    "alts": []
+                },
+                {
+                    "sign": "ą",
+                    "unicodes": [
+                        "0105"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0105",
                     "alts": []
                 },
                 {
@@ -477,6 +477,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "ć",
+                    "unicodes": [
+                        "0107"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0107",
+                    "alts": []
+                },
+                {
                     "sign": "d",
                     "unicodes": [
                         "0064"
@@ -498,6 +510,18 @@
                         "alphabet"
                     ],
                     "description": "0065",
+                    "alts": []
+                },
+                {
+                    "sign": "ę",
+                    "unicodes": [
+                        "0119"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0119",
                     "alts": []
                 },
                 {
@@ -585,6 +609,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "ł",
+                    "unicodes": [
+                        "0142"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0142",
+                    "alts": []
+                },
+                {
                     "sign": "m",
                     "unicodes": [
                         "006D"
@@ -609,6 +645,18 @@
                     "alts": []
                 },
                 {
+                    "sign": "ń",
+                    "unicodes": [
+                        "0144"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0144",
+                    "alts": []
+                },
+                {
                     "sign": "o",
                     "unicodes": [
                         "006F"
@@ -618,6 +666,18 @@
                         "alphabet"
                     ],
                     "description": "006F",
+                    "alts": []
+                },
+                {
+                    "sign": "ó",
+                    "unicodes": [
+                        "00F3"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "00F3",
                     "alts": []
                 },
                 {
@@ -666,6 +726,18 @@
                         "alphabet"
                     ],
                     "description": "0073",
+                    "alts": []
+                },
+                {
+                    "sign": "ś",
+                    "unicodes": [
+                        "015B"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "015B",
                     "alts": []
                 },
                 {
@@ -753,90 +825,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "ą",
-                    "unicodes": [
-                        "0105"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0105",
-                    "alts": []
-                },
-                {
-                    "sign": "ć",
-                    "unicodes": [
-                        "0107"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0107",
-                    "alts": []
-                },
-                {
-                    "sign": "ę",
-                    "unicodes": [
-                        "0119"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0119",
-                    "alts": []
-                },
-                {
-                    "sign": "ł",
-                    "unicodes": [
-                        "0142"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0142",
-                    "alts": []
-                },
-                {
-                    "sign": "ń",
-                    "unicodes": [
-                        "0144"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "0144",
-                    "alts": []
-                },
-                {
-                    "sign": "ó",
-                    "unicodes": [
-                        "00F3"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "00F3",
-                    "alts": []
-                },
-                {
-                    "sign": "ś",
-                    "unicodes": [
-                        "015B"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "015B",
-                    "alts": []
-                },
-                {
                     "sign": "ź",
                     "unicodes": [
                         "017A"
@@ -859,7 +847,28 @@
                     ],
                     "description": "017C",
                     "alts": []
-                },
+                }
+            ]
+        },
+        {
+            "type": "extended",
+            "title": "Extended Orphographic Notation",
+            "show_unicodes": false,
+            "uppercase": [
+                {
+                    "sign": "É",
+                    "unicodes": [
+                        "00C9"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "extended"
+                    ],
+                    "description": "00C9",
+                    "alts": []
+                }
+            ],
+            "lowercase": [
                 {
                     "sign": "é",
                     "unicodes": [
@@ -867,7 +876,7 @@
                     ],
                     "local": "en",
                     "types": [
-                        "alphabet"
+                        "extended"
                     ],
                     "description": "00E9",
                     "alts": []
@@ -890,6 +899,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter A"
+                },
+                {
+                    "sign": "Ą",
+                    "unicodes": [
+                        "0104"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0104",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter A With Ogonek"
                 },
                 {
                     "sign": "B",
@@ -916,6 +937,18 @@
                     "description": "Latin Capital Letter C"
                 },
                 {
+                    "sign": "Ć",
+                    "unicodes": [
+                        "0106"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0106",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter C With Acute"
+                },
+                {
                     "sign": "D",
                     "unicodes": [
                         "0044"
@@ -938,6 +971,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter E"
+                },
+                {
+                    "sign": "Ę",
+                    "unicodes": [
+                        "0118"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0118",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter E With Ogonek"
                 },
                 {
                     "sign": "F",
@@ -1024,6 +1069,18 @@
                     "description": "Latin Capital Letter L"
                 },
                 {
+                    "sign": "Ł",
+                    "unicodes": [
+                        "0141"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0141",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter L With Stroke"
+                },
+                {
                     "sign": "M",
                     "unicodes": [
                         "004D"
@@ -1048,6 +1105,18 @@
                     "description": "Latin Capital Letter N"
                 },
                 {
+                    "sign": "Ń",
+                    "unicodes": [
+                        "0143"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0143",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter N With Acute"
+                },
+                {
                     "sign": "O",
                     "unicodes": [
                         "004F"
@@ -1058,6 +1127,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter O"
+                },
+                {
+                    "sign": "Ó",
+                    "unicodes": [
+                        "00D3"
+                    ],
+                    "local": "en",
+                    "display_unicode": "00D3",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter O With Acute"
                 },
                 {
                     "sign": "P",
@@ -1106,6 +1187,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter S"
+                },
+                {
+                    "sign": "Ś",
+                    "unicodes": [
+                        "015A"
+                    ],
+                    "local": "en",
+                    "display_unicode": "015A",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Capital Letter S With Acute"
                 },
                 {
                     "sign": "T",
@@ -1192,90 +1285,6 @@
                     "description": "Latin Capital Letter Z"
                 },
                 {
-                    "sign": "Ą",
-                    "unicodes": [
-                        "0104"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0104",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter A With Ogonek"
-                },
-                {
-                    "sign": "Ć",
-                    "unicodes": [
-                        "0106"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0106",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter C With Acute"
-                },
-                {
-                    "sign": "Ę",
-                    "unicodes": [
-                        "0118"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0118",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter E With Ogonek"
-                },
-                {
-                    "sign": "Ł",
-                    "unicodes": [
-                        "0141"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0141",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter L With Stroke"
-                },
-                {
-                    "sign": "Ń",
-                    "unicodes": [
-                        "0143"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0143",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter N With Acute"
-                },
-                {
-                    "sign": "Ó",
-                    "unicodes": [
-                        "00D3"
-                    ],
-                    "local": "en",
-                    "display_unicode": "00D3",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter O With Acute"
-                },
-                {
-                    "sign": "Ś",
-                    "unicodes": [
-                        "015A"
-                    ],
-                    "local": "en",
-                    "display_unicode": "015A",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Capital Letter S With Acute"
-                },
-                {
                     "sign": "Ź",
                     "unicodes": [
                         "0179"
@@ -1307,7 +1316,7 @@
                     "local": "en",
                     "display_unicode": "00C9",
                     "types": [
-                        "alphabet"
+                        "extended"
                     ],
                     "description": "Latin Capital Letter E With Acute"
                 }
@@ -1324,6 +1333,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter A"
+                },
+                {
+                    "sign": "ą",
+                    "unicodes": [
+                        "0105"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0105",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter A With Ogonek"
                 },
                 {
                     "sign": "b",
@@ -1350,6 +1371,18 @@
                     "description": "Latin Small Letter C"
                 },
                 {
+                    "sign": "ć",
+                    "unicodes": [
+                        "0107"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0107",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter C With Acute"
+                },
+                {
                     "sign": "d",
                     "unicodes": [
                         "0064"
@@ -1372,6 +1405,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter E"
+                },
+                {
+                    "sign": "ę",
+                    "unicodes": [
+                        "0119"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0119",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter E With Ogonek"
                 },
                 {
                     "sign": "f",
@@ -1458,6 +1503,18 @@
                     "description": "Latin Small Letter L"
                 },
                 {
+                    "sign": "ł",
+                    "unicodes": [
+                        "0142"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0142",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter L With Stroke"
+                },
+                {
                     "sign": "m",
                     "unicodes": [
                         "006D"
@@ -1482,6 +1539,18 @@
                     "description": "Latin Small Letter N"
                 },
                 {
+                    "sign": "ń",
+                    "unicodes": [
+                        "0144"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0144",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter N With Acute"
+                },
+                {
                     "sign": "o",
                     "unicodes": [
                         "006F"
@@ -1492,6 +1561,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter O"
+                },
+                {
+                    "sign": "ó",
+                    "unicodes": [
+                        "00F3"
+                    ],
+                    "local": "en",
+                    "display_unicode": "00F3",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter O With Acute"
                 },
                 {
                     "sign": "p",
@@ -1540,6 +1621,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter S"
+                },
+                {
+                    "sign": "ś",
+                    "unicodes": [
+                        "015B"
+                    ],
+                    "local": "en",
+                    "display_unicode": "015B",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Latin Small Letter S With Acute"
                 },
                 {
                     "sign": "t",
@@ -1626,90 +1719,6 @@
                     "description": "Latin Small Letter Z"
                 },
                 {
-                    "sign": "ą",
-                    "unicodes": [
-                        "0105"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0105",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter A With Ogonek"
-                },
-                {
-                    "sign": "ć",
-                    "unicodes": [
-                        "0107"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0107",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter C With Acute"
-                },
-                {
-                    "sign": "ę",
-                    "unicodes": [
-                        "0119"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0119",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter E With Ogonek"
-                },
-                {
-                    "sign": "ł",
-                    "unicodes": [
-                        "0142"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0142",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter L With Stroke"
-                },
-                {
-                    "sign": "ń",
-                    "unicodes": [
-                        "0144"
-                    ],
-                    "local": "en",
-                    "display_unicode": "0144",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter N With Acute"
-                },
-                {
-                    "sign": "ó",
-                    "unicodes": [
-                        "00F3"
-                    ],
-                    "local": "en",
-                    "display_unicode": "00F3",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter O With Acute"
-                },
-                {
-                    "sign": "ś",
-                    "unicodes": [
-                        "015B"
-                    ],
-                    "local": "en",
-                    "display_unicode": "015B",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Latin Small Letter S With Acute"
-                },
-                {
                     "sign": "ź",
                     "unicodes": [
                         "017A"
@@ -1741,7 +1750,7 @@
                     "local": "en",
                     "display_unicode": "00E9",
                     "types": [
-                        "alphabet"
+                        "extended"
                     ],
                     "description": "Latin Small Letter E With Acute"
                 }

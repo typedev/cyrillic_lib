@@ -16,17 +16,17 @@
         "Sobstvenno-Karel’skij-Jazyk"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный карельский алфавит на основе латиницы утвержден в 2007 году и состоит из 22 букв латинского алфавита (отсутствуют C, Q, W, X) и ряда специфических знаков (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. В квадратных скобках приведены альтернативные формы знаков. Зеленым выделены знаки, используемые в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Č Ĺ Ń Ŕ Ś Š Ź Ž Ü Ä Ö Ć Ǵ Ḱ Ḿ Ṕ ’",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z č ĺ ń ŕ ś š ź ž ü ä ö ć ǵ ḱ ḿ ṕ"
+            "uppercase": "A B Č D E F G H I J K L =Ĺ M N =Ń O P Q R =Ŕ S =Ś Š Z =Ź Ž T U +Ü V Y Ä Ö ’",
+            "lowercase": "a b č d e f g h i j k l =ĺ m n =ń o p q r =ŕ s =ś š z =ź ž t u +ü v y ä ö"
         },
         {
             "type": "extended",
-            "uppercase": "!F540 !F541 !F546 !F547 !F486 !F487",
-            "lowercase": "!F488 !F489 !F542 !F543 !F548 !F549"
+            "uppercase": "!F540 !F541 !F546 !F547 !F486 !F487 Ć Ǵ Ḱ Ḿ Ṕ X",
+            "lowercase": "!F488 !F489 !F542 !F543 !F548 !F549 ć ǵ ḱ ḿ ṕ x"
         }
     ]
 }

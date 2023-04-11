@@ -14,12 +14,22 @@
         "Irish"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный гэльский алфавит состоит из 18 букв латинского алфавита (буквы J, K, Q, V, W, X, Y, Z используются в заимствованиях). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым обозначены важные для языка знаки, не входящие в алфавит:\nзнаки, которые могут употребляться для снятия омонимии и уточнения произношения;\nранее использовавшиеся в языке знаки и исторические формы;\nзнаки, используемые в заимствованиях.\n",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Á À Ë É È Í Ì Ó Ò Ù Ă Ĕ Ĭ Ŏ Ŭ Ā Ē Ī Ō Ū Ú ’",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z á à ë é è í ì ó ò ù ă ĕ ĭ ŏ ŭ ā ē ī ō ſ ɼ ū ú"
+            "uppercase": "A Á À B C D E Ë É È F G H I Í Ì J K L M N O Ó Ò P Q R S T U Ù V W X Y Z ’",
+            "lowercase": "a á à b c d e ë é è f g h i í ì j k l m n o ó ò p q r s t u ù v w x y z"
+        },
+        {
+            "type": "historic",
+            "uppercase": "Ā Ē Ī Ō Ū",
+            "lowercase": "ā ē ī ō ū ſ ɼ"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Ă Ĕ Ĭ Ŏ Ŭ Ú",
+            "lowercase": "ă ĕ ĭ ŏ ŭ ú"
         }
     ]
 }

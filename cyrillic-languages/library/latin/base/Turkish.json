@@ -13,12 +13,17 @@
         "Türkisch"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный турецкий алфавит состоит из 23 букв латинского алфавита (буквы Q, W, X используются в заимствованиях) и ряда специфических знаков (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены знаки, используемые в лексикографических источниках.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Â Ç Ğ İ Ö Ş Û Ü Ā Ī Î Ū",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z â ç ğ ı ö ş û ü ā ī î ū"
+            "uppercase": "A =Â B C Ç D E F G Ğ H İ I J K L M N O Ö P Q R S Ş T U =Û Ü V W X Y Z",
+            "lowercase": "a =â b c ç d e f g ğ h i ı j k l m n o ö p q r s ş t u =û ü v w x y z"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Ā Ī Î Ū",
+            "lowercase": "ā ī î ū"
         }
     ]
 }

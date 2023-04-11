@@ -31,6 +31,19 @@
                     "alts": []
                 },
                 {
+                    "sign": "Ch",
+                    "unicodes": [
+                        "0043",
+                        "0068"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0043, 0068",
+                    "alts": []
+                },
+                {
                     "sign": "D",
                     "unicodes": [
                         "0044"
@@ -76,6 +89,19 @@
                         "alphabet"
                     ],
                     "description": "0047",
+                    "alts": []
+                },
+                {
+                    "sign": "G‘",
+                    "unicodes": [
+                        "0047",
+                        "2018"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0047, 2018",
                     "alts": []
                 },
                 {
@@ -175,6 +201,19 @@
                     "alts": []
                 },
                 {
+                    "sign": "O‘",
+                    "unicodes": [
+                        "004F",
+                        "2018"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "004F, 2018",
+                    "alts": []
+                },
+                {
                     "sign": "P",
                     "unicodes": [
                         "0050"
@@ -220,6 +259,19 @@
                         "alphabet"
                     ],
                     "description": "0053",
+                    "alts": []
+                },
+                {
+                    "sign": "Sh",
+                    "unicodes": [
+                        "0053",
+                        "0068"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0053, 0068",
                     "alts": []
                 },
                 {
@@ -333,6 +385,19 @@
                     "alts": []
                 },
                 {
+                    "sign": "ch",
+                    "unicodes": [
+                        "0063",
+                        "0068"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0063, 0068",
+                    "alts": []
+                },
+                {
                     "sign": "d",
                     "unicodes": [
                         "0064"
@@ -378,6 +443,19 @@
                         "alphabet"
                     ],
                     "description": "0067",
+                    "alts": []
+                },
+                {
+                    "sign": "g‘",
+                    "unicodes": [
+                        "0067",
+                        "2018"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0067, 2018",
                     "alts": []
                 },
                 {
@@ -477,6 +555,19 @@
                     "alts": []
                 },
                 {
+                    "sign": "o‘",
+                    "unicodes": [
+                        "006F",
+                        "2018"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "006F, 2018",
+                    "alts": []
+                },
+                {
                     "sign": "p",
                     "unicodes": [
                         "0070"
@@ -522,6 +613,19 @@
                         "alphabet"
                     ],
                     "description": "0073",
+                    "alts": []
+                },
+                {
+                    "sign": "sh",
+                    "unicodes": [
+                        "0073",
+                        "0068"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "0073, 0068",
                     "alts": []
                 },
                 {
@@ -626,6 +730,16 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter B"
+                },
+                {
+                    "sign": "C",
+                    "unicodes": [
+                        "0043"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0043",
+                    "types": null,
+                    "description": "Latin Capital Letter C"
                 },
                 {
                     "sign": "D",
@@ -930,6 +1044,16 @@
                     "description": "Latin Small Letter B"
                 },
                 {
+                    "sign": "c",
+                    "unicodes": [
+                        "0063"
+                    ],
+                    "local": "en",
+                    "display_unicode": "0063",
+                    "types": null,
+                    "description": "Latin Small Letter C"
+                },
+                {
                     "sign": "d",
                     "unicodes": [
                         "0064"
@@ -1192,6 +1316,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter Z"
+                },
+                {
+                    "sign": "‘",
+                    "unicodes": [
+                        "2018"
+                    ],
+                    "local": "en",
+                    "display_unicode": "2018",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Left Single Quotation Mark"
                 }
             ]
         }

@@ -13,12 +13,12 @@
         "Southern Lapp"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный южносаамский алфавит основан на латинском с дополнением ряда специфических знаков (выделены красным). В квадратных скобках приведены альтернативные формы знаков, которые, в отличие от используемых в Швеции, используются в Норвегии. Буквы C, Q, W, X, Z применяются в словах, заимствованных из других языков.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Á Ï Ñ Ń Ä Æ Å Ö Ø",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z á ï ñ ń ä æ å ö ø"
+            "uppercase": "A Á B C D E F G H I Ï J K L M N Ñ +Ń O P Q R S T U V W X Y Z Ä +Æ Å Ö +Ø",
+            "lowercase": "a á b c d e f g h i ï j k l m n ñ +ń o p q r s t u v w x y z ä +æ å ö +ø"
         }
     ]
 }

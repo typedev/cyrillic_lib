@@ -14,12 +14,17 @@
         "DANO-NORWEGIAN"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "В составе современного суммарного норвежского алфавита 26 букв латинского алфавите и 3 специфических знака (выделены красным). Представленные в скобках знаки при сортировке рассматриваются как эквиваленты основного знака. Зеленым выделены знаки, используемые в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z À É Ê Ò Ó Ô Æ Ø Å Á Â Ç È Ë Ü Ǽ Ä Ö Ǿ Ǻ",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z à é ê ò ó ô æ ø å á â ç è ë ü ǽ ä ö ǿ ǻ"
+            "uppercase": "A =À B C D E =É =Ê F G H I J K L M N O =Ò =Ó =Ô P Q R S T U V W X Y Z Æ Ø Å",
+            "lowercase": "a =à b c d e =é =ê f g h i j k l m n o =ò =ó =ô p q r s t u v w x y z æ ø å"
+        },
+        {
+            "type": "extended",
+            "uppercase": "Á Â Ç È Ë Ü Ǽ Ä Ö Ǿ Ǻ",
+            "lowercase": "á â ç è ë ü ǽ ä ö ǿ ǻ"
         }
     ]
 }

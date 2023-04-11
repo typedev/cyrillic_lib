@@ -12,12 +12,17 @@
         "Polski"
     ],
     "description_eng": "",
-    "description_rus": "",
+    "description_rus": "Современный польский алфавит состоит из 23 букв латинского алфавита и 9 специфических знаков (выделены красным). Буквы Q, V, X, как и выделеный зеленым знак Eacute, используются в заимствованиях.",
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ą Ć Ę Ł Ń Ó Ś Ź Ż É",
-            "lowercase": "a b c d e f g h i j k l m n o p q r s t u v w x y z ą ć ę ł ń ó ś ź ż é"
+            "uppercase": "A Ą B C Ć D E Ę F G H I J K L Ł M N Ń O Ó P Q R S Ś T U V W X Y Z Ź Ż",
+            "lowercase": "a ą b c ć d e ę f g h i j k l ł m n ń o ó p q r s ś t u v w x y z ź ż"
+        },
+        {
+            "type": "extended",
+            "uppercase": "É",
+            "lowercase": "é"
         }
     ]
 }
