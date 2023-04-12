@@ -197,7 +197,10 @@ def checkTypeSign(typesign, name_eng):
 
 
 def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None, wrapedunicodes = None, name_eng = None, localdef = 'en', local = None, extendedglyph = None, casesign = None):
-	chars_list = [getCharInfo(sign, typestring = typestring) for sign in charsline.split(' ')]
+	_charsline = charsline.split(' ')
+	while '' in _charsline:
+		_charsline.remove('')
+	chars_list = [getCharInfo(sign, typestring = typestring) for sign in _charsline]
 	chars_list_wrap = []
 	uniqunicodes = []
 	# local = None
@@ -508,8 +511,8 @@ def compileLagnuages(workPath, libraryMainFile, libraryGlyphsList, scriptlang, l
 
 			for glyphlist in glyphslists:
 				typelist = glyphlist['type']
-				uppercaselist = glyphlist['uppercase']
-				lowercaselist = glyphlist['lowercase']
+				uppercaselist = glyphlist['uppercase'].strip()
+				lowercaselist = glyphlist['lowercase'].strip()
 
 				# checkSortOrderDigraphs(name, typelist, uppercaselist.split(' '))
 				# checkSortOrderDigraphs(name, typelist, lowercaselist.split(' '))

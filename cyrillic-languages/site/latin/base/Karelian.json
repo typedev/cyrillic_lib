@@ -52,7 +52,20 @@
                         "alphabet"
                     ],
                     "description": "0044",
-                    "alts": []
+                    "alts": [
+                        {
+                            "sign": "",
+                            "unicodes": [
+                                "F540"
+                            ],
+                            "local": "en",
+                            "types": [
+                                "equivalentsign"
+                            ],
+                            "description": "F540",
+                            "alts": []
+                        }
+                    ]
                 },
                 {
                     "sign": "E",
@@ -345,7 +358,20 @@
                         "alphabet"
                     ],
                     "description": "0054",
-                    "alts": []
+                    "alts": [
+                        {
+                            "sign": "",
+                            "unicodes": [
+                                "F546"
+                            ],
+                            "local": "en",
+                            "types": [
+                                "equivalentsign"
+                            ],
+                            "description": "F546",
+                            "alts": []
+                        }
+                    ]
                 },
                 {
                     "sign": "U",
@@ -480,7 +506,20 @@
                         "alphabet"
                     ],
                     "description": "0064",
-                    "alts": []
+                    "alts": [
+                        {
+                            "sign": "",
+                            "unicodes": [
+                                "F541"
+                            ],
+                            "local": "en",
+                            "types": [
+                                "equivalentsign"
+                            ],
+                            "description": "F541",
+                            "alts": []
+                        }
+                    ]
                 },
                 {
                     "sign": "e",
@@ -773,7 +812,20 @@
                         "alphabet"
                     ],
                     "description": "0074",
-                    "alts": []
+                    "alts": [
+                        {
+                            "sign": "",
+                            "unicodes": [
+                                "F547"
+                            ],
+                            "local": "en",
+                            "types": [
+                                "equivalentsign"
+                            ],
+                            "description": "F547",
+                            "alts": []
+                        }
+                    ]
                 },
                 {
                     "sign": "u",
@@ -856,54 +908,6 @@
             "show_unicodes": false,
             "uppercase": [
                 {
-                    "sign": "",
-                    "unicodes": [
-                        "F540"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": "F540",
-                    "alts": []
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F541"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": "F541",
-                    "alts": []
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F546"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": "F546",
-                    "alts": []
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F547"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": "F547",
-                    "alts": []
-                },
-                {
                     "sign": "",
                     "unicodes": [
                         "F486"
@@ -916,15 +920,39 @@
                     "alts": []
                 },
                 {
-                    "sign": "",
+                    "sign": "",
                     "unicodes": [
-                        "F487"
+                        "F488"
                     ],
                     "local": "en",
                     "types": [
                         "extended"
                     ],
-                    "description": "F487",
+                    "description": "F488",
+                    "alts": []
+                },
+                {
+                    "sign": "",
+                    "unicodes": [
+                        "F542"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "extended"
+                    ],
+                    "description": "F542",
+                    "alts": []
+                },
+                {
+                    "sign": "",
+                    "unicodes": [
+                        "F548"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "extended"
+                    ],
+                    "description": "F548",
                     "alts": []
                 },
                 {
@@ -1002,15 +1030,15 @@
             ],
             "lowercase": [
                 {
-                    "sign": "",
+                    "sign": "",
                     "unicodes": [
-                        "F488"
+                        "F487"
                     ],
                     "local": "en",
                     "types": [
                         "extended"
                     ],
-                    "description": "F488",
+                    "description": "F487",
                     "alts": []
                 },
                 {
@@ -1026,18 +1054,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "",
-                    "unicodes": [
-                        "F542"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": "F542",
-                    "alts": []
-                },
-                {
                     "sign": "",
                     "unicodes": [
                         "F543"
@@ -1047,18 +1063,6 @@
                         "extended"
                     ],
                     "description": "F543",
-                    "alts": []
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F548"
-                    ],
-                    "local": "en",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": "F548",
                     "alts": []
                 },
                 {
@@ -1199,6 +1203,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Capital Letter D"
+                },
+                {
+                    "sign": "",
+                    "unicodes": [
+                        "F540"
+                    ],
+                    "local": "en",
+                    "display_unicode": "F540",
+                    "types": [
+                        "equivalentsign"
+                    ],
+                    "description": ""
                 },
                 {
                     "sign": "E",
@@ -1489,6 +1505,18 @@
                     "description": "Latin Capital Letter T"
                 },
                 {
+                    "sign": "",
+                    "unicodes": [
+                        "F546"
+                    ],
+                    "local": "en",
+                    "display_unicode": "F546",
+                    "types": [
+                        "equivalentsign"
+                    ],
+                    "description": ""
+                },
+                {
                     "sign": "U",
                     "unicodes": [
                         "0055"
@@ -1573,54 +1601,6 @@
                     "description": "Right Single Quotation Mark"
                 },
                 {
-                    "sign": "",
-                    "unicodes": [
-                        "F540"
-                    ],
-                    "local": "en",
-                    "display_unicode": "F540",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": ""
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F541"
-                    ],
-                    "local": "en",
-                    "display_unicode": "F541",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": ""
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F546"
-                    ],
-                    "local": "en",
-                    "display_unicode": "F546",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": ""
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F547"
-                    ],
-                    "local": "en",
-                    "display_unicode": "F547",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": ""
-                },
-                {
                     "sign": "",
                     "unicodes": [
                         "F486"
@@ -1633,12 +1613,36 @@
                     "description": ""
                 },
                 {
-                    "sign": "",
+                    "sign": "",
                     "unicodes": [
-                        "F487"
+                        "F488"
                     ],
                     "local": "en",
-                    "display_unicode": "F487",
+                    "display_unicode": "F488",
+                    "types": [
+                        "extended"
+                    ],
+                    "description": ""
+                },
+                {
+                    "sign": "",
+                    "unicodes": [
+                        "F542"
+                    ],
+                    "local": "en",
+                    "display_unicode": "F542",
+                    "types": [
+                        "extended"
+                    ],
+                    "description": ""
+                },
+                {
+                    "sign": "",
+                    "unicodes": [
+                        "F548"
+                    ],
+                    "local": "en",
+                    "display_unicode": "F548",
                     "types": [
                         "extended"
                     ],
@@ -1765,6 +1769,18 @@
                         "alphabet"
                     ],
                     "description": "Latin Small Letter D"
+                },
+                {
+                    "sign": "",
+                    "unicodes": [
+                        "F541"
+                    ],
+                    "local": "en",
+                    "display_unicode": "F541",
+                    "types": [
+                        "equivalentsign"
+                    ],
+                    "description": ""
                 },
                 {
                     "sign": "e",
@@ -2055,6 +2071,18 @@
                     "description": "Latin Small Letter T"
                 },
                 {
+                    "sign": "",
+                    "unicodes": [
+                        "F547"
+                    ],
+                    "local": "en",
+                    "display_unicode": "F547",
+                    "types": [
+                        "equivalentsign"
+                    ],
+                    "description": ""
+                },
+                {
                     "sign": "u",
                     "unicodes": [
                         "0075"
@@ -2127,12 +2155,12 @@
                     "description": "Latin Small Letter O With Diaeresis"
                 },
                 {
-                    "sign": "",
+                    "sign": "",
                     "unicodes": [
-                        "F488"
+                        "F487"
                     ],
                     "local": "en",
-                    "display_unicode": "F488",
+                    "display_unicode": "F487",
                     "types": [
                         "extended"
                     ],
@@ -2151,36 +2179,12 @@
                     "description": ""
                 },
                 {
-                    "sign": "",
-                    "unicodes": [
-                        "F542"
-                    ],
-                    "local": "en",
-                    "display_unicode": "F542",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": ""
-                },
-                {
                     "sign": "",
                     "unicodes": [
                         "F543"
                     ],
                     "local": "en",
                     "display_unicode": "F543",
-                    "types": [
-                        "extended"
-                    ],
-                    "description": ""
-                },
-                {
-                    "sign": "",
-                    "unicodes": [
-                        "F548"
-                    ],
-                    "local": "en",
-                    "display_unicode": "F548",
                     "types": [
                         "extended"
                     ],

@@ -104,7 +104,7 @@ for idx, line in enumerate(data):
 					item['glyphs_list'][0]['uppercase'] += ' %s' % ss
 		if extendedline:
 			el = extendedline.split(' ')
-			if '' in el:
+			while '' in el:
 				el.remove('')
 			if el:
 				item['glyphs_list'].append( dict(

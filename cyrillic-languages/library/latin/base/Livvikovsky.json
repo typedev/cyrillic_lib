@@ -21,13 +21,13 @@
     "glyphs_list": [
         {
             "type": "alphabet",
-            "uppercase": "A B Č D Ǯ E F G H I J K L =Ĺ M N =Ń O P R =Ŕ S =Ś Š Z =Ź Ž T U V Ü Ä Ö ’",
-            "lowercase": "a b č d ǯ e f g h i j k l =ĺ m n =ń o p r =ŕ s =ś š z =ź ž t u v ü ä ö"
+            "uppercase": "A B Č D =!F540 !F54C E F G H I J K L =Ĺ M N =Ń O P R =Ŕ S =Ś Š Z =Ź Ž T =!F546 U V Ü Ä Ö ’",
+            "lowercase": "a b č d =!F541 !F54D e f g h i j k l =ĺ m n =ń o p r =ŕ s =ś š z =ź ž t =!F547 u v ü ä ö"
         },
         {
             "type": "extended",
-            "uppercase": "!F54C !F54D !F540 !F541 !F546 !F547 !F486 Ć C Ǵ Ḱ Ḿ Ṕ",
-            "lowercase": "!F487 !F488 !F489 !F542 !F543 !F548 !F549 ć c ǵ ḱ ḿ ṕ"
+            "uppercase": "!F486 !F488 !F542 !F548 Ć C Ǵ Ḱ Ḿ Ṕ",
+            "lowercase": "!F487 !F489 !F543 !F549 ć c ǵ ḱ ḿ ṕ"
         }
     ]
 }
