@@ -3,11 +3,11 @@
 import json
 import os.path
 
-workpath = 'langlib'
-outputpath = 'output'
-codeslangfile = 'cyrillic_lib.json'
-sortorderfile = 'sortorder_cyrillic.txt'
-unicodelibfile = 'unicode14.txt'
+workpath = '/Users/alexander/WORKS/PythonWorks/cyrillic_lib/cyrillic-languages/library/latin/base'
+# outputpath = 'output'
+codeslangfile = '/Users/alexander/WORKS/PythonWorks/cyrillic_lib/cyrillic-languages/library/latin/latin_library.json'
+# sortorderfile = 'sortorder_cyrillic.txt'
+# unicodelibfile = 'unicode14.txt'
 
 with open(codeslangfile, "r") as read_file:
 	data = json.load(read_file)
@@ -26,22 +26,26 @@ for name in names:
 		data = json.load(read_file)
 	name_eng = data['name_eng']
 	name_rus = data['name_rus']
-	language_group = data['language_group']
+	language_group_rus = data['language_group_rus']
 	alt_names_eng = data['alt_names_eng']
 	description_eng = data['description_eng']
 	description_rus = data['description_rus']
 
 	textdata.append('#### ' + name_eng)
 	textdata.append('### Языковые группы')
-	textdata.extend(language_group)
-	# textdata.append('## Латинские названия')
-	# textdata.extend(alt_names_eng)
-	# textdata.append('# description english')
-	# textdata.append(description_eng)
+	textdata.extend(language_group_rus)
+	textdata.append('### Language groups')
+	textdata.append('---')
+	textdata.append('## Латинские названия')
+	textdata.extend(alt_names_eng)
+	textdata.append('# description english')
+	if not description_eng:
+		description_eng = '---'
+	textdata.append(description_eng)
 	textdata.append('# description russian')
 	textdata.append(description_rus)
 	textdata.append('')
-	# textdata.append('')
+	textdata.append('')
 
 for item in textdata:
 	print(item)
