@@ -4,7 +4,7 @@ import json
 import os.path
 
 
-descriptionsfile = 'langdesc-eng_e-25.08.2022.txt'
+descriptionsfile = 'langdesc-rus-latin_g.txt'
 
 applyChanges = True
 workPath = os.path.dirname(__file__)
@@ -16,7 +16,7 @@ print('Started reload description')
 print(workPath)
 basePath, _s = os.path.split(workPath)
 print('basePath: %s' % basePath)
-libraryPath = os.path.join(basePath, libraryPath)
+libraryPath = os.path.join(basePath, libraryPath, 'latin', 'base')
 print('libraryPath: %s' % libraryPath)
 
 filedesc = open(descriptionsfile, mode = 'r')
@@ -49,11 +49,28 @@ for idx, line in enumerate(data):
 	if line.startswith('####'):
 		name_eng = line.replace('####','').strip()
 		item['name_eng'] = name_eng
-	if line.startswith('### Language'):
+
+	if line.startswith('### Языковые группы'):
 		textl = []
 		for t in data[idx + 1:]:
-			if t.startswith('# '):
+			if t.startswith('#'):
+				item['language_group_rus'] = textl
+				break
+			else:
+				textl.append(clearDangerSymbols(t.rstrip()))
+	if line.startswith('### Language groups'):
+		textl = []
+		for t in data[idx + 1:]:
+			if t.startswith('#'):
 				item['language_group_eng'] = textl
+				break
+			else:
+				textl.append(clearDangerSymbols(t.rstrip()))
+	if line.startswith('## Латинские названия'):
+		textl = []
+		for t in data[idx + 1:]:
+			if t.startswith('#'):
+				item['alt_names_eng'] = textl
 				break
 			else:
 				textl.append(clearDangerSymbols(t.rstrip()))
@@ -62,6 +79,14 @@ for idx, line in enumerate(data):
 		for t in data[idx+1:]:
 			if t.startswith('\n'):
 				item['description_eng'] = ''.join(textl)
+				break
+			else:
+				textl.append(clearDangerSymbols(t))
+	if line.startswith('# description russian'):
+		textl = []
+		for t in data[idx+1:]:
+			if t.startswith('\n'):
+				item['description_rus'] = ''.join(textl)
 				break
 			else:
 				textl.append(clearDangerSymbols(t))
@@ -86,11 +111,11 @@ for item in strukt:
 		_data['name_eng'] = data['name_eng']
 		_data['name_rus'] = data['name_rus']
 		_data['local'] = data['local']
-		_data['language_group_eng'] = item['language_group_eng']
-		_data['language_group_rus'] = data['language_group_rus']
-		_data['alt_names_eng'] = data['alt_names_eng']
-		_data['description_eng'] = item['description_eng']
-		_data['description_rus'] = data['description_rus']
+		_data['language_group_eng'] = [] # item['language_group_eng']
+		_data['language_group_rus'] = item['language_group_rus']
+		_data['alt_names_eng'] = item['alt_names_eng']
+		_data['description_eng'] = ''#item['description_eng']
+		_data['description_rus'] = item['description_rus']
 		_data['glyphs_list'] = data['glyphs_list']
 		for k,v in _data.items():
 			print(k,v)
