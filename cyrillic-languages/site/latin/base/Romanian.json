@@ -755,8 +755,8 @@
             ]
         },
         {
-            "type": "extended",
-            "title": "Extended Orphographic Notation",
+            "type": "historic",
+            "title": "Historical glyph forms",
             "show_unicodes": false,
             "uppercase": [
                 {
@@ -766,9 +766,21 @@
                     ],
                     "local": "en",
                     "types": [
-                        "extended"
+                        "historic"
                     ],
                     "description": "00C9",
+                    "alts": []
+                },
+                {
+                    "sign": "Ó",
+                    "unicodes": [
+                        "00D3"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "00D3",
                     "alts": []
                 }
             ],
@@ -780,9 +792,21 @@
                     ],
                     "local": "en",
                     "types": [
-                        "extended"
+                        "historic"
                     ],
                     "description": "00E9",
+                    "alts": []
+                },
+                {
+                    "sign": "ó",
+                    "unicodes": [
+                        "00F3"
+                    ],
+                    "local": "en",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "00F3",
                     "alts": []
                 }
             ]
@@ -1172,9 +1196,21 @@
                     "local": "en",
                     "display_unicode": "00C9",
                     "types": [
-                        "extended"
+                        "historic"
                     ],
                     "description": "Latin Capital Letter E With Acute"
+                },
+                {
+                    "sign": "Ó",
+                    "unicodes": [
+                        "00D3"
+                    ],
+                    "local": "en",
+                    "display_unicode": "00D3",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "Latin Capital Letter O With Acute"
                 }
             ],
             "lowercase": [
@@ -1558,9 +1594,21 @@
                     "local": "en",
                     "display_unicode": "00E9",
                     "types": [
-                        "extended"
+                        "historic"
                     ],
                     "description": "Latin Small Letter E With Acute"
+                },
+                {
+                    "sign": "ó",
+                    "unicodes": [
+                        "00F3"
+                    ],
+                    "local": "en",
+                    "display_unicode": "00F3",
+                    "types": [
+                        "historic"
+                    ],
+                    "description": "Latin Small Letter O With Acute"
                 }
             ]
         }
