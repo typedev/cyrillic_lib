@@ -1502,6 +1502,39 @@
             ]
         },
         {
+            "type": "dialect",
+            "title": "Dialect glyph forms",
+            "show_unicodes": false,
+            "uppercase": [
+                {
+                    "sign": "Ђ",
+                    "unicodes": [
+                        "0402"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "dialect"
+                    ],
+                    "description": "0402",
+                    "alts": []
+                }
+            ],
+            "lowercase": [
+                {
+                    "sign": "ђ",
+                    "unicodes": [
+                        "0452"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "dialect"
+                    ],
+                    "description": "0452",
+                    "alts": []
+                }
+            ]
+        },
+        {
             "type": "charset",
             "title": "Character Set",
             "show_unicodes": true,
@@ -2213,6 +2246,18 @@
                         "extended"
                     ],
                     "description": "Cyrillic Capital Letter Barred O With Diaeresis And Breve"
+                },
+                {
+                    "sign": "Ђ",
+                    "unicodes": [
+                        "0402"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0402",
+                    "types": [
+                        "dialect"
+                    ],
+                    "description": "Cyrillic Capital Letter Dje"
                 },
                 {
                     "sign": "ʼ",
@@ -2935,6 +2980,18 @@
                         "extended"
                     ],
                     "description": "Cyrillic Small Letter Barred O With Diaeresis And Breve"
+                },
+                {
+                    "sign": "ђ",
+                    "unicodes": [
+                        "0452"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "0452",
+                    "types": [
+                        "dialect"
+                    ],
+                    "description": "Cyrillic Small Letter Dje"
                 },
                 {
                     "sign": "ʼ",
