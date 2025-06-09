@@ -487,18 +487,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "Ь",
-                    "unicodes": [
-                        "042C"
-                    ],
-                    "local": "ru",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "042C",
-                    "alts": []
-                },
-                {
                     "sign": "Ъ",
                     "unicodes": [
                         "042A"
@@ -508,6 +496,18 @@
                         "alphabet"
                     ],
                     "description": "042A",
+                    "alts": []
+                },
+                {
+                    "sign": "Ь",
+                    "unicodes": [
+                        "042C"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "042C",
                     "alts": []
                 },
                 {
@@ -1005,18 +1005,6 @@
                     "alts": []
                 },
                 {
-                    "sign": "ь",
-                    "unicodes": [
-                        "044C"
-                    ],
-                    "local": "ru",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "044C",
-                    "alts": []
-                },
-                {
                     "sign": "ъ",
                     "unicodes": [
                         "044A"
@@ -1026,6 +1014,18 @@
                         "alphabet"
                     ],
                     "description": "044A",
+                    "alts": []
+                },
+                {
+                    "sign": "ь",
+                    "unicodes": [
+                        "044C"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "044C",
                     "alts": []
                 },
                 {
@@ -1433,18 +1433,6 @@
                     "description": "Cyrillic Capital Letter Sha"
                 },
                 {
-                    "sign": "Ь",
-                    "unicodes": [
-                        "042C"
-                    ],
-                    "local": "ru",
-                    "display_unicode": "042C",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Cyrillic Capital Letter Soft Sign"
-                },
-                {
                     "sign": "Ъ",
                     "unicodes": [
                         "042A"
@@ -1455,6 +1443,18 @@
                         "alphabet"
                     ],
                     "description": "Cyrillic Capital Letter Hard Sign"
+                },
+                {
+                    "sign": "Ь",
+                    "unicodes": [
+                        "042C"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "042C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Cyrillic Capital Letter Soft Sign"
                 },
                 {
                     "sign": "Я",
@@ -1807,18 +1807,6 @@
                     "description": "Cyrillic Small Letter Sha"
                 },
                 {
-                    "sign": "ь",
-                    "unicodes": [
-                        "044C"
-                    ],
-                    "local": "ru",
-                    "display_unicode": "044C",
-                    "types": [
-                        "alphabet"
-                    ],
-                    "description": "Cyrillic Small Letter Soft Sign"
-                },
-                {
                     "sign": "ъ",
                     "unicodes": [
                         "044A"
@@ -1829,6 +1817,18 @@
                         "alphabet"
                     ],
                     "description": "Cyrillic Small Letter Hard Sign"
+                },
+                {
+                    "sign": "ь",
+                    "unicodes": [
+                        "044C"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "044C",
+                    "types": [
+                        "alphabet"
+                    ],
+                    "description": "Cyrillic Small Letter Soft Sign"
                 },
                 {
                     "sign": "я",
