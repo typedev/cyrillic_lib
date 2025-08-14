@@ -2,7 +2,10 @@
     "name_eng": "Azeri",
     "name_rus": "Азербайджанский",
     "local": "en",
-    "language_group_eng": [],
+    "language_group_eng": [
+"Altaic", 
+"Turkic"
+],
     "language_group_rus": [
         "Алтайские языки",
         "Тюркские языки"
@@ -12,7 +15,8 @@
         "Azerbaydzhani",
         "Azeri Turk"
     ],
-    "description_eng": "",
+    "description_eng": 
+"The modern Azerbaijan alphabet based on the Turkish Latin alphabet was introduced in 1991 and contains 32 letters. The signs of dialects of the language and its historical forms found in lexicographic sources are shown separately. Additional characters are optional and may not be part of the typeface.",
     "description_rus": "Современный азербайджанский алфавит на основе турецкой латиницы введен в 1991 году и содержит 32 буквы. Дополнительно приведены диалектические исторические формы, а также знаки, представленные в лексикографических источниках. Дополнительные знаки не являются обязательными и могут не входить в состав шрифта.\n",
     "glyphs_list": [
         {

@@ -8,6 +8,7 @@ workpath = '/Users/alexander/WORKS/PythonWorks/cyrillic_lib/cyrillic-languages/l
 codeslangfile = '/Users/alexander/WORKS/PythonWorks/cyrillic_lib/cyrillic-languages/library/latin/latin_library.json'
 # sortorderfile = 'sortorder_cyrillic.txt'
 # unicodelibfile = 'unicode14.txt'
+outputfile = 'output.txt'
 
 with open(codeslangfile, "r") as read_file:
 	data = json.load(read_file)
@@ -50,4 +51,8 @@ for name in names:
 for item in textdata:
 	print(item)
 
+outputpath = os.path.join(os.path.dirname(codeslangfile), outputfile)
 
+# save to file
+with open(outputpath, "w") as write_file:
+	write_file.write('\n'.join(textdata))
