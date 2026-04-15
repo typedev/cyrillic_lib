@@ -1048,29 +1048,29 @@
             "show_unicodes": false,
             "uppercase": [
                 {
-                    "sign": "ГӀ",
+                    "sign": "Гӏ",
                     "unicodes": [
                         "0413",
-                        "04C0"
+                        "04CF"
                     ],
                     "local": "ru",
                     "types": [
                         "dialect"
                     ],
-                    "description": "0413, 04C0",
+                    "description": "0413, 04CF",
                     "alts": []
                 },
                 {
-                    "sign": "ХӀ",
+                    "sign": "Хӏ",
                     "unicodes": [
                         "0425",
-                        "04C0"
+                        "04CF"
                     ],
                     "local": "ru",
                     "types": [
                         "dialect"
                     ],
-                    "description": "0425, 04C0",
+                    "description": "0425, 04CF",
                     "alts": []
                 },
                 {
@@ -1441,6 +1441,119 @@
                         "extended"
                     ],
                     "description": "F472",
+                    "alts": []
+                }
+            ]
+        },
+        {
+            "type": "consideration",
+            "title": "Signs under consideration",
+            "show_unicodes": false,
+            "uppercase": [
+                {
+                    "sign": "Сс",
+                    "unicodes": [
+                        "0421",
+                        "0441"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "0421, 0441",
+                    "alts": []
+                },
+                {
+                    "sign": "Хх",
+                    "unicodes": [
+                        "0425",
+                        "0445"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "0425, 0445",
+                    "alts": []
+                },
+                {
+                    "sign": "Ҳҳ",
+                    "unicodes": [
+                        "04B2",
+                        "04B3"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "04B2, 04B3",
+                    "alts": []
+                },
+                {
+                    "sign": "Шш",
+                    "unicodes": [
+                        "0428",
+                        "0448"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "0428, 0448",
+                    "alts": []
+                }
+            ],
+            "lowercase": [
+                {
+                    "sign": "сс",
+                    "unicodes": [
+                        "0441",
+                        "0441"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "0441, 0441",
+                    "alts": []
+                },
+                {
+                    "sign": "хх",
+                    "unicodes": [
+                        "0445",
+                        "0445"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "0445, 0445",
+                    "alts": []
+                },
+                {
+                    "sign": "ҳҳ",
+                    "unicodes": [
+                        "04B3",
+                        "04B3"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "04B3, 04B3",
+                    "alts": []
+                },
+                {
+                    "sign": "шш",
+                    "unicodes": [
+                        "0448",
+                        "0448"
+                    ],
+                    "local": "ru",
+                    "types": [
+                        "consideration"
+                    ],
+                    "description": "0448, 0448",
                     "alts": []
                 }
             ]
@@ -1905,6 +2018,18 @@
                         "alphabet"
                     ],
                     "description": "Cyrillic Letter Palochka"
+                },
+                {
+                    "sign": "ӏ",
+                    "unicodes": [
+                        "04CF"
+                    ],
+                    "local": "ru",
+                    "display_unicode": "04CF",
+                    "types": [
+                        "dialect"
+                    ],
+                    "description": "Cyrillic Small Letter Palochka"
                 }
             ],
             "lowercase": [
