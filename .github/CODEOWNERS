@@ -1,0 +1,32 @@
+# CODEOWNERS — GitHub auto-assigns listed handles as reviewers on PRs that
+# touch these paths. This file enforces nothing on its own; if/when branch
+# protection is enabled, these owners will be required reviewers.
+#
+# The rule below covers everything contributors are NOT supposed to touch
+# (site engine, generated artifacts, pipeline, shared configuration). A PR
+# that modifies any of these paths will auto-request review from @typedev.
+# PRs that only touch `library/cyrillic/base/` do not trigger this rule and
+# can be reviewed by any maintainer.
+
+cyrillic-languages/site/**               @typedev
+cyrillic-languages/static/**             @typedev
+cyrillic-languages/fonts/**              @typedev
+cyrillic-languages/scripts/**            @typedev
+cyrillic-languages/index.html            @typedev
+cyrillic-languages/asset-manifest.json   @typedev
+cyrillic-languages/favicon.ico           @typedev
+cyrillic-languages/robots.txt            @typedev
+cyrillic-languages/languages.json        @typedev
+cyrillic-languages/locales.json          @typedev
+cyrillic-languages/glyphs_list_categories.json                   @typedev
+cyrillic-languages/library/cyrillic/cyrillic_library.json        @typedev
+cyrillic-languages/library/cyrillic/sortorder_cyrillic.txt       @typedev
+cyrillic-languages/library/cyrillic/_legacy/**                   @typedev
+cyrillic-languages/library/latin/**                              @typedev
+cyrillic-languages/site/latin/**                                 @typedev
+cyrillic-languages/unicode14.txt         @typedev
+cyrillic-languages/PT_PUA_unicodes.txt   @typedev
+cyrillic-languages/PT_PUA_unicodes-descritions.txt               @typedev
+/index.html                              @typedev
+/.github/**                              @typedev
+/docs/**                                 @typedev
