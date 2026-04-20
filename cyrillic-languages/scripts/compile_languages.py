@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+"""Compile the Cyrillic / Latin language library.
+
+Pipeline entry point. Reads ``languages.json`` and builds each enabled script
+in two stages: per-language site files (``compileLagnuages``) and the
+pan-script character summary (``makeMainCharactersSet``). See
+``docs/MAINTAINING.md`` for operator docs and ``CONTRIBUTING.md`` for the
+glyph-marker reference.
+"""
 import sys
 import json
 import os.path
@@ -9,6 +17,8 @@ import argparse
 
 
 
+# NOTE: several entries below are legacy markers no longer used in data —
+# see docs/MAINTAINING.md "Known limitations" for the live-vs-dead breakdown.
 marks = ['*', '$', '#', '@', '(', ')', '[', ']', '+', '=', '&', ':', '.alt', '.ita', '.str']
 
 dialectsign = '@'
@@ -50,6 +60,7 @@ unicodeLibFiles = ['unicode14.txt', 'PT_PUA_unicodes-descritions.txt']
 DEVELOPMENT = True
 
 class CharacherDescription(object):
+	"""Lookup of hex-codepoint -> Unicode character name, loaded from tab-separated files."""
 	dangersymbols = {
 		'\t': '',
 		'\"': '\''
@@ -99,6 +110,13 @@ class CharacherDescription(object):
 
 
 class laguagesOrderSorter(object):
+	"""Loads sortorder_<script>.txt and sorts glyph tables by its positions.
+
+	Keys are expanded with locale suffixes so localized forms land at the
+	same position as their unlocalized parent codepoint. The locale list
+	below is hardcoded — see docs/MAINTAINING.md (Known limitations) for
+	the TODO to derive it from locales.json.
+	"""
 	def __init__(self, sortorderfile):
 		self.missigChars = {}
 		locales = ['', '.ru', '.ba', '.bg', '.cv', '.sr', '.en']
@@ -159,6 +177,7 @@ def getUniqName(cut=32):
 	return 'id%s' % ran_gen(cut, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
 def getCharInfo(item, typestring = None):
+	"""Parse one token: strip markers into ``types``, resolve ``!XXXX`` escapes into ``unicodes``."""
 	types = []
 	unicodes = []
 	overrideunicode = False
@@ -198,6 +217,17 @@ def checkTypeSign(typesign, name_eng):
 
 
 def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None, wrapedunicodes = None, name_eng = None, localdef = 'en', local = None, extendedglyph = None, casesign = None):
+	"""Expand one uppercase/lowercase glyph string into two parallel outputs.
+
+	Returns ``(chars_list_wrap, resultunicodes, uniqunicodes, extendedglyph)``.
+	``chars_list_wrap`` is the nested alphabet view: each main glyph with its
+	``+``/``=``/``:`` alternates grouped under it as ``alts``. ``resultunicodes``
+	is the flat charset feeding the pan-script summary. ``&`` marks a localized
+	form (carrying the language's ``local`` value instead of ``localdef``).
+	``usedunicodes`` threads already-seen codepoints across calls to avoid
+	duplicates. ``casesign`` is ``'upper'`` or ``'lower'`` and only affects
+	the multi-codepoint bookkeeping returned in ``extendedglyph``.
+	"""
 	_charsline = charsline.split(' ')
 	while '' in _charsline:
 		_charsline.remove('')
@@ -228,7 +258,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 		# 	types.append(typestring)
 		alts = []
 		if unicodes and unicodes[0] and unicodes[0] not in uniqunicodes and signtypes[featuresign] not in types:
-			""" знак с уникальным юникодом и не локальная форма """
+			""" Token has a unique codepoint and is not a localized form """
 			uniqunicodes.append(unicodes[0])
 			tp = None
 			if len(unicodes) == 1:
@@ -246,7 +276,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 			}
 			resultunicodes.append(item)
 		elif unicodes and unicodes[0] and unicodes[0] not in uniqunicodes and signtypes[featuresign] in types:
-			""" знак с уникальным юникодом и локальная форма """
+			""" Token has a unique codepoint and is a localized form """
 			uniqunicodes.append(unicodes[0])
 			tp = None
 			# print('+++')
@@ -273,10 +303,10 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 			resultunicodes.append(item)
 
 		for nextitem in chars_list[idx + 1:]:
-			""" проверяем следующий по порядку знак """
+			""" Check the next token in sequence """
 			_types = nextitem['types']
 			if signtypes[alternatesign] in _types or signtypes[equivalentsign] in _types or signtypes[digraphsign] in _types:
-				""" следующий знак - альтернатива или эквивалент или диграф"""
+				""" Next token is an alternate, equivalent, or digraph """
 				_unicodes = nextitem['unicodes']
 				nexttypes = nextitem['types'].copy()
 				if signtypes[alternatesign] in nexttypes and signtypes[featuresign] in nexttypes:
@@ -296,7 +326,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 
 				})
 				if _unicodes and _unicodes[0] and _unicodes[0] not in uniqunicodes:
-					""" у знака уникальный юникод """
+					""" Token has a unique codepoint """
 					uniqunicodes.append(_unicodes[0])
 					tp = None
 					if len(_unicodes) == 1:
@@ -315,9 +345,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[alternatesign] in nextitem['types'] and signtypes[featuresign] in nextitem['types']:
-					""" юникод знака уже встречался в списке, 
-						но ну него тип альтернативы и локальной формы - &a +a 
-					"""
+					""" Token's codepoint was already seen, but it carries the alternate + localized-form combo (&a +a) """
 					# print ('@@')
 					tp = None
 					if len(_unicodes) == 1:
@@ -336,9 +364,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 					}
 					resultunicodes.append(item)
 				elif _unicodes and _unicodes[0] in uniqunicodes and signtypes[replacementsign] in nexttypes:
-					""" юникод знака уже встречался в списке, 
-						но ну него тип replacement и локальной формы - &a *a 
-					"""
+					""" Token's codepoint was already seen, but it carries the replacement + localized-form combo (&a *a) """
 					# print ('&&')
 					tp = None
 					if len(_unicodes) == 1:
@@ -394,6 +420,7 @@ def cascadeAltsChar(CharDesc, charsline, typestring = None, usedunicodes = None,
 	return (chars_list_wrap, resultunicodes, uniqunicodes, _extendedglyph)
 
 def checkSortOrderDigraphs(namelang, typelist, glyphslist):
+	"""Orphan diagnostic for Dagestan-language digraph ordering. Callers are commented out."""
 	names = 'Adyge Aghul Dargwa Kabardian Kumyk Lak Lezgin Rutul Tabasaran Tat Tsakhur Kabardino-Cirkassian'.split(' ')
 	# txt = glyphslist
 	exglyphs = 'Ё ё Э э'.split(' ')
@@ -423,6 +450,7 @@ def checkSortOrderDigraphs(namelang, typelist, glyphslist):
 		print(tttout)
 
 def checkExtendedGlyphs(uni, casesign, typestring):
+	"""Return False for codepoints we deliberately do not re-emit as extended glyphs (hardcoded exclusion for U+04CF)."""
 	ignoreGlyphsList = [
 		{
 			'unicodesign': '04CF',
@@ -442,6 +470,7 @@ def checkExtendedGlyphs(uni, casesign, typestring):
 
 
 def compileLagnuages(workPath, libraryMainFile, libraryGlyphsList, scriptlang, local_def, names = None): # names = ['Avar']
+	"""Stage 1: build per-language site JSONs under ``site/<scriptlang>/base/``. ``names=None`` processes every enabled language."""
 	print('*' * 60)
 	print('Started compiling the language library')
 	# print(workPath)
@@ -579,6 +608,7 @@ def compileLagnuages(workPath, libraryMainFile, libraryGlyphsList, scriptlang, l
 
 
 def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicodedlist):
+	"""Partition a charset into three dicts keyed by codepoint: regular Unicode, PUA (``display_unicode`` starts with ``F``), and localized forms without their own display codepoint."""
 	for item in charlist:
 		sign = item['sign']
 		unicodes = item['unicodes']
@@ -658,6 +688,7 @@ def filterCharacters(name, local, charlist, unicodedlist, puazonelist, nonunicod
 	return unicodedlist, puazonelist, nonunicodedlist
 
 def sortGlyphsList(glyphslist, names, sortOrder = None):
+	"""Flatten a codepoint->entry dict into a list, sorted via ``sortOrder`` if given else by codepoint. Entries spanning every known language get an extra ``'All'`` marker."""
 	resultList = []
 
 	if not sortOrder:
@@ -678,6 +709,7 @@ def sortGlyphsList(glyphslist, names, sortOrder = None):
 
 
 def makeMainCharactersSet(workPath, libraryMainFile, sortOrderFile, outputGeneralGlyphsList, scriptlang):
+	"""Stage 2: aggregate per-language charset blocks into the pan-script ``<scriptlang>_characters_lib.json``."""
 	print('*' * 60)
 	print('making MainCharactersSet..')
 	# print(workPath)
@@ -776,6 +808,7 @@ def makeMainCharactersSet(workPath, libraryMainFile, sortOrderFile, outputGenera
 	print('..done')
 
 def loadLanguagesSettings(workpath, argv):
+	"""Parse CLI args (``-s script``, ``-n names``) and dispatch to the two pipeline stages for each enabled script in ``languages.json``."""
 	parser = argparse.ArgumentParser(
 		prog = 'CompileLanguages',)
 		# description = 'What the program does',
